@@ -93,7 +93,7 @@ export default function Home() {
       <HomeBanner />
       {/* <Bannerposter /> */}
       <div className="bg_home b2b-overflow-hidden" >
-       dsasdfsfd
+       
         <Projects />
         <About />
         <Brand heading={"Top Brands We Have Worked With"} color="text-white" />
