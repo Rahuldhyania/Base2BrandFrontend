@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.inte_com_banner {
+
+  height: unset;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5% 0;
+}
+
+.inte_com_banner_padding {
+  padding: 8% 0 !important;
+}
+
+/* banner text */
+.inte_com_banner_img {
+  position: absolute;
+  right: 1%;
+  width: 70%;
+  bottom: 2%;
+}
+
+.inte_com_bar {
+  background: rgba(21, 26, 26, 1);
+  overflow: hidden;
+}
+
+.inte_bar_h3 {
+  text-align: start;
+  padding-left: 18%;
+}
+
+.inte-sub-heading {
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.inte-sub-heading2 {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.feature5_inte_com {
+  background: rgba(255, 230, 201, 1);
+}
+
+.inte_com_blue {
+  color: rgba(64, 95, 219, 1);
+}
+
+.b2b_2 {
+  color: #e6693f;
+  margin-bottom: 0px;
+}
+
+.inte_choose_h2 {
+  text-align: center;
+}
+
+.inte_img_choose {
+  justify-content: center;
+  gap: 10px;
+}
+
+.inte_choose_h3 {
+  font-size: 22px;
+  padding-top: 15px;
+}
+
+.feature4_inte_com {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(107deg, rgba(0, 0, 0, 1) 43%, rgba(24, 18, 59, 1) 82%);
+}
+
+.inte_faq_com {
+  background-color: #fff;
+  margin-bottom: 15px;
+  border-radius: 40px;
+  padding-left: 25px;
+  box-shadow: 2px 3px 20px #a9a9a9;
+}
+
+.inte_faq_com .accordion-header {
+  padding-right: 3%;
+}
+
+.accordion-header .inte_faq_btn {
+  color: #000 !important;
+}
+
+.accordion-body .anifaq_inte_text {
+  color: #000 !important;
+}
+
+.ani_faq_banner {
+  width: 60%;
+}
+
+.ani_faq_h3 {
+  text-align: center;
+}
+
+.inte_dis_choose_p {
+  width: 50%;
+  text-align: center;
+}
+
+.processcon {
+  background-color: rgba(31, 34, 47, 1);
+}
+
+.inte_process_h3 {
+  font-size: 22px;
+  color: #fff !important;
+  text-align: center;
+}
+
+.sub_text_process {
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.serviceIcon_2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.ani_process_h3 {
+  text-align: center;
+  padding: 0px 4%;
+  margin-bottom: 1rem;
+}
+
+.lower_bar {
+  padding: 3%;
+  background-color: rgba(7, 7, 7);
+}
+
+.inte_com_barlower {
+  overflow: hidden;
+  background: rgb(14, 10, 34);
+  background: linear-gradient(84deg, rgba(14, 10, 34, 1) 5%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 1) 65%, rgba(14, 10, 34, 1) 91%);
+}
+
+.inte_FAQ {
+  background-color: rgba(200, 150, 255, 1);
+}
+
+.inte_faq_con2 .accordion-header .intefaq_btn {
+  color: #000000 !important;
+  font-weight: 400;
+}
+
+.accordion-body .intefaq_p {
+  color: #000000 !important;
+}
+
+.accordion-header .intefaq_btn::after {
+  filter: inherit;
+}
+
+.accordion-body .faq_inte_text6 {
+  color: #000 !important;
+  /* padding-right:10px ; */
+}
+
+.inte_faq_con2 {
+  border-bottom: 1px solid #000 !important;
+}
+
+.accordion-body .faq_com_P {
+  color: #000 !important;
+  padding: 0 5px !important;
+}
+
+.inte_faqh2 {
+  color: #000 !important;
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.odoo_banner {
+  background: #111616;
+}
+
+.custom_bar {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(84deg, rgba(0, 0, 0, 1) 5%, rgba(34, 24, 83, 1) 91%);
+}
+
+.inte_dis_cus_p {
+  width: 75%;
+}
+
+.procus_p {
+  max-width: 404px;
+}
+
+.procus_p_con {
+  justify-content: center;
+}
+
+.sub_text_choose {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.inte_cen_textban {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.colorbartitle {
+  color: #cf3400;
+}
+
+.step-count_inte span {
+  border-bottom: 4px solid #396bdb;
+  padding: 9px 10px 1px;
+  display: inline-block;
+  color: #fff;
+  border-top-left-radius: 29px;
+  border-top-right-radius: 29px;
+  background-color: #1f222f;
+  width: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #262f45;
+}
+
+.inte_process_h3 p {
+  margin-bottom: 15px;
+}
+
+.nav_image {
+  display: flex;
+}
+
+.choose_outer {
+  padding: 0px 2%;
+}
+
+.inte_hover {
+  transition: 0.5s;
+}
+
+.inte_hover:hover {
+  filter: drop-shadow(0px -2px 14px #fff);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.inte_img_choose img {
+  transition: 0.5s;
+}
+
+.inte_img_choose img:hover {
+  filter: drop-shadow(0px -2px 14px blue);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.works-servics-radius {
+  transition: 0.5s;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.works-servics-radius:hover {
+  box-shadow: -1px 0px 20px 0px #767474;
+  border-radius: 25px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.erp_heading {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media screen and (max-width:1024px) {
+  .works-servics-radius:hover {
+    box-shadow: none;
+  }
+
+  .erp_heading {
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .works-servics-radius {
+    padding: 10px;
+  }
+
+  .service_box_outer {
+    box-shadow: -1px 0px 20px 0px #bebebe;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .inte_faq_con2 .accordion-header button {
+    padding: 15px 0px !important;
+  }
+
+  .choose_outer {
+    /* padding: 0px 3%; */
+    margin-bottom: 25px !important;
+  }
+
+  .inte_faq_com .accordion-header button {
+    padding: 15px 0px !important;
+  }
+
+  .inte_bar_h3 {
+    text-align: start;
+    padding: 0 20px;
+  }
+
+  .sub_text_choose {
+    font-size: 13px
+  }
+
+  .inte-sub-heading2 {
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+
+  .inte_com_banner {
+    height: auto;
+    padding-bottom: 8%;
+  }
+
+  .procus_p {
+    max-width: unset;
+  }
+
+  .props_image_banner {
+    padding-top: 10%;
+  }
+
+  .inte_dis_cus_p {
+    width: 90%;
+  }
+
+  .inte_com_banner_img {
+    width: 95%;
+  }
+
+  .ani_process_h3 {
+    margin-bottom: 2rem;
+  }
+
+  .inte_text_bar {
+    padding: 0 20px;
+  }
+
+  .inte-sub-heading {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .inte_choose_h2 {
+    text-align: center;
+  }
+
+  .ani_faq_h3 {
+    text-align: center;
+    padding: 0px 5%;
+  }
+
+  .inte_dis_choose_p {
+    width: 90%;
+  }
+
+  .serviceIcon_2 {
+    flex-direction: column-reverse;
+  }
+
+  .serviceIcon_2_img {
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+    display: flex;
+  }
+
+  br {
+    display: none;
+  }
+
+  .inte_ani_faqp {
+    padding-top: 2.5rem;
+  }
+
+  /* .serviceIcon
+  {
+    padding: 10px 0;
+  } */
+  .inte_work_heading {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width:1350px) {
+  .inte_com_banner {
+    height: auto;
+    padding-bottom: 8%;
+  }
+}

@@ -1,0 +1,12 @@
+.line_services{
+    width: 817px;
+    height: 15px;
+    position: relative;
+    bottom: 3px;
+}
+
+@media (max-width:768px) {
+    .line_services{
+       display: none;
+    } 
+}

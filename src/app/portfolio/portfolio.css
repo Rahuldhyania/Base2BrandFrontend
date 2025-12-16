@@ -1,0 +1,50 @@
+.btn_portfolio {
+    color: #fff !important;
+    padding: 9px 30px !important;
+    border-radius: 50px !important;
+    border: 1px solid #fff !important;
+}
+button.nav-link.btn_portfolio.active {
+    background: #396BDB !important;
+    padding: 9px 30px;
+    border: 1px solid #396BDB !important;
+}
+/* .case_box img {
+    width: 100%;
+    height: calc(436px - 15px);
+    object-fit: cover;
+    border-radius: 25px;
+    object-position: center;
+} */
+ .case_box img {
+    width: 100%;
+    border-radius: 15px;
+}
+.portfolio_new_banner
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+.portfolio_new_banner img 
+{
+    height: 100%;
+}
+.portfolio_old_banner
+{
+    display: none !important;
+}
+
+
+@media screen and (max-width:768px) {
+    .portfolio_old_banner
+{
+    display: flex !important;
+    margin-top: 30px;
+}
+.portfolio_new_banner
+{
+    display: none;
+}
+}

@@ -1,0 +1,939 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    position: relative;
+    z-index: 5;
+}
+
+.handdrawn {
+    z-index: 2 !important;
+}
+
+.handdrawn svg {
+    z-index: 1 !important;
+}
+
+.handdrawn svg path {
+    z-index: 1 !important;
+
+}
+
+.handdrawn_orange svg path {
+    z-index: 1 !important;
+    stroke: #FF7344 !important;
+}
+
+.handdrawn_white svg path {
+    z-index: 1 !important;
+    stroke: #ffffff !important;
+}
+
+.text-sub-new {
+    font-size: 18px;
+}
+
+.baoff_cus_heading {
+    font-size: 50px;
+}
+
+.cus_gradient_baoff {
+    background: radial-gradient(circle, rgb(116 54 255 / 33%) 0%, rgb(35 28 65 / 0%) 72%);
+    position: absolute;
+    z-index: 1;
+}
+
+.gradient_index {
+    position: relative;
+    z-index: 5;
+}
+
+.b2b_2color {
+    color: #F47B52;
+}
+
+.b2b_voilet {
+    color: #AA9DFF;
+}
+
+.baoff_text {
+    color: #E3E3E3;
+}
+
+.baoff_upper_header img {
+    width: 50px;
+    height: 50px;
+}
+
+.baoff_upper_header {
+    font-weight: 500;
+    color: #fff;
+}
+
+.baoff_lower_header {
+    font-weight: 700;
+}
+
+.baoff_banner_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(125, 155, 255, 1) 0%, rgba(176, 106, 179, 1) 100%);
+    padding: 7px 0;
+    transform: rotate(362deg);
+}
+
+.baoff_banner_bar img {
+    width: 50px;
+}
+
+.baoff_bar {
+    height: 150px;
+    position: relative;
+}
+
+.baoff_bar hr {
+    background: #fff;
+    color: #fff;
+    transform: rotate(357deg);
+    position: absolute;
+    width: 100%;
+    height: 2px;
+}
+
+.baoff_bar_heading {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.main_baoff_banner {
+    overflow: hidden;
+}
+
+.baoff_banner2_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.baoff_banner2_bar img {
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.baoff_bar2 {
+    padding: 15px 40px;
+    border: 2px solid #ffffff42;
+    border-radius: 40px;
+    background: linear-gradient(90deg, rgba(68, 64, 84, 1) 40%, rgba(55, 41, 81, 1) 100%);
+}
+
+.baoff_sec2_banner {
+    display: flex;
+}
+
+.baoff_sec2_banner img {
+    width: 80%;
+    margin: auto;
+}
+
+.baoff_card_title {
+    position: relative;
+}
+
+.baoff_card_title img {
+    position: absolute;
+    bottom: 10px;
+    width: 40px;
+    margin-left: 10px;
+}
+
+.baoff_service_card {
+    background-color: #b7c8ff;
+    border-radius: 20px;
+    padding: 55px 0;
+    position: relative;
+    box-shadow: 9px 8px 20px 5px #00000038;
+    border: 3px dashed #fff;
+}
+
+.baoff_banner {
+    display: flex;
+}
+
+.baoff_banner img {
+    width: 70%;
+    margin: auto;
+}
+
+.card_text_con {
+    width: 80%;
+    margin: auto 0;
+}
+
+/* .baoff_service_card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background:
+        linear-gradient(90deg, #e0e0e0 50%, transparent 50%) 0 100%,
+        linear-gradient(90deg, #e0e0e0 50%, transparent 50%) 0 100%,
+        linear-gradient(0deg, #e0e0e0 50%, transparent 50%) 100% 0,
+        linear-gradient(0deg, #e0e0e0 50%, transparent 50%) 100% 0;
+    background-size: 36px 17px;
+    background-repeat: repeat;
+    -webkit-mask:
+        linear-gradient(white, white) content-box,
+        linear-gradient(white, white);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+} */
+
+.shadow_left {
+    filter: drop-shadow(-10px 10px #175CD3);
+}
+
+.shadow_right {
+    filter: drop-shadow(10px 10px #175CD3);
+}
+
+.trust_banner {
+    display: flex;
+    justify-content: center;
+}
+
+.tool_number {
+    padding-right: 30px;
+    z-index: 2;
+    position: relative;
+}
+
+.trust_banner img {
+    width: 80%;
+}
+
+.text_center {
+    margin: auto
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+        /* or side-to-side with translateX */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.floting_img {
+    position: absolute;
+    animation: floatAnimation 3s ease-in-out infinite;
+}
+
+.floting_img img {
+    width: 80%;
+}
+
+.trust_left_floting_img {
+    left: -10%;
+    top: 53%;
+}
+
+.trust_right_floting_img {
+    right: -17%;
+    display: flex;
+    justify-content: end;
+    top: 10%;
+}
+
+.main_baoff_trust {
+    overflow: hidden;
+}
+
+.trust_title_img img {
+    width: 40px;
+    padding-left: 10px;
+}
+
+.indus_bar {
+    padding: 15px 30px;
+    border-radius: 15px;
+    background: linear-gradient(180deg, rgba(97, 85, 159, 1) 0%, rgba(26, 27, 37, 1) 84%);
+    font-size: 18px;
+    color: #fff;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.tools_li img {
+    width: 15px;
+    margin-right: 8px;
+}
+
+.tools_card {
+    background: linear-gradient(180deg, rgba(97, 85, 159, 1) 0%, rgba(26, 27, 37, 1) 64%);
+    width: 90%;
+    padding: 60px 40px 110px;
+    border-radius: 25px;
+    /* border: 2px dotted #fff; */
+    height: 100%;
+    transition: 0.7s;
+    position: relative;
+    top: 0;
+}
+
+.tools_card_outer {
+    display: flex;
+    justify-content: center;
+}
+
+.tools_card:hover {
+    top: -50px;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+
+.choose_banner img {
+    width: 80%;
+}
+
+.tool_text_bar {
+    display: flex;
+    position: relative;
+}
+
+.tool_border {
+    position: absolute;
+    left: 22.5px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-image: repeating-linear-gradient(to bottom, #ffffffe0, #ffffff00 10px, transparent 10px, transparent 20px);
+    z-index: 1;
+}
+
+.tool_number p {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    background-color: #fff;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    z-index: 5;
+}
+
+.slider_cotss img {
+    width: 100px;
+}
+
+.clinet_img img {
+    width: 150px;
+}
+
+.clinet_upper {
+    display: flex;
+    align-items: start;
+    gap: 40px;
+}
+
+.choose_banner {
+    display: flex;
+    justify-content: center;
+}
+
+.clinet_container {
+    padding: 5% 10%;
+}
+
+.tool_text_con {
+    width: 80%;
+    margin: auto;
+}
+
+.clinet_con_inner {
+    padding: 5%;
+    background: linear-gradient(180deg, rgba(97, 85, 159, 1) 0%, rgba(26, 27, 37, 1) 84%);
+    border-radius: 20px;
+}
+
+.line_container {
+    width: 16%;
+}
+
+.clinet_lower {
+    display: flex;
+}
+
+.border_con .tool_text_bar .tool_border:nth-last-child {
+    display: none;
+}
+
+.line_container hr {
+    background: #ffffff;
+    margin: 0;
+    color: #ffffff;
+    display: flex;
+    height: 100%;
+    width: 2px;
+    margin: auto;
+}
+
+.clinet_para_con {
+    width: 85%;
+}
+
+.indus_card_2 {
+    display: none;
+}
+
+.client_img_ph {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.section2_bg_images {
+    background-image: url(https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Group_1707479212_orjnm7.png);
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    right: -150px;
+    z-index: 1;
+    filter: brightness(0.4);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: floatAnimation 3s ease-in-out infinite;
+}
+
+.baoff_cus_sup_left_img {
+    background-image: url(https://cdn.shopify.com/s/files/1/0835/6334/8002/files/path_ngvpzi.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 50%;
+    left: -22%;
+    top: 38%;
+    height: 68%;
+    animation: floatAnimation 3s ease-in-out infinite;
+}
+
+.baoff_cus_sup_right_img {
+    background-image: url(https://cdn.shopify.com/s/files/1/0835/6334/8002/files/path_ngvpzi.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 50%;
+    right: -40%;
+    top: 38%;
+    height: 68%;
+    animation: floatAnimation 3s ease-in-out infinite;
+}
+
+.baoff_talk_left_img {
+    background-image: url(https://cdn.shopify.com/s/files/1/0835/6334/8002/files/path_ngvpzi.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 10%;
+    animation: floatAnimation 3s ease-in-out infinite;
+    top: 0;
+}
+
+.baoff_talk_right_img {
+    background-image: url(https://cdn.shopify.com/s/files/1/0835/6334/8002/files/path_ngvpzi.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    animation: floatAnimation 3s ease-in-out infinite;
+    right: 5%;
+    top: 0;
+}
+
+.scale_bg_img {
+    background-image: url(https://cdn.shopify.com/s/files/1/0835/6334/8002/files/675bada8d3c534b95b762ebb_BG_20circle-p-800.png_yasg1l.png);
+}
+
+.baoff_cruve_arrow {
+    position: absolute;
+    width: auto !important;
+    left: 30%;
+    top: -230%;
+    animation: floatAnimation 3s ease-in-out infinite;
+
+}
+
+.cacle_title_img img {
+    width: 35px;
+    margin-left: 15px;
+}
+
+.images_container_index {
+    position: relative;
+    z-index: 2;
+}
+
+.tool_icon_img img {
+    cursor: pointer;
+    animation: floatAnimationx 3s ease-in-out infinite;
+}
+
+@keyframes floatAnimationx {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateX(-10px);
+        /* or side-to-side with translateX */
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.tool_icon_img {
+    width: max-content;
+    position: absolute;
+}
+
+.tool_icon_img1 {
+    left: 16%;
+}
+
+.tool_icon_img1 img {
+    width: 100px;
+}
+
+.tool_icon_img2 {
+    left: 40%;
+    top: -85%;
+}
+
+.tool_icon_img2 img {
+    width: 75px;
+}
+
+.tool_icon_img3 {
+    left: 58%;
+    top: -110%;
+}
+
+.tool_icon_img3 img {
+    width: 120px;
+}
+
+.tool_icon_img4 {
+    left: 70%;
+    bottom: 5%;
+}
+
+.tool_icon_img4 img {
+    width: 63px;
+}
+
+.tool_icon_img5 {
+    left: 43%;
+    bottom: -30%;
+}
+
+.tool_icon_img5 img {
+    width: 77px;
+}
+
+.cus_fontw_title {
+    font-weight: 600;
+}
+
+.client_left_side {
+    position: absolute;
+    height: 80%;
+    z-index: 1;
+    left: 5%;
+    animation: floatAnimationx 3s ease-in-out infinite;
+}
+
+.client_right_side {
+    position: absolute;
+    height: 80%;
+    right: 6%;
+    top: 20%;
+    animation: floatAnimationx 3s ease-in-out infinite;
+    z-index: 1;
+}
+
+.c_left_inner {
+    height: 100%;
+    position: relative;
+}
+
+.c_right_inner {
+    height: 100%;
+    position: relative;
+}
+
+
+.c_left_inner,
+.c_left_inner img,
+.c_right_inner img {
+    height: 100%;
+}
+
+.client_floting_img {
+    position: absolute;
+    cursor: pointer;
+}
+
+.client_left_img1 {
+    top: 0;
+    right: 40px;
+}
+
+.client_left_img1 img {
+    width: 120px;
+}
+
+.client_left_img2 {
+    top: 45%;
+    left: 0;
+}
+
+.client_left_img2 img {
+    width: 65px;
+}
+
+.client_left_img3 img {
+    width: 170px;
+}
+
+.client_right_img1 {
+    top: 0;
+    right: 26px;
+}
+
+.client_right_img1 img {
+    width: 97px;
+}
+
+.client_right_img2 {
+    top: 42%;
+    right: 50px;
+}
+
+.client_right_img2 img {
+    width: 65px;
+}
+
+.client_right_img3 {
+    bottom: -15%;
+}
+
+.client_right_img3 img {
+    width: 154px;
+}
+
+@media screen and (max-width:768px) {
+    .tools_card_outer .tools_card {
+        padding: 60px 23px 110px;
+    }
+
+    .baoff_cus_heading {
+        padding: 0 10px;
+    }
+
+    .text_center_cus {
+        text-align: center !important;
+    }
+
+    .baoff_sec2_banner img {
+        width: 100%;
+    }
+
+    .ph_card {
+        flex-direction: column-reverse !important;
+    }
+
+    .baoff_card_title img {
+        position: absolute;
+        width: 25px;
+        margin-left: 5px;
+    }
+
+    .card_text_con {
+        width: 100%;
+    }
+
+    .baoff_banner img {
+        width: 90%;
+    }
+
+    .trust_banner img {
+        width: 100%;
+    }
+
+    .indus_row .indus_bar {
+        margin-right: 0;
+        margin-bottom: 15px;
+        text-align: center;
+        padding: 17px 28px;
+    }
+
+    .indus_card_1 {
+        display: none;
+    }
+
+    .indus_card_2 {
+        display: flex;
+    }
+
+    .choose_banner img {
+        width: 95% !important;
+    }
+
+    .tool_text_bar {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .tool_number {
+        padding-right: 0;
+    }
+
+    .clinet_upper {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .clinet_container {
+        padding: 5% 2%;
+    }
+
+    .slider_cotss img {
+        width: 70px;
+    }
+
+    .clinet_img img {
+        width: 100px;
+    }
+
+    .client_img_ph {
+        gap: 20px;
+    }
+
+    .tool_border {
+        display: none;
+    }
+
+    .cus_gradient_baoff {
+        display: none;
+    }
+
+    .baoff_banner2_bar {
+        flex-direction: column;
+    }
+
+    .baoff_text_ph {
+        width: 85%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .tool_ph {
+        height: 200px;
+        display: flex;
+    }
+
+    .tool_ph_inner {
+        margin: auto;
+    }
+
+    /* sfs */
+    .tool_icon_img1 {
+        left: 0%;
+        bottom: -30px;
+    }
+
+    .tool_icon_img1 img {
+        width: 70px;
+    }
+
+    .tool_icon_img2 {
+        left: 23%;
+        top: -150%;
+    }
+
+    .tool_icon_img2 img {
+        width: 70px;
+    }
+
+    .tool_icon_img3 {
+        left: 65%;
+        top: -150%;
+    }
+
+    .tool_icon_img3 img {
+        width: 70px;
+    }
+
+    .tool_icon_img4 {
+        left: 76%;
+        bottom: -75%;
+    }
+
+    .tool_icon_img5 {
+        left: 39%;
+        bottom: -140%;
+    }
+
+    .clinet_name_degi h4 {
+        margin: 0;
+    }
+
+    .baoff_cruve_arrow {
+        display: none;
+    }
+
+    .b2b_tool_heading {
+        font-size: 18px !important;
+    }
+
+    .b2b-heading {
+        font-size: 22px;
+    }
+
+    .baoff_bar_heading {
+        font-size: 30px !important;
+    }
+
+    .baoff_cus_heading {
+        font-size: 34px !important;
+    }
+
+    .cacle_title_img img {
+        width: 35px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .baoff_banner_con .baoff_cus_heading {
+        font-size: 34px;
+    }
+
+    .baoff_banner_bar .baoff_bar_heading {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .baoff_banner_bar {
+        padding: 5px 0;
+    }
+
+    br {
+        display: none;
+    }
+
+    .trust_left_floting_img,
+    .trust_right_floting_img {
+        display: none;
+    }
+
+    .b2b_tool_heading {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+
+    .client_left_side,
+    .client_right_side {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1600px) {
+    .baoff_banner_bar {
+        padding: 0;
+    }
+
+    .baoff_cus_heading {
+        font-size: 40px;
+    }
+
+    .baoff_bar_heading {
+        font-size: 35px;
+    }
+
+    .indus_bar {
+        padding: 12px 28px;
+        border-radius: 15px;
+        background: linear-gradient(180deg, rgba(97, 85, 159, 1) 0%, rgba(26, 27, 37, 1) 84%);
+        color: #fff;
+        margin-right: 30px;
+        font-size: 16px;
+    }
+
+    .text-sub-new {
+        font-size: 16px;
+    }
+
+    .tools_card {
+        padding: 50px 25px;
+    }
+
+    .choose_banner img {
+        width: 75%;
+    }
+
+    .tool_text_con {
+        width: 100%;
+    }
+
+    .b2b_tool_heading {
+        font-size: 26px;
+    }
+
+    .floting_img img {
+        width: 100%;
+    }
+
+    .client_left_img1 img {
+        width: 100px;
+    }
+
+    .client_left_img3 img {
+        width: 140px;
+    }
+
+    .client_right_img3 img {
+        width: 130px;
+    }
+}

@@ -1,0 +1,392 @@
+.gk-sub-heading {
+    font-size: 50px;
+    line-height: 65px;
+}
+.gk-heading-bold {
+    font-size: 36px;
+    font-weight: 600;
+    
+}
+.gk-sub-heading-bold {
+    font-size: 45px;
+    line-height: 55px;
+    color: white;
+    font-weight: 600;
+}
+
+.gk-b2b-bold {
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 600;
+}
+.gk-b2b-btn-text {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.gk-rendom-text {
+    color: #82BC29;
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+.gk-acco-text {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 500;
+}
+.gk-sub-text-small {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.gk-heading-bold {
+    font-size: 55px;
+    color: white;
+    line-height: 65px;
+}
+
+
+
+/* text mediaquary */
+@media only screen and (max-width: 1024px) {
+    .gk-sub-heading {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .gk-heading-bold {
+        font-size: 36px !important;
+        font-weight: 500;
+    }
+    .gk-sub-heading-bold {
+        font-size: 26px !important;
+        line-height: 38px !important;
+        color: white !important;
+        font-weight: 600 !important;
+    }
+    .gk-b2b-bold {
+        font-size: 26px !important;
+        line-height: 36px !important;
+        
+    }
+    .gk-b2b-btn-text {
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 400;
+    }
+    .gk-rendom-text {
+        color: #82BC29;
+        font-size: 20px;
+        letter-spacing: 3px;
+        line-height: 25px;
+    }
+    .gk-acco-text {
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 500;
+    }
+    .gk-sub-text-small {
+        font-size: 16px;
+        margin-top: 10px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    
+    
+}
+@media only screen and (max-width: 1400px) {
+
+
+    .gk-heading-bold {
+        font-size: 38px;
+        color: white;
+        line-height: 48px;
+    }
+    .gk-sub-heading-bold {
+        font-size: 40px;
+        line-height: 50px;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 576px) {
+
+.gk-heading-bold {
+    font-size: 26px !important;
+    color: white;
+    line-height: 36px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* button */
+.gk-b2b-btn {
+    background-image: linear-gradient(90deg, #7411E1 0%, #396BDB 100%);
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+    transition: 0.6s;
+    border: none;
+}
+
+.whatsapp-btn a span {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px 34px;
+    display: block;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+    background-color: #1F1D38;
+    border-radius: 25px;
+    width: 100%;
+}
+.whatsapp-btn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, #396BDB 0%, #7411E1 100%);
+    transition: 0.6s;
+    background-size: 50% 100%;
+}
+.whatsapp-btn a {
+    text-align: center;
+    position: relative;
+    border-radius: 25px;
+    display: block;
+    z-index: 2;
+    overflow: hidden;
+    padding: 2px;
+}
+.whatsapp-btn {
+ 
+   margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* css all css */
+
+.gk-width-lg{
+    width: 65%;
+    margin: 0 auto;
+}
+.Shopify-Website-img {
+    width: 90% !important;
+}
+.BG-RED {
+  
+    background: linear-gradient(45deg, #111616, #41308c);
+}
+.fontlinear {
+    font: 700 45px 'Droid Sans', sans-serif;
+    color: #396BDB;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 1),
+        0px 2px 0px rgba(255, 255, 255, 1),
+        -1px 1px 0px rgba(255, 255, 255, 1),
+        -2px 0px 0px rgba(255, 255, 255, 1),
+        -1px -1px 0px rgba(255, 255, 255, 1),
+        0px -2px 0px rgba(255, 255, 255, 1),
+        1px -1px 0px rgba(255, 255, 255, 1),
+        2px 0px 0px rgba(255, 255, 255, 1);
+}
+  .list {
+    font-size: 16px;
+    color: white;
+}
+.card-btn {
+    background: transparent;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 0;
+    border-bottom: 2px solid aliceblue;
+    width: 100%;
+    padding-bottom: 25px;
+}
+.gk-rounded {
+    border-color: white;
+    border-radius: 20px;
+    border: 1.5px solid white;
+    transition: border-color 0.3s ease;
+  }
+  
+  .gk-rounded:hover {
+    transition-delay: 0.3; /* Delay the start of the transition by 1 second */
+    border-color: #396BDB;
+  }
+  .para {
+    padding: 20px 20px;
+}
+
+
+button.accordion-button.collapsed {
+    padding: 0 !important;
+}
+button.accordion-button {
+    padding: 0 !important;
+}
+
+
+
+.gk-bg-Contact{
+    background-image: url(../../../public//img/gk-bg-Contact.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+.card-price {
+    width: 30%;
+}
+.cardi-main {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+
+
+.border-radious {
+    border-radius: 10px;
+}
+.gk-width {
+    width: 93%;
+    margin: 0 auto;
+}
+img.Image-icon {
+    width: 35px !important;
+}
+.divider {
+    width: 60%;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .gk-width-lg{
+        width: 100%;
+    }
+    .Shopify-Website-img {
+        width: 100% !important;
+    }
+    .para {
+        padding: 10px 10px;
+    }
+    .card-price {
+        width: 48%;
+    }
+    .cardi-main {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 27px;
+    }
+   
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    img.Image-icon {
+        width: 25px !important;
+    }
+    .gk-width {
+        width: 100%;
+    }
+    .divider {
+        width: 100%;
+    }
+
+
+}
+@media only screen and (max-width: 767px) {
+  
+    .card-price {
+        width: 100%;
+    }
+    .cardi-main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 27px;
+        justify-content: space-between;
+    }
+    .headercall{
+        width: 250px !important;
+    }
+    .gk-heder {
+      
+        font-size: 14px !important;
+        letter-spacing: 3px;
+        line-height: 25px;
+    }
+
+}
+.main_footer {
+    border-top: 2px solid #5C5C5C;
+    border-bottom: 2px solid #5C5C5C;
+}
+.headercall{
+    width: auto;
+}
+/* .gk-b2b-btn:hover {
+    transform: scale(1.2);
+} */
+.gk-b2b-btn:hover {
+    transform: translateY(-6px);
+}
+
+
+
+@media only screen and (max-width: 375px) {
+  
+
+    .gk-heder {
+      
+        font-size: 13px !important;
+        letter-spacing: 1px !important;
+        line-height: 25px !important;
+    }
+
+}

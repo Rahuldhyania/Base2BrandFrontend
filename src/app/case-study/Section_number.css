@@ -1,0 +1,17 @@
+.radialGradient{
+    background-color:rgb(31, 34, 37);
+
+}
+
+
+
+.text_dynamic{
+    font-size: 30px !important;
+}
+
+@media (max-width:768px){
+    .text_dynamic{
+        font-size: 25px !important;
+    }
+    
+}

@@ -1,0 +1,376 @@
+.line_looking {
+    width: 600px;
+    height: 15px;
+    position: relative;
+    bottom: 20px;
+}
+
+.ser-digital-col .digital-txt>strong {
+    color: #F47B52;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.ser-digital-col img.ico,
+.digital-column .ico {
+    max-width: 20px;
+    margin-left: 10px;
+}
+
+.ser-digital-col .digital-para {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.ser-digital img {
+    max-width: 500px;
+}
+
+.digital-column img {
+    max-width: 50px;
+}
+
+.digital-row .digital-column {
+    border: 1px solid #bcbcbc;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+}
+
+.digital-row .digital-column:hover {
+    border: 1px solid #F47B52;
+    box-shadow: 0px 2px 20px #F47B52;
+}
+
+.hexWrap,
+.process-content {
+    height: 200px;
+}
+
+.hexWrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.hexWrap * {
+    z-index: 2;
+}
+
+.hexBg:after,
+.hexBg:before {
+    z-index: 1;
+}
+
+.hexBg {
+    position: relative;
+}
+
+.hexagon {
+    position: relative;
+    margin: 2em 3em;
+    width: 5em;
+    height: 8.2em;
+    border-radius: 10px;
+    display: inline-block;
+    top: 0;
+    transition: all 0.2s ease;
+    background: #3561C5;
+    transform: rotate(30deg);
+}
+
+.hexagon-bottom {
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+.hexagon-inner {
+    position: absolute;
+    margin: 2em 3em;
+    width: 5em;
+    height: 8.2em;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 0.2s ease;
+    background: #111616;
+    left: 0px;
+    top: 1px;
+    transform: rotate(30deg) scale(0.99);
+}
+
+.hexagon:before,
+.hexagon:after,
+.hexagon-inner:before,
+.hexagon-inner:after {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: inherit;
+    content: "";
+}
+
+.hexagon:before,
+.hexagon-inner:before {
+    transform: rotate(60deg);
+}
+
+.hexagon:after,
+.hexagon-inner:after {
+    transform: rotate(-60deg);
+}
+
+.hexWrap img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 62px;
+    top: 50%;
+}
+
+.process-content {
+    position: relative;
+    text-align: center;
+}
+
+.process-content .step-title {
+    font-size: 18px;
+    line-height: normal;
+    color: #B6CCFF;
+}
+
+.process-content .step-text {
+    font-size: 14px;
+    line-height: normal;
+    color: #fff;
+    font-weight: 400;
+}
+
+.process-content .step-count span {
+    border-bottom: 4px solid #396BDB;
+    padding: 9px 10px 1px 10px;
+    display: inline-block;
+    color: #fff;
+    border-top-left-radius: 29px;
+    border-top-right-radius: 29px;
+    background-color: #1F222F;
+    width: 40px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.process-content .step-count {
+    margin-bottom: 14px;
+}
+
+.hexBg:before {
+    content: '';
+    width: 220px;
+    height: 1px;
+    border-bottom: 1px dashed #fff;
+    display: block;
+    position: absolute;
+    left: calc(100% - 39px);
+    bottom: 42%;
+
+}
+
+.planningSteps .col:nth-child(odd) .hexBg:before {
+    transform: rotate(44deg);
+    transform-origin: 0;
+}
+
+.planningSteps .col:nth-child(even) .hexBg:before {
+    bottom: 62%;
+    transform: rotate(-44deg);
+    transform-origin: 0;
+}
+
+.planningSteps .col:last-child .hexBg:before {
+    display: none;
+}
+
+
+@media screen and (max-width:1400px) {
+    .process-content .step-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1399px) {
+    .planningSteps .col:nth-child(odd) .hexBg:before {
+        transform: rotate(50deg);
+        transform-origin: 0;
+    }
+
+    .planningSteps .col:nth-child(even) .hexBg:before {
+        transform: rotate(-50deg);
+        transform-origin: 0;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .ser-digital img {
+        max-width: 400px;
+    }
+
+    .process-content .step-title {
+        font-size: 16px;
+    }
+
+    .process-content .step-text {
+        font-size: 14px;
+    }
+
+    .hexBg {
+        transform: scale(0.9);
+    }
+
+    .planningSteps .col:nth-child(odd) .hexBg:before {
+        transform: rotate(58deg);
+        transform-origin: 0;
+    }
+
+    .planningSteps .col:nth-child(even) .hexBg:before {
+        transform: rotate(-58deg);
+        transform-origin: 0;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .ser-digital img {
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    .process {
+        padding: 1em !important;
+    }
+
+    .planningSteps .col:nth-child(even) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .process-content {
+        width: 200px;
+        margin: auto;
+    }
+
+    .hexBg:before {
+        left: 25px;
+        bottom: unset;
+        top: 50%;
+    }
+
+    .hexBg:before,
+    .hexBg:after {
+        width: 264px;
+    }
+
+    .hexBg:after {
+        content: '';
+        height: 1px;
+        border-bottom: 1px dashed #fff;
+        display: block;
+        position: absolute;
+        left: 25px;
+
+    }
+
+    .planningSteps .col:first-child .hexBg:after {
+        display: none;
+    }
+
+    .planningSteps .col:last-child .hexBg:before {
+        display: block;
+    }
+
+    .planningSteps .col:nth-child(odd) .hexBg:before {
+        transform: rotate(134deg);
+        transform-origin: 0;
+        top: 62%;
+        left: 30px;
+    }
+
+    .planningSteps .col:nth-child(even) .hexBg:before {
+        bottom: unset;
+        transform: rotate(42deg);
+        transform-origin: 0;
+        left: calc(100% - 50px);
+        top: 74%;
+    }
+
+    .planningSteps .col:nth-child(even) .hexBg:after {
+        transform: rotate(-136deg);
+        transform-origin: 0;
+        top: 27%;
+        left: 39px;
+    }
+
+    .planningSteps .col:nth-child(odd) .hexBg:after {
+        transform: rotate(-42deg);
+        transform-origin: 0;
+        left: calc(100% - 50px);
+        top: 29%;
+    }
+
+}
+
+
+
+@media (max-width:767px) {
+    .line_looking {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 475px) {
+
+    /* .planningSteps {
+        transform: scale(0.6);
+        transform-origin: top;
+    } */
+    .hexBg {
+        transform: scale(0.6);
+    }
+
+    .hexWrap,
+    .process-content {
+        height: 155px;
+    }
+
+    .process-content .step-count {
+        margin-bottom: 8px;
+    }
+
+    .process-content .step-title {
+        font-size: 14px;
+    }
+
+    .process-content .step-text {
+        font-size: 13px;
+    }
+
+    .process-content .step-count span {
+        font-size: 12px;
+    }
+
+    .process-content {
+        width: 192px;
+        margin-top: -14px;
+    }
+
+    .hexBg:before,
+    .hexBg:after {
+        width: 300px;
+    }
+
+    .hexWrap img {
+        width: 42px;
+    }
+}

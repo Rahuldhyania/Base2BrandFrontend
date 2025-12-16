@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.capmton 
+{
+  /* font-family:"Campton webfont,sans-serif "!important ;   */
+  /* font-family: 'Campton webfont', sans-serif ; */
+  font-family: 'Campton', sans-serif !important;
+}
+.cus_form_main {
+    padding: 4% 0;
+    background-color: #fff;
+    width: 80%;
+    box-shadow: -1px -1px 20px 8px #c4c4c4b0;
+    border-radius: 10px;
+}
+
+.custo_input {
+    border: 1px solid #000000;
+    padding: 8px;
+    outline: none;
+    border-radius: 10px;
+    color: #000;
+}
+
+#form_custom_message textarea {
+    background-color: #fff !important;
+    border: 1px solid #000000 !important;
+    padding: 8px !important;
+    border-radius: 10px !important;
+    color: #000 !important;
+}
+
+#form_custom_message::placeholder {
+    color: #000 !important;
+}
+
+.cus-heading {
+    font-size: 26px;
+    line-height: 38px;
+    padding-bottom: 10px;
+}
+
+.custom_heading {
+    height: 78%;
+    padding: 5% 10% 5% 0%;
+    display: flex;
+    flex-direction: c;
+    flex-direction: column;
+    justify-content: start;
+    gap: 4%;
+}
+.custom_h2
+{
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 800;
+    color: #fff;
+}
+.custom_p
+{
+    color: #fff;
+    font-size: 17px;
+    line-height: 27px;
+}
+.custom_heading
+{
+    padding: 0;
+}
+@media screen and (max-width:1024px) {
+    .cus_form_main
+    {
+        width: 98%;
+    }
+    .out_con
+    {
+        padding: 0 !important;
+    }
+    .outer_center
+    {
+        display: flex;
+        justify-content: center;
+    }
+}

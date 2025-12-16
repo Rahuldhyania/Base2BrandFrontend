@@ -1,0 +1,20 @@
+.banner-video button {
+    position: absolute;
+    bottom: 6em;
+}
+.web-head{
+    color:#F47B52;
+}
+ul.order-list::before {
+    position: absolute;
+    content: "";
+    border-style: dashed;
+    border-width: 1px;
+    height: 80%;
+    left: 30px;
+    top: 20px;
+    z-index: 1;
+}
+ul.order-list li img {
+    z-index: 11;
+}

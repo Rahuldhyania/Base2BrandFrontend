@@ -1,0 +1,264 @@
+.hire_dubai_banner {
+    max-height: 680px;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    padding: 2% 0;
+}
+
+.hire_dubai_banner_title {
+    font-size: 80px;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* .hire_dubai_banner:hover
+{
+   filter: sepia(0.5);
+} */
+.hire_dubai_right_banner {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
+
+/* Basic Styling for Tabs */
+.tabs-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.tabs-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tab-title {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 2px dashed #ddd;
+    border-radius: 45px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.tab-title.active {
+    background-color: #4b9604;
+    color: white;
+    border: 2px dashed #000000;
+}
+
+.tab-content {
+    padding: 20px;
+    border-radius: 25px;
+    transition: all 0.5s ease-in-out;
+    /* border: 2px dashed #fff; */
+}
+
+.hire_challage_banner {
+    width: 90%;
+    margin: auto;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+.tab-content {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.tab-content.fading {
+    opacity: 0;
+}
+
+.whyb2b_banner {
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+
+.hire_process_wrap {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.hire_procss_card_dubai {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hire_process_dubai {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5D56F1;
+    font-weight: 700;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 0px 10px 9px #ffffffbf;
+    cursor: pointer;
+}
+
+.hire_dubai_hr {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hire_dubai_hr span {
+    width: 78%;
+    border-top: 3px dashed #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.process_card_outer {
+    margin: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 4px 4px 7px 0px #fff;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.process_card_outer:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.process_card_outer p {
+    margin: 0;
+}
+
+.hire_dubai_reviewfrom {
+    max-width: 200px;
+}
+
+.hire_dubai_lower_review {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hire_dubai_review_inner {
+    margin: 10px;
+    padding: 25px;
+    box-shadow: inset 0px 0px 20px 7px #919191;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.hire_dubai_review_inner_comment {
+    color: #fff;
+}
+
+.hire_dubai_review_inner:hover {
+    background: #fff;
+    box-shadow: inset 0px 0px 20px 7px #686868;
+    cursor: pointer;
+
+}
+
+.hire_dubai_review_inner:hover .hire_dubai_review_inner_comment {
+    color: #000;
+}
+
+.hire_dubai_review_inner:hover .hire_dubai_reviewfrom {
+    mix-blend-mode: difference;
+}
+
+
+@media screen and (max-width:1660px) {
+    .hire_dubai_banner_title {
+        font-size: 65px;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .hire_dubai_banner_title {
+        font-size: 50px !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hire_dubai_lower_review 
+    {
+        margin-top: 10px;
+    }
+    .hire_dubai_reviewfrom
+    {
+        display: none;
+    }
+    .tab-title {
+        padding: 5px 10px;
+        font-size: 12px !important;
+    }
+
+    .tabs-list {
+        gap: 10px;
+    }
+
+    .hire_dubai_banner_title {
+        font-size: 40px !important;
+    }
+
+    .hire_process_dubai {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .tabs-list {
+        justify-content: space-between !important;
+        row-gap: 20px;
+    }
+
+    .hire_dubai_process_outer {
+        gap: 10px !important;
+    }
+
+    .hire_challage_banner {
+        width: 100% !important;
+    }
+
+    .hire_dubai_review_inner {
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .hire_dubai_process_outer {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .hire_process_wrap,
+    .hire_procss_card_dubai {
+        flex-direction: column;
+    }
+
+    .hire_dubai_hr span {
+        width: 3px;
+        border-left: 3px dashed #fff;
+        position: relative;
+        z-index: 1;
+        height: 78%;
+    }
+}

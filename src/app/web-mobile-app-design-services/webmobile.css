@@ -1,0 +1,522 @@
+.webservices_left {
+  background-image: url(https://cdn.shopify.com/s/files/1/0835/6334/8002/files/12_1_bn6yqh.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.webservices_right img {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.setting_man {
+  position: absolute;
+  width: 100%;
+  top: -48%;
+}
+
+.webservices_banner {
+  /* height: 75vh; */
+  display: flex;
+  justify-content: end;
+  position: relative;
+  flex-direction: column;
+}
+
+.webservices_banner .row {
+  height: max-content;
+}
+
+.setting_man img {
+  width: 45%;
+}
+
+.black_sm_gradient_blue {
+  background: linear-gradient(0deg,
+      rgba(11, 12, 23, 1) 47%,
+      rgb(14 17 17 / 0%) 100%);
+  position: absolute;
+  width: 100%;
+}
+
+.webcard {
+  display: flex;
+  padding: 0 0px 26px 30px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Listitem_1_z7lmdt.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.7s;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.webcard_child1 {
+  width: 72%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.interface_child1 {
+  width: 80%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.webcard_child2 {
+  width: 28%;
+}
+
+.webcard_child1 p {
+  width: 100%;
+}
+
+.webcard_child1 h2,
+.interface_child1 h2 {
+  font-size: 34px;
+}
+
+.webcard_bg {
+  background-image: url(https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Group_1_2_pns062.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.chain_left {
+  position: absolute;
+  top: 0;
+  left: -8%;
+}
+
+.chain_right {
+  position: absolute;
+  top: 0;
+  right: -8%;
+}
+
+.webservices_right {
+  background-image: url(https://cdn.shopify.com/s/files/1/0835/6334/8002/files/252982154_qxkytm.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.webservices_right_arrow {
+  position: absolute;
+  top: 25%;
+}
+
+.webservices_lower_arrow {
+  position: absolute;
+  bottom: 2%;
+  left: -25%;
+}
+
+.collbanner_outer {
+  overflow: hidden;
+}
+
+.collbanner_outer img {
+  transform: scale(1.4);
+}
+
+.sm_heading_text2 {
+  font-size: 5.1rem;
+}
+
+.sm_subheading_text2 {
+  font-size: 6rem;
+}
+
+.cool_subheading_text2 {
+  font-size: 3.6rem;
+}
+
+.interface_container {
+  background-image: url(https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Group_2_2_gj8t7b.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.interface_container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Vector_2_fac5om.svg);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.ani_mobile_card {
+  position: relative;
+  z-index: 2;
+}
+
+.water_banner_left {
+  width: 80%;
+}
+
+.rotated_mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.rotated_mobile_right {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.rotated_mobile img {
+  position: relative;
+  z-index: 1;
+}
+
+/* .rotated_mobile img 
+  {
+    width: 80%;
+  } */
+
+.ani_mobile_card_right {
+  display: flex;
+  justify-content: end;
+}
+
+.intermobile2 {
+  margin-top: 20%;
+}
+
+.webcard:hover {
+  background: #000;
+  transition: all 0.7s;
+}
+
+.webcard:hover .webcard_child1 h2,
+.webcard:hover .webcard_child1 p {
+  transition: all 0.7s;
+  color: #fff !important;
+}
+
+.webslider_border {
+  border: 2px solid #ffffff5b;
+  max-height: 670px;
+  overflow-y: auto;
+  border-radius: 70px;
+}
+
+.webslider_border::-webkit-scrollbar {
+  display: none;
+}
+
+.main_webslider_con {
+  display: flex;
+  justify-content: center;
+  background-image: url(https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Group_2_3_sghcye.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.techcard_p {
+  width: 90%;
+  margin: auto !important;
+}
+
+.main_webslider_con_inner {
+  margin: 30px;
+  border-radius: 40px;
+  background: #ffffff;
+  background-image: url(https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Listitem_2_g5qvh5.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: sticky;
+  top: 30px;
+  min-height: 610px;
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+}
+
+.webslider_cartoon {
+  position: absolute;
+  left: 11%;
+  height: 100%;
+}
+
+.webslider_cartoon img {
+  height: 100%;
+}
+
+.clunting_bg {
+  width: 123px;
+}
+
+.webslider_heading {
+  font-size: 32px;
+  color: #3248f6;
+  font-weight: 500;
+}
+
+.webslider_number {
+  font-size: 34px;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue_line_bar {
+  max-width: 130px;
+  height: 3px;
+  background: #3248f6;
+  border-radius: 70px;
+  width: 100%;
+}
+
+.webwow_container {
+  position: relative;
+}
+
+.wow_text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wow_banner_img {
+  width: 100%;
+}
+
+#banner_br {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  .webslider_blue {
+    text-align: center;
+  }
+
+  .rotated_mobile {
+    justify-content: center !important;
+  }
+
+  .rotated_mobile_right {
+    display: flex;
+    justify-content: center;
+  }
+
+  .webservices_right_arrow {
+    display: none;
+  }
+
+  #banner_br {
+    display: block;
+  }
+
+  .sm_text_marquee .webbanner_text .sm_banner_text {
+    font-size: 3rem !important;
+    line-height: 58px !important;
+  }
+
+  .webservices_ {
+    padding: 0 4%;
+  }
+
+  .webcard {
+    padding: 0px 0px 15px 15px;
+  }
+
+  .webcard_child1 {
+    padding-top: 15px;
+  }
+
+  .webservices_right {
+    padding: 0 4%;
+  }
+
+  .webservices_right .sm_heading_text2 {
+    font-size: 2.2rem !important;
+  }
+
+  .webservices_right .sm_subheading_text2 {
+    font-size: 2.4rem !important;
+  }
+
+  /* .webservices_right {
+    text-align: center;
+  } */
+  .webservices_lower_arrow {
+    display: none;
+  }
+
+  .webservices_right {
+    padding-bottom: 3rem;
+  }
+
+  .interface_child1 {
+    width: 100%;
+  }
+
+  .webslider_cartoon img {
+    display: none;
+  }
+
+  .main_webslider_con_inner {
+    margin: 20px 20px !important;
+    top: 18px !important;
+  }
+
+  .webslider_border {
+    max-height: 575px !important;
+  }
+
+  .wow_text {
+    text-align: center;
+  }
+
+  .wow_banner_img {
+    margin: auto;
+  }
+
+  .scolldown_img {
+    width: 110px !important;
+  }
+
+  h2.cool_subheading_text2 {
+    font-size: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .setting_man {
+    top: -20% !important;
+  }
+
+  .webbanner_text .sm_banner_text {
+    font-size: 5.5rem !important;
+  }
+
+  .sm_banner_text {
+    font-size: 6.75rem !important;
+    line-height: 120px !important;
+  }
+
+  br {
+    display: none;
+  }
+
+  .webcard_bg .cus_container_con {
+    padding: 0 4% !important;
+  }
+
+  .sm_heading_text2 {
+    font-size: 3rem !important;
+  }
+
+  .sm_subheading_text2 {
+    font-size: 3.1rem !important;
+  }
+
+  .cool_subheading_text2 {
+    font-size: 2.3rem !important;
+  }
+
+  .webcard_child1 p {
+    width: 100% !important;
+  }
+
+  .main_webslider_con .webslider_cartoon {
+    left: -5.6% !important;
+  }
+}
+
+@media screen and (max-width: 1220px) {}
+
+@media screen and (max-width: 1440px) {
+  .webslider_cartoon {
+    left: 1.8% !important;
+  }
+}
+
+@media screen and (max-width: 1660px) {
+  .wow_banner_img {
+    width: 90%;
+  }
+
+  .webbanner_text .sm_banner_text {
+    font-size: 7.5rem;
+  }
+
+  .rotated_mobile {
+    display: flex;
+    justify-content: end;
+  }
+
+  .rotated_mobile img,
+  .rotated_mobile_right img {
+    width: 70%;
+  }
+
+  .webcard_child1 h2,
+  .interface_child1 h2 {
+    font-size: 26px;
+  }
+
+  .sm_heading_text2 {
+    font-size: 4rem;
+  }
+
+  .sm_subheading_text2 {
+    font-size: 4.5rem;
+  }
+
+  .cool_subheading_text2 {
+    font-size: 2.6rem;
+  }
+
+  .webservices_right img {
+    width: 60%;
+  }
+
+  .main_webslider_con_inner {
+    min-height: 500px;
+    max-width: 900px;
+  }
+
+  .webslider_border {
+    max-height: 560px;
+  }
+
+  .webslider_cartoon {
+    left: 6.2%;
+  }
+
+  .webslider_heading {
+    font-size: 28px;
+  }
+}

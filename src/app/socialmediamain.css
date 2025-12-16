@@ -1,0 +1,118 @@
+.sm_banner_text {
+  font-size: 11.75rem;
+  line-height: 195px;
+}
+
+.text_sm_gray {
+  color: #a9a9ac;
+}
+
+.sm_heading_text {
+  font-size: 5rem;
+}
+
+.sm_services_bg {
+  background: radial-gradient(circle,
+      rgba(24, 32, 78, 1) 10%,
+      rgba(16, 20, 21, 1) 100%);
+}
+
+.scroll_arow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll_arow img {
+  width: 80px;
+}
+
+.scolldown_img {
+  width: 170px;
+  animation: scolldown_img 6s linear infinite;
+}
+
+.para_bar_white {
+  max-width: 100px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 75px;
+}
+
+.dotted_bg {
+  background-image: url(https://cdn.shopify.com/s/files/1/0835/6334/8002/files/ImageGradient_3_ztyyje.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes scolldown_img {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2.sm_banner_text {
+    font-size: 3rem !important;
+    line-height: 58px !important;
+  }
+
+  .w_ph_row {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sm_banner_text {
+    font-size: 3.75rem !important;
+    line-height: 4rem !important;
+  }
+
+  .sm_heading_text {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1600px) {
+  .sm_banner_text {
+    font-size: 8.75rem;
+    line-height: 150px;
+  }
+
+  .sm_heading_text {
+    font-size: 3.1rem;
+  }
+
+  .scroll_arow img {
+    width: 65px;
+  }
+
+  .webservices_lower_arrow {
+    left: -40% !important;
+  }
+}
+
+@media screen and (min-device-width: 2100px) and (max-device-width: 2500px) {
+  .webslider_cartoon {
+    left: 17% !important;
+  }
+
+  .behance_left_flowting {
+    width: 100px !important;
+  }
+
+  .behance_right_flowting {
+    width: 140px !important;
+  }
+}

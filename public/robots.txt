@@ -1,0 +1,8 @@
+# robots.txt for https://www.base2brand.com/
+
+User-agent: *
+Disallow: /b2bcampus.base2brand.com/
+Disallow: /suntuari.base2brand.com/
+Allow: /
+
+Sitemap: https://www.base2brand.com/sitemap.xml 

@@ -1,0 +1,308 @@
+.devops_color {
+    color: #F37335;
+}
+
+.dev_right_banner {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.con_banner_con {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con_banner_con img {
+    width: 82%;
+
+}
+
+.choose_img_con img {
+    width: 35%;
+}
+
+.main_choose_bar {
+    display: flex;
+    gap: 20px;
+}
+
+.sub_choose_bar {
+    display: flex;
+    width: 50%;
+    gap: 20px;
+}
+
+.choose_img_con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    width: 50%;
+    gap: 15px;
+}
+
+.dev_key {
+    background-color: #D0DDD0;
+    color: #000;
+}
+
+.dev_choose_t1 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.dev_choose_p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.choose_cart {
+    padding: 3%;
+    border: 2px solid #161616;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.tcard_img img {
+    width: 25%;
+}
+
+.toolcard {
+    display: flex;
+    gap: 20px;
+}
+
+.tcard {
+    width: 33.33%;
+}
+
+.tcard_inner {
+    padding: 3% 7%;
+    text-align: center;
+}
+
+.tcard_hover {
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+.tcard_hover:hover {
+    box-shadow: 2px 1px 20px 0px #fff;
+    border-radius: 10px;
+}
+
+.tcard_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.tool_card {
+    display: flex;
+}
+
+.tool_card_center {
+    flex-direction: row-reverse;
+}
+
+.banner_number_container {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dev_bar_img {
+    width: 15%;
+    /* display: flex;
+    justify-content: center; */
+    margin: auto;
+}
+
+.dev_bar_text {
+    width: 85%;
+}
+
+.dev_bar_img img {
+    width: 80%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.dev_bar_inner {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #4E4E4E;
+    border-radius: 10px;
+    background: #111616;
+}
+
+.dev_partner_bar {
+    row-gap: 20px;
+}
+
+.aicard_img img {
+    width: 14%;
+}
+
+.tcard3 {
+    border: 2px solid #4E4E4EB2;
+    border-radius: 10px;
+    min-height: 245px;
+    padding: 20px 0;
+}
+
+.ai_faq .accordion-body p {
+    color: #000 !important;
+}
+
+.accordion-header .black_faq {
+    color: #000 !important;
+}
+
+.accordion-header {
+    border: #111111 !important;
+}
+
+.ai_faq_main .accordion-item {
+    border-color: #000 !important;
+}
+
+.choose_cart:hover {
+    box-shadow: 10px 10px 10px #00000087;
+}
+
+.accordion-header .black_faq::after {
+    filter: inherit;
+}
+.dev_ai_hover_blue
+{
+    transition: all 0.5s;
+}
+.dev_ai_hover_blue:hover
+{
+    background: radial-gradient(85.16% 132.43% at 10% 99%, #4556EC 0%, #111616 70%);
+    box-shadow: 0px 0px 10px #4556EC ;
+}
+@media screen and (max-width:1100px) {
+    br {
+        display: none;
+    }
+
+    .main_choose_bar {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sub_choose_bar {
+        width: 100%;
+
+    }
+
+    .toolcard {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .tcard {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .tool2_heading {
+        text-align: center;
+    }
+
+    .sub_choose_bar {
+        flex-direction: column;
+    }
+
+    .choose_img_con {
+        width: 100%;
+    }
+
+    .con_banner_con img {
+        width: 100%;
+    }
+
+    .con_banner_con {
+        padding-bottom: 10px;
+    }
+
+    .toolcard {
+        gap: 25px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tcard {
+        width: 100%;
+    }
+
+    .tool_card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner_part {
+        gap: 30px;
+    }
+
+    .props_text_banner {
+        text-align: center;
+    }
+
+    .dev_bar_inner {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dev_bar_img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dev_bar_img img {
+        width: 25%;
+    }
+
+    .dev_bar_text {
+        width: auto;
+        text-align: center;
+    }
+
+    /* ai services */
+    .ai_services {
+        text-align: center !important;
+    }
+
+    .ai_inner {
+        padding: 0;
+    }
+
+    .devops_count_con {
+        width: 100%;
+        max-width: unset !important;
+    }
+
+    .devops_count_con .count-col {
+        width: 50% !important;
+    }
+    .devops_count_inner
+    {
+        box-shadow: none;
+    }
+}

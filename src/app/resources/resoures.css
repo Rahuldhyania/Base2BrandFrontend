@@ -1,0 +1,257 @@
+.recorses_heading h1 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.text-center.recorses_heading {
+    position: relative;
+    z-index: 9;
+}
+.recorses_heading p {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+button.btn.text-white.radius.outline {
+    border-radius: 50px;
+}
+img.Icon_lines {
+    margin-top: -17rem;
+}
+.source_box {
+    border: 1px solid #969696;
+    background: #000000;
+    border-radius: 42px;
+    padding: 2rem;
+}
+.source_list {
+    border: 1px solid #777777;
+    background: #0F0F0F;
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+img.lan_icon {
+    width: 20px;
+}
+
+.out_heading h1 {
+    font-weight: 200;
+    font-size: 42px;
+    margin-bottom: 3rem;
+    
+}
+.out_heading p {
+    font-weight: 200;
+    font-size: 24px;
+    margin-bottom: 3rem;
+}
+.out_source {
+    background: #0F0F0F;
+    padding-bottom: 3rem;
+}
+
+
+
+
+
+
+
+
+
+.resource-col nav > .nav {
+    border: none;
+}
+.resource-col .nav button.nav-link {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 20px;
+    padding-bottom:0px;
+    position:relative;
+}
+.resource-col .nav button.nav-link::before {
+    position: absolute;
+    content: "";
+    background: #F47B52;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+}
+.resource-col .nav button.nav-link:hover::before {
+    width:100%;
+}
+
+ul.order-list::before {
+    position: absolute;
+    content: "";
+    border-style: dashed;
+    border-width: 1px;
+    height: 80%;
+    left: 30px;
+    top: 20px;
+    z-index: 1;
+}
+ul.order-list li img {
+    z-index: 11;
+}
+div#v-pills-tab button {
+    background: #353535;
+    border-radius: 0;
+    /* transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg); */
+}
+div#v-pills-tab button.active {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 56% !important;
+    text-align:left;
+    margin-bottom:0 !important;
+    /* transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg); */
+}
+div#v-pills-tab button.active i{
+    display:none;
+}
+#v-pills-tab button > i {
+    font-size: 12px;
+    line-height: 22px;
+    padding-top: 3px;
+    position: relative;
+    right: 0px;
+}
+
+/*-----Tabs------*/
+.item {
+  flex-grow: 1;
+  height: 400px;
+  background-color: rgb(61, 61, 61);
+  position: relative;
+  border: 1px solid #1a1a1a;
+  transition: all 300ms ease-in-out;
+}
+.item:hover {
+  flex-grow: 4.3;
+  max-width:360px;
+  background-image: url("../../../public/resources/writer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item:hover .rotate {
+    align-items: end !important;
+}
+.item h3 {
+    position: absolute;
+    top: 69%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 34px;
+    transform: rotate(90deg);
+}
+.item:hover h3 {
+    position: absolute;
+    top: 69%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 34px;
+    transform: rotate(360deg);
+}
+
+.item2 {
+  flex-grow: 1;
+  height: 500px;
+  background-color: rgb(85, 85, 85);
+  position: relative;
+  border: 1px solid #1a1a1a;
+  transition: all 300ms ease-in-out;
+}
+.item2:hover {
+  flex-grow: 4.3;
+  /* background-color: #f10000; */
+  background-image: url("../../../public/resources/writer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item2 h3 {
+    position: absolute;
+    top: 69%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 34px;
+    transform: rotate(90deg);
+}
+.item2:hover h3 {
+    position: absolute;
+    top: 69%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 34px;
+    transform: rotate(360deg);
+}
+
+.item3 {
+  flex-grow: 1;
+  height: 500px;
+  background-color: #353535;
+  position: relative;
+  border: 1px solid #1a1a1a;
+  transition: all 300ms ease-in-out;
+}
+.item3:hover {
+  flex-grow: 4.3;
+  background-image: url("../../../public/resources/writer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item3 h3 {
+    position: absolute;
+    top: 69%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 34px;
+    transform: rotate(90deg);
+}
+.item3:hover h3 {
+    position: absolute;
+    top: 69%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 34px;
+    transform: rotate(360deg);
+}
+
+.resource-col ul.order-list li span {
+    max-width: 80%;
+}
+
+@media screen and (max-width:1600px) {
+    .resource-col ul.order-list li span {
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .resource-col ul.order-list li span {
+        max-width: 60%;
+    }
+}

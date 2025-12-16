@@ -1,0 +1,81 @@
+.main_new_footer {
+    background-image: url(https://res.cloudinary.com/driveuyen/image/upload/v1757500100/base2brand_website/new%20home%20page/Rectangle_42554_1_jsskym.webp);
+    background-repeat: no-repeat;
+}
+
+.footerlist_title {
+    font-size: 22px;
+    color: #fff;
+    width: max-content;
+    font-weight: 400;
+}
+
+.mainfooterlist ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0;
+}
+
+.mainfooterlist ul li {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+.footerlist_list_li {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 32px;
+    margin: 0;
+}
+
+.footerlist_outer {
+    width: max-content;
+}
+
+.Footernavlist {
+    width: max-content;
+}
+
+.Footernavlist_outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.social_media_inner {
+    display: flex;
+    max-width: 700px;
+    justify-content: space-between;
+}
+
+.social_dot {
+    background: #AFAEAE;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    border-radius: 50%;
+}
+
+.social_media_linking {
+    gap: 20px;
+}
+
+.footer_lower_box_outer {
+    display: flex;
+    max-width: 1650px;
+    margin: auto;
+    justify-content: center;
+}
+
+.footer_lower_box {
+    padding: 50px;
+    border: 1px solid;
+}
+
+.footer_lower_box_logo {
+    border: 1px solid;
+}

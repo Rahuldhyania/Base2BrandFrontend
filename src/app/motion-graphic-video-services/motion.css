@@ -1,0 +1,559 @@
+.motion_text {
+  font-size: 22rem;
+  line-height: 300px;
+  position: relative;
+  width: max-content;
+  margin: auto;
+  z-index: 5;
+}
+
+.motion_text_floting_left {
+  position: absolute;
+  top: -67%;
+  left: -15%;
+  z-index: 1;
+}
+
+.motion_text_floting_right {
+  position: absolute;
+  top: -69%;
+  right: -15%;
+  z-index: 1;
+}
+
+.motion_text_floting_right img {
+  width: 80%;
+}
+
+.mainfact_card {
+  width: 90%;
+  margin: auto;
+}
+
+.mainfact_card_upper {
+  position: relative;
+}
+
+.factnumber_outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 8px 1px #ffffff;
+  border-radius: 25px;
+}
+
+.fact_card_title {
+  font-size: 4.4rem;
+}
+
+.motionfactcard {
+  row-gap: 20px;
+}
+
+.mainfact_card {
+  background-color: #363340;
+  padding: 20px 10px;
+  border-radius: 25px;
+  height: 100%;
+  border: 2px solid #696565;
+  transition: all 0.5s;
+}
+
+.mainfact_card_upper {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.mainfact_card_lower {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.mainfact_card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 19px 3px #ffffff;
+  cursor: pointer;
+}
+
+.fact_card_text {
+  width: 60%;
+  font-size: 35px;
+  font-weight: 500;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+}
+
+.animation_upper2d {
+  width: 75%;
+  margin: auto;
+  display: flex;
+}
+
+.aimation2d_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.volume_flotingimg {
+  position: absolute;
+  bottom: -15%;
+  z-index: 1;
+}
+
+.bg_volume_left {
+  position: absolute;
+  left: -20%;
+  top: -10%;
+}
+
+.bg_volume_right {
+  position: absolute;
+  right: -20%;
+  top: -10%;
+}
+
+.creative_marquee_con {
+  position: absolute;
+  top: -3%;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.creative_marquee {
+  height: 375px;
+}
+
+.creative_marquee img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.main_creative_marquee {
+  transform: rotate(-7deg);
+  overflow: hidden;
+}
+
+.motion_3d_banner img {
+  width: 80%;
+}
+
+.graphic_offer_gray {
+  background: #1d2121;
+}
+
+.border_dash_top {
+  border-top: 3px dashed #585454;
+}
+
+.border_dash_bottom {
+  border-bottom: 3px dashed #585454;
+}
+
+.motion_choose_card {
+  text-align: center;
+  padding: 40px 15px;
+  border-radius: 15px;
+  height: 100%;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.motion_choose_card_gray {
+  background: #646464;
+  background: linear-gradient(90deg,
+      rgba(100, 100, 100, 1) 66%,
+      rgba(58, 58, 58, 1) 100%);
+}
+
+.motion_choose_card_blue {
+  background: #678df9;
+  background: linear-gradient(90deg,
+      rgba(103, 141, 249, 1) 66%,
+      rgba(46, 84, 196, 1) 100%);
+}
+
+.motion_card_2 {
+  position: relative;
+  right: 10px;
+  transform: rotate(2deg);
+}
+
+.motion_card_4 {
+  position: relative;
+  transform: rotate(357deg);
+  right: 10px;
+}
+
+.motion_card_3 {
+  position: relative;
+  right: 10px;
+}
+
+.motion_card_grayblue .col-12 {
+  padding: 0;
+}
+
+.graphic_offer_black {
+  background: #111616;
+}
+
+.graphic_offer_card {
+  position: relative;
+}
+
+.graphic_offer {
+  position: sticky;
+  top: 200px;
+}
+
+.motionchoose_con {
+  background-image: url(https://cdn.shopify.com/s/files/1/0835/6334/8002/files/252982155_1_nxdgdp.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.brand_d {
+  position: relative;
+}
+
+.brand_d_img {
+  position: absolute;
+  width: 68%;
+  left: 28%;
+  top: 42%;
+}
+
+.motion_card_4:hover {
+  z-index: 1;
+  transform: rotate(360deg) scale(1.1) !important;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 4px #fff;
+}
+
+.motion_card_hover:hover {
+  z-index: 1;
+  transform: rotate(0deg) scale(1.1) !important;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 4px #fff;
+}
+
+.videocard_card img {
+  width: 95%;
+}
+
+.videocard_card {
+  position: relative;
+}
+
+.videocard_center {
+  position: relative;
+  top: 70px;
+}
+
+.videocard_youtubeicon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  top: 0;
+}
+
+.videocard_client_name {
+  position: absolute;
+  bottom: 0px;
+  left: -14px;
+  height: 100%;
+  width: 110%;
+  z-index: 1;
+  display: flex;
+  overflow: hidden;
+  align-items: end;
+  background: linear-gradient(183deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 95%);
+}
+
+.videocard_client_name h2 {
+  padding-bottom: 40px;
+  padding-left: 40px;
+}
+
+.videocard_youtubeicon img {
+  cursor: pointer;
+  width: auto;
+  position: relative;
+  z-index: 3;
+}
+
+.main_videopop_con {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.videocard_cross {
+  width: max-content;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 8px;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.videocard_bgvideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 1;
+  pointer-events: none;
+  border-radius: 50px;
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+.videocard_card:hover .videocard_bgvideo {
+  opacity: 1;
+}
+
+.videocard_card {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.thembnel_card {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .container_videocard3 {
+    padding: 0 0.8rem;
+  }
+
+  .videocard_card_3_row {
+    gap: 0 !important;
+  }
+
+  .videocard_card_3_row .videocard_card_3 {
+    width: 100% !important;
+  }
+
+  .videocard_center {
+    top: 0 !important;
+  }
+
+  .videocard_youtubeicon img {
+    width: 80px;
+  }
+
+  .videocard_card {
+    height: 400px;
+  }
+
+  .padding_ph {
+    padding: 0 15px;
+  }
+
+  .pt-5 .text-center .motion_text {
+    font-size: 6rem !important;
+    line-height: 150px !important;
+  }
+
+  .motion_text_floting_left {
+    top: -39% !important;
+    left: -20% !important;
+  }
+
+  .motion_text_floting_right {
+    top: -42%;
+    right: -28%;
+  }
+
+  .motion_text .motion_text_floting_left img,
+  .motion_text .motion_text_floting_right img {
+    width: 150px !important;
+  }
+
+  .animation2d_textbg {
+    height: 300px !important;
+  }
+
+  .volume_flotingimg img {
+    width: 50% !important;
+  }
+
+  .container .volume_flotingimg {
+    bottom: -14% !important;
+  }
+
+  .creative_marquee_con_outer {
+    height: 100px !important;
+  }
+
+  .creative_marquee_con {
+    top: 31% !important;
+  }
+
+  .creative_marquee {
+    height: 110px !important;
+  }
+
+  .creative_marquee img {
+    height: 50% !important;
+  }
+
+  .motion_3d_banner img {
+    width: 95% !important;
+  }
+
+  .webservices_right {
+    padding-top: 3rem !important;
+  }
+
+  .webservices_right {
+    padding-bottom: 0;
+  }
+
+  .webservices_right_ph_motion {
+    text-align: end;
+  }
+
+  .motion_card_grayblue .col-12 {
+    padding: 0 !important;
+  }
+
+  .interface_child1 {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .videocard_center {
+    top: 0 !important;
+  }
+
+  .text-center .motion_text {
+    font-size: 12rem !important;
+    line-height: 170px !important;
+  }
+
+  .motion_text_floting_left img,
+  .motion_text_floting_right img {
+    width: 200px !important;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+
+  .webservices_lower_arrow,
+  .webservices_right_arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .videocard_card_3_row {
+    gap: 2%;
+  }
+
+  .videocard_card_3 {
+    width: 48% !important;
+  }
+
+  .mainfact_card {
+    width: 95% !important;
+  }
+
+  .motion_card_grayblue {
+    padding: 1rem;
+    row-gap: 20px;
+  }
+
+  .motion_card_grayblue .col-12 {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 1660px) {
+  .motion_text {
+    font-size: 17rem !important;
+    line-height: 240px !important;
+  }
+
+  .fact_card_title {
+    font-size: 3rem !important;
+  }
+
+  .mainfact_card {
+    width: 80%;
+  }
+
+  .fact_card_text {
+    font-size: 28px;
+  }
+
+  .volume_flotingimg {
+    bottom: -12% !important;
+  }
+
+  .volume_flotingimg img {
+    width: 80%;
+  }
+
+  .motionchoose_con_lap .cus_container {
+    padding: 0 !important;
+  }
+
+  .motion_card_2 {
+    position: relative;
+    right: 0px;
+  }
+
+  .motion_card_4 {
+    right: 0px;
+  }
+
+  .motion_card_3 {
+    position: relative;
+    right: 0px;
+  }
+}
+
+@media screen and (min-device-width: 2100px) and (max-device-width: 2500px) {
+  .graphic_offer {
+    top: 300px;
+  }
+}

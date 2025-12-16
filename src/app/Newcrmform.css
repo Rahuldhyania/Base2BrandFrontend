@@ -1,0 +1,150 @@
+ .form-wrapper {
+     display: flex;
+     justify-content: center;
+     padding: 20px;
+     background: rgba(0, 0, 0, 0.45);
+     backdrop-filter: blur(4px);
+     height: max-content;
+ }
+
+ .crm-form {
+     width: 100%;
+     max-width: 580px;
+     /* width thodi badha di */
+     background: #fff;
+     padding: 28px;
+     /* height reduce + compact */
+     border-radius: 18px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+     animation: fadeIn 0.4s ease-in-out;
+ }
+
+ .title {
+     text-align: center;
+     margin-bottom: 18px;
+     /* kam spacing */
+     font-size: 28px;
+     font-weight: 600;
+     color: #333;
+ }
+
+ .grid {
+     display: flex;
+     flex-direction: column;
+     gap: 14px;
+     /* spacing kam */
+ }
+
+ .form-group {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .form-group.full {
+     grid-column: span 2;
+     /* state ek line me */
+ }
+
+ label {
+     margin-bottom: 4px;
+     font-size: 16px;
+     color: #555;
+     font-weight: 500;
+ }
+
+ input {
+     padding: 9px 11px;
+     /* height kam */
+     border: 1.5px solid #7b7b7b !important;
+     border-radius: 8px;
+     font-size: 13px;
+     transition: all 0.2s ease;
+     color: #000 !important
+ }
+
+ input:focus {
+     border-color: #6c63ff;
+     box-shadow: 0 0 4px rgba(108, 99, 255, 0.3);
+     outline: none;
+     color: #000;
+ }
+
+ .submit-btn {
+     width: 100%;
+     margin-top: 18px;
+     padding: 10px;
+     border: none;
+     border-radius: 10px;
+     background: linear-gradient(135deg, #6c63ff, #5146d8);
+     color: white;
+     font-size: 15px;
+     font-weight: 600;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+
+ .submit-btn:hover {
+     opacity: 0.92;
+ }
+
+ .form-wrapper::-webkit-scrollbar {
+     display: none;
+ }
+
+ .service_select {
+     padding: 10px;
+     border-radius: 10px;
+ }
+
+ .newfrommodal {
+     width: 30%;
+     max-width: 550px;
+     margin: auto;
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(10px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ @media (max-width: 600px) {
+     .grid {
+         grid-template-columns: 1fr;
+     }
+
+     .form-group.full {
+         grid-column: span 1;
+     }
+
+     .form-wrapper {
+         height: max-content;
+         overflow: scroll;
+         background: #fff;
+         width: 90%;
+         margin: auto;
+         border-radius: 25px;
+         padding: 5px;
+     }
+
+     .crm-form {
+         box-shadow: none;
+     }
+
+     /* .grid {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 14px;
+     } */
+
+     .newfrommodal {
+         width: 100%;
+     }
+
+ }

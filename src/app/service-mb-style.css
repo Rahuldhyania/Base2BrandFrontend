@@ -1,0 +1,1044 @@
+.designTabsWrap .slick-slider {
+    margin-top: 0 !important;
+}
+button.btn_design span {
+    display: grid !important;
+    place-items: center;
+}
+body .designTabsWrap .slick-track {
+    position: relative !important;
+    width: 100% !important;
+    transform: unset !important;
+}
+.designTabsWrap .slick-slide {
+    position: absolute;
+    left: 50%;
+    height: 100px;
+    width: 100px !important;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s ease-in-out;
+}
+.designTabsWrap .slick-slide.slick-active.slick-current{
+    opacity: 1;
+    visibility: visible;
+}
+.designTabsWrap .slick-slide button.btn_design {
+    padding: 0;
+}
+.designTabsWrap .slick-slide button.btn_design span {
+    margin: auto;
+}
+.designTabsWrap .slick-track,
+.designTabsWrap .slick-list,
+.designTabsWrap .slick-slider{
+    height: 100px;
+}
+.slick-arrow:before {
+    content: '' !important;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-repeat: no-repeat;
+}
+.designTabsWrap .slick-next:before{
+    background-image: url(../../public/team-img/arrow-right.svg);
+}
+.designTabsWrap .slick-prev:before{
+    background-image: url(../../public/team-img/arrow-left.svg);
+}
+/* tab content  */
+
+.designTabsContentWrap .slick-slide {
+    transition: 0.9s !important;
+    
+}
+/* .animated-imgs.animated-banner-img {
+    height: 500px !important;
+} */
+.mobileSectionNav{
+    display: none !important;
+}
+/* responsive style
+services pages */
+@media screen and (min-width: 1700px){
+    .deliverable-icon {
+        width: 140px;
+        height: 140px;
+        left: -60px;
+    }
+    .odd-row:after,
+    .even-row:after {
+        background-size: 100%;
+    }
+    .even-row .textWrap:before {
+        right: 24px;
+        border-width: 3px;
+    }
+    .even-row .textWrap:after {
+        right: 29px;
+    }
+    .odd-row .textWrap:before {
+        border-width: 3px;
+        left: 0px;
+    }
+    .odd-row .textWrap:after {
+        left: 4px;
+    }
+    .first-row::before {
+        bottom: calc(50% - 44px);
+        left: -85px;
+        background-size: 59% 100%;
+    }
+    .animated-imgs {
+        height: calc(100vh - 236px);
+    }
+}
+@media screen and (max-width:1699px) {
+    .deliverable-content .b2b-sub-heading {
+        font-size: 22px;
+        line-height: 35px;
+    }
+    .deliverable-content .b2b-text {
+        font-size: 16px;
+        line-height: normal;
+    }
+    .deliverable-icon {
+        width: 120px;
+        height: 120px;
+        left: -47px;
+    }
+    .first-row::before {
+        bottom: calc(50% - 40px);
+        left: -64px;
+        background-size: 58% 95%;
+    }
+}
+@media screen and (max-width: 1600px){
+}
+@media screen and (max-width: 1440px){
+    button.btn_design {
+        font-size: 14px !important;
+    }
+    button.btn_design span {
+        border-width: 10px;
+    }
+    .b2b-text-lg{
+        font-size: 20px;
+        line-height: 30px;
+      }
+      .b2b-text-sm, .designTabsContentWrap ul li{
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .interfaceWrap h3 {
+        font-size: 20px;
+    }
+    .deliverable-content .b2b-sub-heading {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .benefitOuterWrap .b2b-text-sm{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .process_row .b2b-heading {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .ecommerceserviceWrap .b2b-sub-heading {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .ecommerceserviceWrap .cell-wrap .imgIcon {
+        width: 56px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1399px){
+    .first-row::before {
+        bottom: calc(50% - 40px);
+        left: -54px;
+        background-size: 58% 95%;
+    }
+    .odd-row img, .even-row img {
+        height: 215px;
+        width: auto;
+    }
+    .even-row .textWrap:before {
+        right: 10px;
+    }
+    .even-row .textWrap:after {
+        right: 15px;
+    }
+    .first-row {
+        margin-top: 82px !important; 
+    }
+    .leader_box {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1366px){
+    .deliverable-content .b2b-text {
+        font-size: 14px;
+        line-height: normal;
+    }
+    .benefitOuterWrap .b2b-text-sm {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media screen and (max-width:1200px ){
+    button.btn_design {
+        font-size: 12px !important;
+    }
+    button.btn_design span {
+        width: 90px;
+        height: 90px;
+    }
+    button.btn_design span img {
+        height: 34px;
+        width: auto;
+    }
+    .designTabsContentWrap img{
+        width: 75%;
+        height: auto;
+    }
+    .deliverable-content {
+        padding: 18px 20px 18px 34px;
+    }
+    .deliverable-icon {
+        width: 100px;
+        height: 100px;
+        left: -33px;
+    }
+    .deliverable-icon-bg {
+        padding: 24px;
+    }
+    .deliverable-step-outer{
+        margin: auto;
+    }
+    .benefitOuterWrap .b2b-text-sm {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .b2b-sub-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .mobileAppWrap .cell-wrap span {
+        font-size: 12px;
+    }
+    .mobileAppWrap .cell-wrap .imgIcon {
+        width: 50px;
+        height: auto;
+    }
+    .mobileAppWrap .cell-wrap {
+        padding: 20px;
+    }
+    
+}
+@media screen and (max-width: 1199px){
+    .odd-row img, .even-row img {
+        height: 200px;
+        width: auto;
+    }
+    .process_row .b2b-heading {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .odd-row .textWrap {
+        padding: 0 30px 0 20px;
+    }
+    .odd-row, .even-row {
+        padding: 19px 25px;
+    }
+    .last-row {
+        padding-bottom: 50px;
+    }
+    .odd-row .textWrap:before,
+    .even-row .textWrap:before {
+        width: 30px;
+        height: 30px;
+    }
+    .odd-row .textWrap:after,
+    .even-row .textWrap:after {
+        width: 20px;
+        height: 20px;
+    }
+    .odd-row .textWrap:before {
+        left: -2px;
+    }
+    .odd-row .textWrap:after {
+        left: 3px;
+    }
+    .even-row .textWrap:before {
+        right: 11px;
+    }
+    .even-row .textWrap:after {
+        right: 16px;
+    }
+    .first-row::before {
+        bottom: calc(50% - 18px);
+        left: -51px;
+        background-size: 58% 100%;
+    }
+    .ecommerceWrap .cell-wrap {
+        padding: 30px 20px;
+    }
+    .ecommerceWrap .cell-wrap img {
+        margin: auto;
+        width: auto;
+        height: 50px;
+    }
+    .ecommerceWrap .cell-wrap:before {
+        width: 100px;
+        height: 100px;
+    }
+    .ecommerceserviceWrap .b2b-sub-heading {
+        font-size: 20px;
+        line-height: normal;
+    }
+    .ecommerceserviceWrap .cell-wrap {
+        padding: 30px 20px 70px 20px;
+    }
+    .leader_box {
+        padding: 20px 66px 20px 94px;
+        font-size: 14px;
+    }
+    ul.checkListing {
+        margin-top: 28px;
+    }
+    .checkListing li {
+        padding-left: 24px;
+        margin-bottom: 12px;
+        font-size: 12px;
+    }
+    ul.checkListing li:before {
+        width: 14px;
+        height: 14px;
+        top: 1px;
+    }
+    .counterWrap .counterInnerWrap h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .even-row:after {
+        top: calc(50% - 2px);
+    }
+}
+@media screen and (max-width: 1024px){
+    button.btn_design {
+        padding: 15px 20px;
+    }
+    .b2b-text-sm, .designTabsContentWrap ul li {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    ul.arrowListing li:before {
+        width: 10px;
+        height: 10px;
+        top: 4px;
+    }
+    .arrowListing li {
+        padding-left: 18px;
+        margin-bottom: 6px;
+    }
+    .b2b-sub-heading {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .deliverable-step-outer {
+        width: 85%;
+    }
+    .benefitOuterWrap .b2b-text-lg {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .btnIcon img {
+        height: 36px;
+        width: auto;
+    }
+    button.btn_platfotm {
+        font-size: 14px;
+    }
+    .main_gallery.full_height {
+        height: auto;
+    }
+    .left_thumnails .slick-slide img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    .left_thumnails a, .left_thumnails .slick-slide {
+        height: 60px !important;
+        width: 60px !important;
+    }
+    .slider_right_main .row.gap-5 {
+        gap: 1rem !important;
+    }
+    .social_ads h2 {
+        font-size: 20px;
+    }
+    .social_ads p {
+        font-size: 16px;
+    }
+    .social_ads small {
+        font-size: 12px;
+    }
+    .growBusinessType p {
+        font-size: 15px;
+        margin-left: 14px;
+        padding-right: 50px;
+    }
+    .growBusinessType img {
+        height: 42px;
+        width: auto;
+    }
+    .counterWrap .counterInnerWrap:nth-child(odd) {
+        padding-right: 40px;
+    }
+    .counterWrap .counterInnerWrap:nth-child(even) {
+        padding-left: 40px;
+    }
+    .dmWrap {
+        padding: 44px 18px;
+        height: 254px;
+        width: 164px;
+    }
+    .whyChoosewrap .dmWrap p {
+        font-size: 14px;
+    }
+    .first-row::before {
+        left: -38px;
+        background-size: 53% 100%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .service-banner h1 {
+        font-size: 22px !important;
+        line-height: 32px !important;
+    }
+    .service-banner p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .designTabsWrap * {
+        display: block !important;
+        z-index: 2;
+        position: relative;
+    }
+    .designTabs {
+        width: 300px;
+        margin: auto;
+    }
+    button.btn_design {
+        margin: auto;
+    }
+    .designTabsWrap:before {
+        height: 55%;
+    }
+    .designTabsContentWrap .slick-slider {
+        margin-top: 30px !important;
+    }
+    .interfaceWrap h3 {
+        font-size: 16px;
+    }
+    .cell-wrap {
+        padding: 25px 15px;
+    }
+    .interfaceWrap .cell-wrap .imgIcon {
+        width: auto;
+        height: 64px;
+    }
+    .deliverable-step-outer {
+        width: 400px;
+    }
+    .benefitOuterWrap .px-3 {
+        padding-right: 0rem!important;
+        padding-left: 0rem!important;
+    }
+    .benefitOuterWrap .b2b-text-lg {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .benefitOuterWrap .b2b-text-sm {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .benefitOuterWrap .p-3 {
+        padding: 0rem !important;
+    }
+    .b2b-achievements-wrap img {
+        height: 30px;
+    }
+    .b2b-achievements-wrap .b2b-sub-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .mobileAppWrap .cell-wrap {
+        padding: 20px 12px;
+    }
+    .deliverableSteps{
+        border-radius: 20px;
+    }
+    .chosseInnerWrap .b2b-sub-heading {
+        font-size: 18px;
+        line-height: normal;
+    }
+    .platform-tabs div#pills-tabContent {
+        margin-right: 55px;
+        padding: 40px 45px 50px 80px;
+    }
+    .platform-tabs p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    img.digital_img {
+        width: 100%;
+        height: auto;
+    }
+    img.digital_icon {
+        padding: 10px;
+        bottom: 7px;
+        left: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    .leader_box {
+        padding: 20px 38px 20px 72px;
+        font-size: 16px;
+    }
+    .leader_box i {
+        right: 12px;
+        bottom: 14px;
+    }
+    .leader_box i:before {
+        font-size: 20px;
+    }
+    .whyChoosewrap h4 {
+        font-size: 16px;
+    }
+    .whyChoosewrap .row.gap-5 {
+        gap: 0rem !important;
+    }
+    .dmWrap {
+        padding: 34px 6px;
+        height: 200px;
+        width: 128px;
+    }
+    .dmWrap:before {
+        content: '';
+        width: calc(100% - 24px);
+        height: calc(100% - 24px);
+        left: 12px;
+        top: 12px;
+    }
+    .whyChoosewrap .dmWrap p {
+        font-size: 12px;
+    }
+    .whyChoosewrap img.icon {
+        height: 36px;
+        width: auto;
+    }
+    .whyChoosewrap img.checkicon {
+        height: 22px;
+        width: 22px;
+    }
+    .shopify-banner .full_height{
+        height: auto;
+    }
+    .animated-imgs.animated-banner-img {
+        height: 400px !important; 
+        width: 100%;
+    }
+    .animated-banner-img canvas {
+        margin-top: 0;
+        height: 100% !important;
+    }
+    h1.banner-text-outline {
+        font-size: 50px !important;
+    }
+    .odd-row img, .even-row img {
+        height: auto;
+        width: 100%;
+    }
+    .process_row .b2b-heading {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .process_row p.b2b-text {
+        margin-bottom: 0 !important;
+    }
+    .odd-row .textWrap {
+        padding: 0;
+    }
+    .first-row::before {
+        left: -26px;
+        background-size: 48% 100%;
+    }
+    .odd-row .textWrap:before {
+        left: -7px;
+    }
+    .odd-row .textWrap:after {
+        left: -2px;
+    }
+    .even-row .textWrap:before {
+        right: 4px;
+    }
+    .even-row .textWrap:after {
+        right: 9px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .service-banner p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .designTabsContentWrap img{
+        margin: auto;
+    }
+    .about-accordion .accordion-body p {
+        font-size: 12px;
+        line-height: normal;
+    }
+    .whyChooseWrap .cell-wrap .imgIcon {
+        width: 25px;
+        height: auto;
+    }
+    .whyChooseWrap .cell-wrap .b2b-text {
+        font-size: 14px;
+    }
+    .whyChooseWrap .cell-wrap h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .whyChooseWrap .cell-wrap .ps-4 {
+        padding-left: 0.5rem!important;
+    }
+    .nextGenWrap{
+        background: #111616 !important;
+    }
+    body .b2b-achievements-wrap {
+        width: 250px;
+        margin: auto;
+    }
+    .b2b-achievements-wrap .b2b-sub-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    body .b2b-achievements-wrap {
+        justify-content: flex-start !important;
+    }
+    .deliverableSteps .b2b-sub-heading {
+        font-size: 14px;
+        line-height: normal;
+        margin-bottom: 2px;
+    }
+    .graphic-ser-head p {
+        margin: 0 auto 1em;
+    }
+    .uiux-cta {
+        text-align: center;
+    }
+    .uiux-cta h2.b2b-heading {
+        max-width: 400px;
+        width: 100%;
+        margin: auto;
+    }
+    .uiux-cta h2.b2b-heading br{
+        display: none;
+    }
+    .cell-wrap span {
+        font-size: 12px;
+    }
+    .ecommerceWrap .cell-wrap {
+        padding: 28px 15px;
+    }
+    .ecommerceserviceWrap .b2b-sub-heading {
+        font-size: 18px;
+        line-height: normal;
+    }
+    .ecommerceserviceWrap .cell-wrap .imgIcon {
+        width: 44px;
+        height: auto;
+    }
+    .ecommerceserviceWrap .cell-wrap {
+        max-width: 100%;
+        margin: auto;
+    }
+    .choose-us-wrap>div:nth-child(even) {
+        place-items: unset;
+    }
+    .b2b-main-heading br {
+        display: none;
+    }
+    .choose-us-wrap .chosseInnerWrap {
+        width: 100%;
+        height: 100%;
+    }
+    .platform-tabs ul#pills-tab {
+        width: 100%;
+        left: 0;
+        margin-top: 15px !important;
+        height: unset !important;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: unset;
+    }
+    .platform-tabs {
+        flex-wrap: wrap;
+    }
+    button.btn_platfotm span{
+        display: none;
+    }
+    .btn_platfotm.active {
+        background: linear-gradient(180deg, #7411E1 0%, #396BDB 100%);
+    }
+    button.btn_platfotm {
+        box-shadow: none;
+        width: 100%;
+        margin-bottom: 15px;
+        border-radius: 0 !important;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .btnIcon{
+        width: unset;
+        padding-right: 0;
+    }
+    .btnIcon img{
+        height: 30px;
+    }
+    .platform-tabs div#pills-tabContent {
+        margin-right: 0;
+        padding: 40px;
+        border-radius: 14px;
+        height: unset;
+    }
+    .digital_box {
+        width: 100%;
+        margin: auto;
+    }
+    .leader_box i {
+        right: 20px;
+        bottom: 23px;
+    }
+    .gallery_slider {
+        flex-wrap: wrap;
+        padding: 30px 0; 
+    }
+    .left_thumnails, .left_thumnails .slick-track {
+        width: 100% !important;
+        height: 100px !important;
+        
+    }
+    .left_thumnails:before {
+        left: 0;
+        top: 50%;
+        height: 2px;
+        width: 100%;
+    }
+    .left_thumnails .slick-list {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .left_thumnails .slick-slider {
+        width: 100%;
+    }
+    .left_thumnails .slick-track {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        transform: unset !important;
+    }
+    .right_slider img.social_img {
+        width: 280px !important;
+        margin: auto;
+    }
+    .right_slider {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .main_gallery .b2b-container-lg {
+        padding: 0;
+    }
+    .left_thumnails a, .left_thumnails .slick-slide {
+        margin-bottom: 0 !important;
+    }
+    .b2b-heading br{
+        display: none;
+    }
+    .counterWrap .counterInnerWrap:nth-child(odd) {
+        padding-right: 15px;
+    }
+    .counterWrap .counterInnerWrap:nth-child(even) {
+        padding-left: 15px;
+    }
+    .whyChoosewrap-row .col:nth-child(3) {
+        width: 100%;
+        margin-top: -50px;
+    }
+    .whyChoosewrap-row .col:nth-child(1),
+    .whyChoosewrap-row .col:nth-child(2) {
+        margin-top: 0;
+    }
+    .whyChoosewrap-row .col {
+        margin-top: -50px;
+    }
+    .service-banner.shopify-banner h1 {
+        font-size: 34px !important;
+        line-height: normal;
+    }
+    .service-banner h1,
+    .service-banner p {
+        text-align: center !important;
+    }
+    .service-btn {
+        justify-content: center;
+    }
+    .animated-imgs.animated-banner-img {
+        margin-top: 35px;
+    }
+    .whyChoosewrap img.icon {
+        margin-left: 0 !important;
+    }
+    .service-banner{
+        padding: 30px 0 10px 0;
+        /* background-image: url(/_next/static/media/radial_bg.ac4b8273.svg);
+        background-repeat: no-repeat; */
+        /* background: radial-gradient(85.95% 85.95% at 51.75% 51.4%, rgb(31 0 173) 0, rgb(22 32 71 / 68%) 100%); */
+    }
+    .choose-us-wrap .hoverGradient {
+        margin-right: 0 !important;
+    }
+    .process_row::before,
+    .process_row:after,
+    .textWrap:before,
+    .textWrap:after
+    {
+        display: none !important;
+    }
+    .even-row {
+        flex-direction: column-reverse;
+    }
+    .first-row {
+        margin-top: 22px !important;
+    }
+    .process_steps {
+        overflow: unset;
+    }
+    .mobileSectionNav {
+        position: absolute;
+        left: 13px;
+        top: 198px;
+        width: 35px;
+        height: calc(100% - 198px);
+        display: block !important;
+    }
+    span.dotNav {
+        position: relative;
+        left: 50%;
+        width: 30px;
+        height: 30px;
+        display: block;
+        transform: translateX(-50%);
+    }
+    .mobileSectionNav:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 1px;
+        height: 100%;
+        top: 0;
+        transform: translateX(-50%);
+        border-left: 1px dashed #fff;
+    }
+    .mobileSectionNav .dotNav:before {
+        content: '';
+        width: 30px;
+        height: 30px;
+        border: 1px dashed #fff;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        background-color: #111616;
+    }
+    .mobileSectionNav .dotNav:after {
+        content: '';
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background-color: #396BDB;
+        transform: translate(-50%, -50%);
+    }
+    span.dotNavrap {
+        position: sticky;
+        top: 120px;
+    }
+    .process_steps .b2b-heading br {
+        display: block;
+    }
+}
+
+.odd-row{
+    padding: 26px 0px 26px 14px;
+}
+
+.even-row{
+    padding: 26px 0px 26px 14px;
+}
+@media screen and (max-width:575px) {
+    .service-banner h1 {
+        font-size: 24px !important;
+        line-height: 26px !important;
+        margin-bottom: 14px !important;
+    }
+    .service-banner p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .designTabs {
+        width: calc(100% - 50px);
+        margin: auto;
+    }
+    .designTabsContentWrap .slick-slider {
+        margin-top: 12px !important;
+    }
+    .designTabsContentWrap img{
+        width: 100%;
+        height: auto;
+    }
+    .deliverable-step-outer {
+        width: 90%;
+        padding-left: 10px;
+    }
+    .deliverable-step{
+        padding-left: 35px;
+        
+    }
+    .deliverable-icon {
+        width: 80px;
+        height: 80px;
+        left: -33px;
+    }
+    .deliverable-icon-bg {
+        padding: 18px;
+    }
+    .deliverable-content .b2b-sub-heading {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .deliverable-content {
+        padding: 18px 14px 18px 26px;
+    }
+    .deliverable-content .b2b-text {
+        font-size: 14px;
+        line-height: normal;
+    }
+    .whyChooseWrap .cell-wrap .imgIcon {
+        width: 32px;
+        height: auto;
+    }
+    .mobileAppWrap {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .ecommerceWrap .cell-wrap {
+        padding: 28px 12px;
+    }
+    .btnIcon img {
+        height: 26px;
+    }
+    button.btn_platfotm {
+        padding: 4px;
+    }
+    .platform-tabs div#pills-tabContent {
+        padding: 28px;
+    }
+    
+    .platform-tabs .tab-pane.active h2 {
+        font-size: 24px !important;
+        margin-bottom: 10px !important;
+    }
+    .process_steps .b2b-heading br {
+        display: none;
+    }
+}
+@media screen and (max-width: 425px){
+    .whyChoosewrap img.icon {
+        height: 33px;
+        width: auto;
+    }
+    .whyChoosewrap .dmWrap p {
+        font-size: 10px;
+        margin: 4px 0;
+        padding: 0 8px;
+    }
+    .dmWrap {
+        padding: 34px 4px;
+        height: 155px;
+        width: 90px;
+    }
+    .dmWrap:before {
+        width: calc(100% - 15px);
+        height: calc(100% - 15px);
+        left: 8px;
+        top: 8px;
+    }
+    .growBusinessType p {
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 375px){
+    .deliverable-step-outer {
+        width: calc(100% - 50px);
+        margin: unset;
+        margin-left: 38px;
+        padding-left: 30px;
+    }
+    ul.arrowListing li:before {
+        top: 5px;
+    }
+    .btnIcon img {
+        height: 20px;
+    }
+    .platform-tabs p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .left_thumnails .slick-slide img {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .left_thumnails a, .left_thumnails .slick-slide {
+        height: 40px !important;
+        width: 40px !important;
+        margin-bottom: 0 !important;
+    }
+    .left_thumnails, .left_thumnails .slick-track {
+        width: 100% !important;
+        height: 60px !important;
+    }
+    .right_slider img.social_img {
+        width: 230px !important;
+        margin: auto;
+    }
+    .mobileAppWrap {
+        padding: 40px 15px !important;
+    }
+}
+

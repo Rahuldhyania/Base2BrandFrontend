@@ -1,0 +1,16 @@
+.seo {
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff; 
+}
+.text-center.text_primary.overlap_social {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    z-index: 2;
+    width: 100%;
+} 
+p.mb-5.lineheight {
+    line-height: 2;
+}

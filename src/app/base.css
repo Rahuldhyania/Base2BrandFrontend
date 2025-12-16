@@ -1,0 +1,12 @@
+ .line_faq{
+    width: 550px;
+    height: 15px;
+    position: relative;
+    bottom: 1px;
+ }
+
+ @media (max-width:767px){
+    .line_faq{
+        display: none;
+    }
+ }

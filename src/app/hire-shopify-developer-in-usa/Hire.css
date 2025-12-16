@@ -1,0 +1,435 @@
+.hire_banner_heading {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.hire_count {
+    font-size: 32px;
+}
+
+.hire_banner_subheading {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hire_banner_heading2 {
+    font-size: 44px;
+    font-weight: 500;
+}
+
+.hire_banner_bg {
+    background-color: #F7F8FD;
+}
+
+.text_hire_primary {
+    color: #5D56F1;
+}
+
+.text_hire_green {
+    color: #4b9604;
+}
+
+.hire_banner_image_outer {
+    display: flex;
+    justify-content: center;
+}
+
+.hire_banner_image {
+    width: 80%;
+    border-radius: 30px;
+}
+
+.hire_banner_list {
+    list-style: square;
+}
+
+.hire_banner_list strong {
+    font-weight: 600;
+}
+
+.hire_benefit_icon {
+    width: 80px;
+}
+
+.hire_top_benefit {
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 0px #aca6a6;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+    height: 90%;
+}
+
+.hire_top_benefit:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px 4px #aca6a6;
+}
+
+.bg_blue_right {
+    background: linear-gradient(84deg, rgb(34, 24, 83) 5%, #111616 50%);
+}
+
+.bg_blue_left {
+    background: linear-gradient(86deg, #111616 67%, rgb(34, 24, 83) 89%);
+}
+
+.max_w_1920 {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.reviewname {
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #000;
+    border-radius: 50%;
+}
+
+.buid_icon_outer {
+    background-color: #4b9604;
+    padding: 20px;
+    border-radius: 50%;
+    width: max-content;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.buid_icon_container svg,
+.buid_icon_outer p {
+    transition: all 0.5s ease-in-out;
+}
+
+.buid_icon_outer:hover svg {
+    transform: scale(1.1);
+}
+
+.buid_icon_outer:hover p {
+    color: #fff;
+    background-color: #000;
+}
+
+.build_icon_count {
+    position: absolute;
+    color: #000000;
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50%;
+    top: -5px;
+    left: 0;
+}
+
+.buid_icon_container {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.build_hr_line {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.buid_text_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.build_hr_line span {
+    width: 65%;
+    height: 2px;
+    border-top: 2px dashed #fff;
+}
+
+.build_text_outer {
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    margin: 0 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.build_text_outer:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 8px 2px #b5afaf;
+}
+
+
+.hire_developer_component {
+    box-shadow: 0px 0px 8px 0px #c1baba;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    max-width: 453px;
+    margin: auto;
+}
+
+.hire_developer_component:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px 4px #c1baba;
+}
+
+.hire_developer_count {
+    width: max-content;
+    padding: 15px 30px;
+    margin: 0;
+    background: #ffffff;
+    color: #000000;
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.hire_developer_outer {
+    padding: 10px 20px;
+}
+
+.endtoend_image {
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.hire_review_person {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.hire_review_card {
+    padding: 35px;
+    padding-top: 0;
+    margin-top: 0;
+    cursor: pointer;
+    height: max-content;
+}
+
+.hire_review_textreview {
+    padding: 20px 10px;
+    text-align: center;
+    border: 2px dashed #fff;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hire_review_card:hover .hire_review_textreview {
+    color: #000 !important;
+    background-color: #fff !important;
+    border: 2px dashed #000000;
+    transform: scale(1.05);
+}
+
+.hire_review_detail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+}
+
+.hire_review_person_name {
+    margin: 0;
+}
+
+.hire_developer_input_outer {
+    padding: 5px 0;
+}
+
+.hire_developer_input_outer label {
+    color: #fff;
+}
+
+.hire_developer_form {
+    border: 2px solid #fff;
+    padding: 15px 20px;
+    border-radius: 16px;
+}
+
+.hire_dev_form_checkbox {
+    width: max-content;
+}
+
+.hire_dev_formmain {
+    max-width: 700px;
+}
+
+.hire_from_banner {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+@media screen and (max-width: 1660px) {
+    .hire_banner_heading {
+        font-size: 56px;
+        font-weight: 600;
+    }
+
+    .hire_banner_heading2 {
+        font-size: 34px;
+        font-weight: 500;
+    }
+
+    .hire_banner_subheading {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .hire_banner_heading {
+        font-size: 48px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .hire_banner_heading {
+        font-size: 42px;
+        font-weight: 600;
+    }
+
+    .hire_banner_subheading {
+        font-size: 36px;
+    }
+
+    .hire_developer_upper {
+        flex-direction: column-reverse;
+    }
+
+    .hire_developer_upper_row1 {
+        flex-direction: row-reverse;
+    }
+
+    .build_main_continer {
+        display: flex;
+    }
+
+    .buid_icon_container,
+    .buid_text_container {
+        flex-direction: column;
+    }
+
+    .buid_icon_outer svg {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .build_text_outer {
+        padding: 5px;
+        margin: 0 0px 0px 15px !important;
+        text-align: start !important;
+    }
+
+    .hire_banner_subheading {
+        font-size: 28px;
+    }
+
+    .hire_review_card {
+        padding: 10px 20px;
+    }
+
+    .hire_banner_image {
+        width: 100%;
+    }
+
+    .endtoend_image {
+        width: 100%;
+    }
+
+    .hire_banner_heading2 {
+        font-size: 24px !important;
+    }
+
+    .hire_banner_heading {
+        font-size: 32px !important;
+    }
+
+    .hire_banner_list {
+        margin-top: 10px;
+    }
+
+    .question::after {
+        font-size: 1.2rem !important;
+    }
+
+    .question {
+        font-size: 1rem !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container_faq {
+    max-width: 1200px;
+    margin: 20px auto;
+    /* background-color: #4b9604; */
+    background: transparent;
+    border-radius: 15px;
+    /* border: 2px solid  #fff; */
+    box-shadow: 0px 0px 8px 0px #c1baba;
+}
+
+.question {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 20px 80px 20px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question::after {
+    content: "\002B";
+    font-size: 2.2rem;
+    position: absolute;
+    right: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.question.active::after {
+    transform: rotate(45deg);
+}
+
+.answercont {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.answer {
+    padding: 0 20px 20px;
+    line-height: 1.5rem;
+}

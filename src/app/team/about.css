@@ -1,0 +1,151 @@
+.team-details h3 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.line_team{
+    width: 150px!important;
+    height: 10px;
+    position: relative;
+    bottom: 10px;
+}
+
+.line_higher_officials {
+    width: 300px !important;
+    height: 15px;
+    position: relative;
+    bottom: 5px;
+}
+
+.team-details p {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.higher-officials h3 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.higher-officials p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.team-details {
+    margin-top: 22px;
+}
+
+.crew-wrap {
+    max-width: 1199px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.crew-wrap .row {
+    column-gap: 20px;
+}
+
+.crew-wrap.work-with-us .row {
+    column-gap: unset;
+}
+
+.team-animated-img {
+    max-width: 650px;
+    height: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+.team-animated-img canvas {
+    max-width: 650px !important;
+    width: 100%;
+    height: 650px !important;
+}
+
+.team-animated-img {
+    overflow: hidden;
+}
+
+.team-animated-img canvas {
+    margin-top: -250px;
+}
+
+.crew-wrap img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.crew-wrap.work-with-us img {
+    border-radius: 0;
+}
+
+@media screen and (max-width:1200px) {
+    .team-details p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    .team-animated-img {
+        max-width: 650px;
+        height: 320px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .higher-officials p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .higher-officials h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .crew-wrap .employeesWrap img {
+        width: calc(100% - 20px);
+        margin: auto;
+        display: block;
+    }
+}
+
+
+@media (max-width:768px) {
+    .line_higher_officials {
+        display: none;
+    }
+
+    .line_team{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .crew-wrap .employeesWrap .team-details h3 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .crew-wrap .employeesWrap.row {
+        column-gap: 0px;
+    }
+
+    .b2b-sub-heading-bold {
+        font-size: 26px;
+        line-height: 26px;
+    }
+}

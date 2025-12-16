@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.new_customer_title1 {
+    font-weight: 500;
+}
+
+.new_customer_title2 {
+    color: #7D9BFF;
+    font-weight: 600;
+}
+
+.new_customer_title3 {
+    font-weight: 600;
+}
+
+.customer_form_new {
+    background: linear-gradient(90deg, rgb(255 255 255 / 42%) 0%, rgb(13 31 42 / 20%) 100%) !important;
+    filter: brightness(0.9);
+}
+
+#cus_from_new {
+    border-radius: 15px !important;
+    padding: 15px 20px !important;
+}
+
+.stand_card_inner {
+    padding: 5% 5%;
+
+}
+
+.s_card_btn_container {
+    display: flex;
+}
+
+.s_card_btn {
+    padding: 5px 25px;
+    border-radius: 25px;
+}
+
+.stand_card_container {
+    border-radius: 25px;
+}
+
+.s_card_title {
+    padding: 15px 0;
+}
+
+.stand_position {
+    top: 100px;
+}
+
+.cha_img img {
+    width: 18%;
+}
+
+.cha_para p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.ch_card_inner {
+    padding: 5%;
+    border: 1px solid #8a8a8a8a;
+    border-radius: 10px;
+    min-height: 340px;
+}
+
+.pro_img {
+    width: 30%;
+}
+
+.pro_img img {
+    width: 100%;
+}
+
+.procedure_inner {
+    display: flex;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.procedure_inner:hover {
+    box-shadow: 5px 5px 5px #575656;
+}
+
+.pro_text span {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.pro_img_thr img {
+    width: 100%;
+}
+
+.procedure_inner_thr {
+    gap: 5%;
+    margin-bottom: 30px;
+}
+
+.thrive_banner,
+.touch_banner {
+    display: flex;
+    justify-content: center;
+}
+
+.thrive_banner img {
+    width: 60%;
+}
+
+.thrive_text_outer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.touch_banner img {
+    width: 80%;
+}
+
+.re_name img {
+    object-fit: contain;
+    width: 22%;
+}
+
+.cus_rating {
+    display: flex;
+    justify-content: center;
+}
+
+.cus_rating img {
+    width: 40%;
+}
+
+.re_name {
+    display: flex;
+    justify-content: center;
+}
+
+.cus_re_inner {
+    text-align: center;
+
+}
+
+.re_user {
+    margin: 10px 0;
+}
+
+.cus_review_outer {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    background: linear-gradient(90deg, rgb(255 255 255 / 14%) 0%, rgb(69 68 68 / 63%) 100%);
+    border-radius: 10px;
+    min-height: 350px;
+    cursor: pointer;
+}
+
+.cus_gardient_upper {
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(180deg, rgb(0 0 0) 0%, rgb(0 0 0 / 0%) 100%);
+}
+
+.cus_gardient_lower {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    position: absolute;
+    width: 100%;
+}
+
+.cus_gardient_header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    position: absolute;
+    width: 100%;
+}
+
+.cus_text_zindex {
+    z-index: 2;
+    position: relative;
+}
+
+.s_card_title_tuch {
+    font-size: 40px;
+}
+
+.s_card_para_tuch {
+    letter-spacing: 1px;
+    line-height: inherit;
+}
+
+.touch_banner {
+    border-right: 1px solid #fff;
+}
+
+.tuch_text_con {
+    text-align: start;
+}
+
+.review_col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.review_col_container {
+    margin: 0 8%;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    min-height: 80vh;
+}
+
+.marque_scroll {
+    position: absolute;
+    top: -100%;
+    animation: scroll-down 20s linear infinite;
+    padding: 0px 10px;
+}
+
+.marque_scroll2 {
+    position: absolute;
+    bottom: -100%;
+    padding: 0px 10px;
+    animation: scroll-up 20s linear infinite;
+}
+
+.review_col .rfm-marquee-container {
+    width: 100% !important;
+}
+.cysview_heading 
+{
+    padding-bottom:60px ;
+}
+@keyframes scroll-down {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.re_cus_con_ph 
+{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    br {
+        display: none;
+    }
+
+    .procedure_inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pro_img {
+        width: 15%;
+        margin: auto;
+    }
+
+    .pro_img_thr img {
+        width: 20%;
+    }
+
+    .thrive_banner img {
+        width: 80%;
+    }
+
+    .s_card_title_tuch {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .tuch_text_con {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .s_card_para_tuch {
+        letter-spacing: unset;
+    }
+
+    .cus_gardient_upper {
+        height: 15% !important;
+    }
+
+    .cus_gardient_lower {
+        height: 15% !important;
+    }
+
+    .cus_review_outer {
+        background: linear-gradient(90deg, rgb(255 255 255 / 3%) 0%, rgb(0 0 0 / 24%) 100%);
+    }
+
+    .review_col {
+        flex-direction: column !important;
+        gap: 0px !important;
+    }
+
+    .cus_review_outer {
+        min-height: auto;
+    }
+
+    .marque_scroll,
+    .marque_scroll2 {
+        position: relative;
+        animation: none;
+        top: unset;
+        padding: 0;
+    }
+
+    .marque_scroll2 {
+        bottom: unset;
+    }
+
+    .review_col_container {
+        height: auto !important;
+        min-height: auto;
+    }
+
+    .review_col {
+        padding: 0 !important;
+    }
+
+    .touch_banner
+    {
+        border: none;
+    }
+    .call_back_popup
+    {
+        display: none;
+    }
+    .cysview_heading 
+    {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .call_back_popup {
+        width: 31%;
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .re_cus_con_ph
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .re_cus_con_dt 
+    {
+        display: none;
+    }
+    .main_call_back_outer {
+        display: none;
+    }
+
+    .review_col {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .review_col_container {
+        margin: 0;
+    }
+
+}
+

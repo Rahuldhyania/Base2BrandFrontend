@@ -1,0 +1,140 @@
+.hire_aus_banner {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.hire_aus_sercard {
+    cursor: pointer;
+    background: transparent !important;
+    box-shadow: 0px 0px 8px 3px #fff !important;
+    max-width: 500px;
+    margin: auto;
+}
+
+.hire_aus_side_banner {
+    width: 80%;
+    margin: auto;
+    border-top-left-radius: 30% !important;
+    border-bottom-right-radius: 30% !important;
+}
+
+.hire_dubai_review_inner_aus {
+    margin: 10px;
+    padding: 25px;
+    box-shadow: 0px 0px 8px 2px #919191;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.hire_dubai_review_inner_aus:hover {
+    transform: scale(1.02);
+}
+
+.hire_dubai_reviewfrom_aus {
+    max-width: 100px;
+}
+
+.hire_step_aus {
+    position: relative;
+}
+
+.hire_step_aus img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #000;
+    mix-blend-mode: hard-light;
+    display: flex;
+    margin: auto;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    z-index: 5;
+}
+
+.hire_step_aus img:hover {
+    box-shadow: -5px 5px 5px #000;
+}
+
+.hire_step_aus_outer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.hire_step_aus_hr {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hire_step_aus_outer p {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.hire_step_aus_hr span {
+    width: 70%;
+    border-top: 3px dashed #000;
+    position: absolute;
+    z-index: 1;
+}
+
+.hire_step_aus_count {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #4b9604;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    transition: all 0.5s ease-in-out;
+    z-index: 6;
+}
+@media screen and (max-width:1680px) {
+    .hire_step_aus img 
+    {
+        width: 130px;
+        height: 130px;
+    }
+    .hire_step_aus_count
+    {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width:1024px) 
+{
+    .hire_step_container 
+    {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .hire_step_aus_outer
+    {
+        flex-direction: column;
+    }
+    .hire_step_aus_hr
+    {
+        display: none;
+    }
+    .hire_aus_bannerm,.hire_aus_side_banner
+    {
+        width: 100%;
+    }
+    .hire_aus_banner
+    {
+        width: 100%;
+    }
+}

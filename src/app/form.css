@@ -1,0 +1,102 @@
+.modal-backdrop.fade.show {
+    display: none;
+}
+body.modal-open { 
+    padding-right: 0px !important;
+}
+.modal.fade {
+    opacity: 1;
+    display: block;
+}
+.modal.fade {
+    opacity: 1 !important;
+    height: 100vh;
+    display: flex !important;
+    align-items: center;
+    background: #000000b0;
+}
+.modal-header {
+    border-bottom: none !important;
+}
+button.btn.btn-Quite {
+    border: 1px solid #000;
+    width: 100%;
+}
+button.btn-close.alignTop {
+    filter: none;
+    position: absolute;
+    right: 0;
+    top: 8px;
+    background-color: #e1e1e1;
+    opacity: 1 !important;
+    padding: 9px;
+    border-radius: 50px;
+    font-size: 10px;
+}
+
+.modal-content {
+    border-radius: 30px; 
+    padding: 12px 2rem;
+}
+button.btn-close {
+    filter: invert(1);
+}
+.modal-body .form-control { 
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px #ccc;
+    margin-top: 10px;
+}
+ 
+.request-form .form-section {
+    display: flex;
+}
+ 
+.request-form .modal-body .form-control {
+    background: transparent;
+    /* min-height: 0;
+    max-height: 0; */
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+    box-shadow: none;
+    border: 1px solid #4e4e4e;
+    padding-left: 10px; 
+}
+.request-form .modal-body textarea.form-control {
+    min-height: 60px;
+}
+.request-form .request-form-img img {
+    height: 100%;
+    object-fit: cover;
+}
+ 
+.request-form .modal-header .btn-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    opacity: 1;
+}
+.request-form .modal-header {
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+.request-form {
+    justify-content: center;
+}
+img.w-100.request_img.apply_jobs {
+    height: 600px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:799px) {
+.request-form .form-section {
+    flex-wrap: wrap;
+}
+.request_img{
+ display: none;
+}
+.row.pr-3{
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+}

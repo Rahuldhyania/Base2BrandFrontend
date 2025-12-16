@@ -1,0 +1,126 @@
+.home_banner_new {
+    display: flex;
+    justify-content: center;
+    background-image: url("https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Group_1707480262_nqjig2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inner_banner_con {
+    width: 65%;
+}
+
+.new_banner_color {
+    color: #F37335 !important;
+}
+
+.banner_rating_bar {
+    width: 70%;
+    gap: 10px;
+}
+
+.banner_rating_bar img {
+    width: 100px;
+
+}
+
+.banner_rating_bar {
+    color: #fff;
+}
+
+.new_banner_italic_p {
+    font-size: 17px;
+    color: #fff;
+    background: #0000004a;
+    padding: 5px 25px;
+    border-radius: 25px;
+}
+
+.new_banner_marque {
+    gap: 20px;
+}
+
+.social_logo_new_banner {
+    width: 140px;
+    margin-right: 10px;
+    object-fit: contain;
+    height: 70px;
+}
+
+.social_logo_new_banne2 {
+    height: 70px;
+}
+
+.inner_banner_con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.new_banner_text {
+    line-height: 55px;
+}
+
+.sub_heading_new_banner {
+    font-size: 44px;
+}
+
+.inner_banner_con {
+    padding: 6% 0 3%;
+}
+
+.new_banner_marque {
+    /* padding-top: 20px; */
+    padding-bottom: 2%;
+}
+
+.banner_gradent {
+    position: absolute;
+    bottom: -5px;
+    color: #fff;
+    height: 40%;
+    background: rgb(21, 26, 26);
+    background: linear-gradient(180deg, rgba(21, 26, 26, 0.053639644334296244) 0%, rgba(17, 22, 22, 1) 100%);
+    width: 100%;
+}
+
+@media screen and (max-width:1200px) {
+    .new_banner_text {
+        line-height: inherit;
+    }
+
+    .sub_heading_new_banner {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .social_logo_new_banner {
+        height: auto;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .inner_banner_con {
+        width: 95%;
+    }
+
+    .banner_rating_bar {
+        width: auto;
+    }
+
+    .sub_heading_new_banner {
+        font-size: 24px;
+    }
+
+    .inner_banner_con {
+        padding: 10% 0;
+    }
+
+    .new_banner_marque {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

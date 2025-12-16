@@ -1,0 +1,51 @@
+img.icon {
+    width: 50px;
+    margin-left: 1rem;
+}
+h1.big {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    font-size: 80px;
+    font-weight: 600;
+}
+.col-md-7.Type_Writer .Typewriter { 
+    background: -webkit-linear-gradient(#4D65E5, #FF7B00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ .desc_big {
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 1.7;
+}
+img.agencyIcon {
+    width: 100px;
+    margin: 0px 10px;
+    height: 28px;
+    object-fit: contain;
+}
+.bg_gray_commerce {
+    background: #0F0F0F;
+    /* margin-bottom: 2rem; */
+}
+.bg_light_green {
+    background: #111616;
+}
+.needBox {
+    background: #000000;
+    border-radius: 14px;
+    padding: 20px 10px;
+    min-height: 340px; 
+}
+.readMore{
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 50px;
+    padding: 8px 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.agency_heading{
+    font-weight: 100;
+}

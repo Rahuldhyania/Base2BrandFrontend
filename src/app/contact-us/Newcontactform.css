@@ -1,0 +1,113 @@
+/* Wrapper */
+.form-wrapper {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.title {
+  font-size: 38px !important;
+  text-align: center;
+}
+
+/* Form */
+.crm-form {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Title */
+.crm-form .title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+}
+
+/* Grid system */
+.crm-form .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Full row */
+.form-group.full {
+  grid-column: 1 / -1;
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Inputs & textarea */
+.form-group input,
+.form-group textarea {
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  background: #fff;
+}
+
+input,
+textarea {
+  color: #000 !important;
+}
+
+/* No focus effects */
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #dcdcdc;
+  box-shadow: none;
+}
+
+/* Textarea resize off */
+.form-group textarea {
+  resize: none;
+}
+
+/* Submit button */
+.submit-btn {
+  margin-top: 25px;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 6px;
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .crm-form .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-wrapper {
+    padding: 0px !important;
+  }
+  .title {
+  font-size: 28px !important;
+  text-align: center;
+}
+}

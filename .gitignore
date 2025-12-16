@@ -1,0 +1,11 @@
+node_modules
+
+# next.js
+/.next
+
+
+# Next.js static optimization cache
+/cache
+
+# If using custom compression
+*.gz

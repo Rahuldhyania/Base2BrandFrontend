@@ -1,0 +1,70 @@
+.bgblack{
+    background-color: #111616;
+}
+h1.base_logo {
+    font-weight: 300;
+    font-size: 36px;
+}
+h1.base_logo span {
+    color: #F47B52;
+}
+h1.base_logo b {
+font-weight: 700;
+}
+img.carrer_icon {
+    margin: auto;
+    width: 90px;
+    margin-bottom: 1rem;
+}
+h2.car_desc, .ui_ux {
+    font-size: 24px;
+    color: #F47B52;
+
+}
+section.carrer_section {
+    border-bottom: 1px solid #5C5C5C;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+.feature_b2b {
+    color: #ccc;
+    display: flex;
+    flex-wrap:wrap;
+}
+.feature_b2b ul li > p {
+    margin:0;
+}
+span.primary {
+    width: 30%;
+    color: #F47B52;
+    line-height: 2.5;
+}
+.d-flex.detail_data {
+    font-size: 18px;
+    font-weight: 500;
+}
+.feature_b2b ul li {
+    padding-left: 13px;
+    position:relative;
+}
+.feature_b2b ul li::before {
+    position: absolute;
+    content: "";
+    background: #c7c7c7;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    top: 8px;
+    left: 0;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+}
+
+
+@media screen and (max-width:767px) {
+    .career-container {
+        max-width: 95% !important;
+        margin:0 auto;
+    }
+}

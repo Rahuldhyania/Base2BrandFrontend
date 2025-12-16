@@ -1,0 +1,135 @@
+.team-details h3 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.line_carrer_about{
+    width: 300px;
+    height: 15px;
+    position: relative;
+    bottom: 50px;   
+}
+.line_current {
+    width: 350px !important;
+    height: 15px;
+    position: relative;
+    bottom: 5px;
+}
+
+.team-details p {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.higher-officials h3 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.higher-officials p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.team-details {
+    margin-top: 22px;
+}
+
+.crew-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.crew-wrap .row {
+    column-gap: 50px;
+}
+
+.crew-wrap.work-with-us .row {
+    column-gap: unset;
+}
+
+.crew-wrap img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:1200px) {
+    .team-details p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    .team-animated-img {
+        max-width: 650px;
+        height: 320px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .higher-officials p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .higher-officials h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .bannerContent {
+        text-align: center;
+    }
+
+    .crew-wrap .row {
+        column-gap: 0px;
+    }
+
+    .crew-wrap img {
+        width: calc(100% - 80px);
+    }
+
+.line_current{
+    display: none;
+}
+
+
+.line_carrer_about{
+display: none;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .crew-wrap img {
+        width: calc(100% - 20px);
+    }
+
+    .b2b-sub-heading-bold {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .team-details h3 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 5px;
+    }
+}

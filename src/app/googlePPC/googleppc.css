@@ -1,0 +1,97 @@
+.Typewriter {
+    width: 100%;
+}
+.google {
+    position: relative;
+}
+.ppc-para {
+    font-size: 15px;
+    line-height: 25px;
+}
+.order_list {
+    list-style: circle;
+    margin-bottom: 1rem;
+}
+.order_list li{
+    margin-bottom: 1rem;
+}
+.web-head{
+    color:#F47B52;
+}
+.revenue-bg{
+    background:#131313;
+    border-radius:35px;
+}
+.quote-box {
+    background: #251c30;
+    padding: 2em;
+    border: 3px solid #F47B52;
+    background-image: linear-gradient(to right, #271218, #0F2227);
+}
+.quote-box button {
+    border-radius: 30px;
+}
+.quote-box button:hover {
+    background: #071c4d;
+    border: 1px solid #F47B52;
+    box-shadow: 0px 2px 30px #F47B52;
+    transition: 0.4s;
+    padding: 12px 43px;
+}
+.ppc-count-bg{
+    background: #251c30;
+    padding: 2em;
+    border: 3px solid #F47B52;
+}
+.ppc-count span {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.ppc-col-head {
+    max-width: 60%;
+    position: relative;
+}
+.ppc-col-head::before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 2px;
+    height: 100%;
+    right: 0;
+    min-height: 120px;
+    top: 0;
+}
+.ppc-count-bg {
+    max-width: 95%;
+    margin: 0 auto !important;
+}
+.tabs-heading a{
+    color:#fff;
+    text-decoration:none;
+}
+
+@media screen and (max-width:1200px) {
+    .ppc-col-head::before {
+        right: -60px;
+    }
+    .ppc-col-head {
+        font-size: 18px !important;
+    }   
+}
+
+@media screen and (max-width:991px) {
+    .ppc-col-head::before{
+        display:none;
+    }
+    .ppc-col-head {
+        max-width: 100%;
+    }   
+}
+
+@media screen and (max-width:767px) {
+    .ppc-count {
+        padding: 1em 0;
+    }
+}

@@ -1,0 +1,192 @@
+[
+    {
+        "ename": "Rakesh Arora",
+        "edesignation": "Director (CEO)",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/rakesh.ceo.png"
+    },
+    {
+        "ename": "Rahul Dhyaniya",
+        "edesignation": "Chief Executive Officer (CEO)",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/rahul.png"
+    },
+    {
+        "ename": "Manpreet Singh",
+        "edesignation": "Project Manager",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/manpreet-Singh..png"
+    },
+    {
+        "ename": "Arshpreet Singh",
+        "edesignation": "Project Coordinator",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Arshpreet-Singh.png"
+    },
+    {
+        "ename": "Sandeep Singh",
+        "edesignation": "Technical Lead",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Sandeep-Singh.png"
+    },
+    {
+        "ename": "Surya Thakur",
+        "edesignation": "Digital Marketing Manager",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/surya-sir.png"
+    },
+    {
+        "ename": "Sameer Kathat",
+        "edesignation": "Digital Marketing Team Lead",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/SameerKathat.11afb3f8_hucsdj.png"
+    },
+    {
+        "ename": "Deepti Dixit",
+        "edesignation": "Business Development Lead",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/DeeptiDixit.a074071b_dubdzg.png"
+    },
+    {
+        "ename": "Sahil Solanki",
+        "edesignation": "UI/UX & Graphic Designer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/sahilsir_uyagsb.png"
+    },
+    {
+        "ename": "Vikash Soni",
+        "edesignation": "Software Developer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/download.png"
+    },
+    {
+        "ename": "Md. Sahjad Ansari",
+        "edesignation": "Software Developer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/download_1.png"
+    },
+    {
+        "ename": "Suraj Parkash",
+        "edesignation": "Quality Analyst",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/SurajParkash.892b53e2_as2yuc.png"
+    },
+    {
+        "ename": "Nasir Ahmed",
+        "edesignation": "Senior Digital Marketer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/NasirAhmed.1e594fbc_ca6f9x.png"
+    },
+    {
+        "ename": "Jagtar Singh",
+        "edesignation": "Digital Marketing Executive ",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/5we_zpqkfk.png"
+    },
+    {
+        "ename": "Vineet Kumar Rana",
+        "edesignation": "Digital Marketer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/VineetKumarRana.5b09b34f_wbxqxl.png"
+    },
+    {
+        "ename": "Ambalika Phanker",
+        "edesignation": "Digital Marketer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/AmbalikaPhanker.ebd7ae44_nuajec.png"
+    },
+    {
+        "ename": "Rishabh Dixit",
+        "edesignation": "Video Editor",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/RishabhDixit.53c125a3_t8refp.png"
+    },
+    {
+        "ename": "Aman Kumar",
+        "edesignation": "Graphic & UI/UX Designer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/AmanKumar.2345135f_ug5w7a.png"
+    },
+    {
+        "ename": "Abhishek Kumar",
+        "edesignation": "Graphic designer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/1we_lpyrkv.png"
+    },
+    {
+        "ename": "Gurpreet Singh",
+        "edesignation": "Graphic designer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/3we_i8n1p4.png"
+    },
+    {
+        "ename": "Mukesh Kumar",
+        "edesignation": "Digital Marketing Executive",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/4we_qdcxkn.png"
+    },
+    {
+        "ename": "Diksha Dogra",
+        "edesignation": "Digital Marketing Executive",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/2we_vu3tga.png"
+    },
+    {
+        "ename": "Kanishtha Sharma",
+        "edesignation": "Business Development Executive",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/kanishtha_dnz3ix.png"
+    },
+    {
+        "ename": "Anurag Sharma",
+        "edesignation": "Content Writer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/AnuragSharma.d359f441_p9nyxm.png"
+    },
+    {
+        "ename": "Shubham Sharma",
+        "edesignation": "React Native",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/ShubhamSharma.4dae57f0_nmpuch.png"
+    },
+    {
+        "ename": "Om Parkash",
+        "edesignation": "Software Developer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/OmParkash.49cd349b_kayqo8.png"
+    },
+    {
+        "ename": "Saddam Husain",
+        "edesignation": "Software Developer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/SaddamHusain.5011bfe6_kmpg9j.png"
+    },
+    {
+        "ename": "Deepak Chauhan",
+        "edesignation": "Software Developer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/DeepakChauhan.e7f0dd67_zjaxmd.png"
+    },
+    {
+        "ename": "Lakhwinder",
+        "edesignation": "Software Developer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Lakhwinder.0042978f_py2scb.png"
+    },
+    {
+        "ename": "Sanjeev Kumar",
+        "edesignation": "Software Developer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/SanjeevKumar.7867868a_sargo4.png"
+    },
+    {
+        "ename": "Lalit Kumar",
+        "edesignation": "React Native",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/LalitKumar.21f551c7_dkxocc.png"
+    },
+    {
+        "ename": "Rahul Raj",
+        "edesignation": "Software Developer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/RahulRaj.eb38340f_gyotup.png"
+    },
+    {
+        "ename": "Ramnish",
+        "edesignation": "Software Developer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Ramnish.c18dda14_fjeqwx.png"
+    },
+    {
+        "ename": "Rishav Karn",
+        "edesignation": "Software Developer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/RishavKarn.d266b182_h1ippf.png"
+    },
+    {
+        "ename": "Gaurav Kumar",
+        "edesignation": "Software Developer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/GauravKumar.25adaf1e_tmwzgs.png"
+    },
+    {
+        "ename": "Lovee Jarewal",
+        "edesignation": "Software Developer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/LoveeJarewal.6286cdee_r6oaup.png"
+    },
+    {
+        "ename": "Gaganjot Singh",
+        "edesignation": "Software Developer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Gaganjot.6b8e6536_adruus.png"
+    },
+    {
+        "ename": "Ankit Thakur",
+        "edesignation": "Software Developer",
+        "eimage": "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/ankit_qcn6y4.png"
+    }
+]

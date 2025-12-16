@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.vip_li_points_data
+{
+    color: #fff;
+}
+.objective_list{
+    padding: 10px 0;
+}
+.objective_arrow img
+{
+    padding: 0px 10px;
+    width: auto;
+    height: auto;
+}
+.objective_dis 
+{
+    color: #fff;
+    font-size: 17px;
+    line-height: 20px
+}
+.ul_list
+{
+    display: flex;
+}
+.case-footer
+{
+  background-color: #161616;
+}
+@media screen and (max-width:749px) {
+  .objective_arrow img 
+  {
+    width: 35px;
+  }
+  .objective_dis
+  {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}

@@ -1,0 +1,233 @@
+.side__bar {
+    width: 20%; 
+}
+.main__sidebar {
+    position: fixed;
+    width: 20%;
+}
+.admin__sidebar {
+    background: radial-gradient(85.95% 85.95% at 51.75% 51.4%, rgba(65, 48, 140, 0.2) 0%, rgba(17, 22, 22, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    background-color: #111616;
+    padding: 20px;
+    height: 100vh;
+ 
+}
+i.fa.fa-search.search-icon {
+    position: absolute;
+    right: 12px;
+    color: #000;
+    cursor: pointer;
+}
+.table-responsive.overlap__header.editForm {
+    border: 1px solid #cccccc33;
+}
+.blog_desc{
+    display: -webkit-box;
+    max-width: 400px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+ .logo_admin{
+    width: 250px;
+    object-fit: contain;
+    margin: auto;
+    margin-bottom: 30px;
+ }
+ .blog-image-preview{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    object-fit: cover;
+    margin-top: 0.5rem;
+ }
+ a.sidebar__nav {
+    color: #fff;
+    display: block;
+    padding: 10px 16px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition:   0.5s;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px #000000;
+    background: linear-gradient(90deg, #7411E1 0%, #396BDB 100%);
+}
+a.sidebar__nav:hover {
+    font-size: 16px;
+    font-weight: 600; 
+    padding-left: 20px;
+}
+.card:hover
+{
+    transform: scale(1.0) !important;
+}
+.sidebar__with__data {
+    display: flex;
+    gap: 20px;
+}
+.main__page__content {
+    width: 78%;
+}
+.bg__heading_admin {
+    background: #171924;
+    padding: 22px 30px;
+    border-radius: 10px;
+    color: #fff;
+    padding-bottom: 50px;
+}
+.bg__heading_admin h2.title {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+button.btn-create {
+    background: linear-gradient(90deg, #7411E1 0%, #396BDB 100%);
+    color: #fff;
+    border-radius: 40px;
+    border: none;
+    padding: 6px 20px;
+}
+.table-responsive.overlap__header {
+    background: #fff;
+    padding: 10px;
+    position: relative;
+    bottom: 30px;
+    margin: 0px 30px;
+    border-radius: 10px;
+}
+.btn-edit-admin {
+    background: #6922e0;
+    padding: 9px 13px;
+    border-radius: 6px;
+    color: #ffffff;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+}
+.btn-delete-admin {
+    background: red;
+    padding: 9px 13px;
+    border-radius: 6px;
+    border: none;
+    color: #ffffff; 
+    cursor: pointer;
+
+}
+img.blog__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.modal-container {
+    position: relative;
+}
+.modal-header   {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+}
+.modal-container .modal-content {
+    padding-top: 0;
+}
+input#status {
+    width: auto;
+}
+label.check__box {
+    padding-bottom: 0 !important;
+    font-weight: 500;
+}
+
+
+
+/* Login form css */
+.login__form{
+    height: 100vh;
+}
+.form-group.position-relative p {
+    color: red;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 0 !important;
+}
+.form-control.border-top-0.border-right-0.border-left-0.rounded-0.shadow-none {
+    border-left: 0;
+    border-right: 0;
+}
+img.login__logo {
+    z-index: 9;
+    width: 280px;
+    margin-bottom: 2rem;
+}
+.AppFormLeft {
+    width: 100%;
+    padding: 0px 3rem;
+}
+.AppForm .AppFormLeft h1{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.AppForm .AppFormLeft input:focus{
+    border-color: #ced4da;
+}
+.AppForm .AppFormLeft input::placeholder{
+   font-size: 15px;
+}
+.AppForm .AppFormLeft i{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.AppForm .AppFormLeft a{
+    color: #3a3e42 ;
+}
+.AppForm .AppFormLeft button{
+    background-image: linear-gradient(90deg, #7411E1 0%, #396BDB 100%);
+    border-radius: 30px;
+}
+.AppForm .AppFormLeft p span{
+  color: #007bff;
+}
+.AppForm .AppFormRight{
+    background-image: url('https://i.ibb.co/tDLqQtj/bg.jpg');
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+.AppForm .AppFormRight:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #7411E1 0%, #396BDB 100%);
+    opacity: 0.5;
+}
+.AppForm .AppFormRight h2{
+    z-index: 1;
+}
+.AppForm .AppFormRight h2::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  bottom: 0;
+  left:50%;
+  transform: translateX(-50%);
+}
+.AppForm .AppFormRight p{
+    z-index: 1;
+}
+a.logout_admin {
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    cursor: pointer;
+    transition:   0.5s; 
+}
+a.logout_admin:hover {
+    padding-left: 10px;
+}
