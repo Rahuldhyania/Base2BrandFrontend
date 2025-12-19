@@ -27,10 +27,10 @@ export default function Home() {
     canonical = isUsingWWW ? wwwURL : baseURL;
   }
   const PageMeta = {
-    title: "Digital Marketing & Web & Mobile App Development Agency",
-    description: "Boost your business with our Digital Marketing, Web, and Mobile App Development services. Discover expert solutions tailored to your needs. Contact us!",
-    canonical: canonical, // Replace with your page's canonical URL
-    image: "/img/portfolio/b1.png", // Replace with your image URL for sharing
+    title: "Base2Brand | High-Converting Website Design & Digital Growth Agency",
+    description: "Base2Brand builds high-converting websites and digital strategies that help brands grow. Expert website design, development, SEO, and performance marketing.",
+    canonical: canonical, 
+    image: "/img/portfolio/b1.png", 
   };
   const [showModal, setShowModal] = useState(false);
 

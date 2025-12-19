@@ -1,36 +1,35 @@
-import React from 'react'
-import PageHead from "../../../component/PageHead";
-function page() {
-  const baseURL = "https://base2brand.com/hire-shopify-developers";
-  const wwwURL = "https://www.base2brand.com/hire-shopify-developers";
-  let canonical = '';
-  // Check if the current URL includes 'www'
-  if (typeof window !== "undefined") {
-    const isUsingWWW = window.location.href.includes("www.");
-    canonical = isUsingWWW ? wwwURL : baseURL;
-  }
+import Frame from "./Frame";
 
-  const PageMeta = {
-    title: "Shopify Development Company | Hire Expert Shopify Developers Mohali",
-    description: "Looking for a reliable Shopify development company in Mohali? Hire expert Shopify developers at Base2Brand to build, optimize, and scale your e-commerce store with custom solutions.",
-    canonical: canonical, // Replace with your page's canonical URL
-    image: "/img/portfolio/b1.png", // Replace with your image URL for sharing
-  };
-  return (
-    <>
-    <PageHead PageMeta={PageMeta} />
-    <div style={{height:"100vh"}}>
-      {/* <Collectiion/> */}
-      <iframe
-        src="https://shopify-base2brand.vercel.app"
-        width="100%"
-        height="100%"
-        style={{ border: "none" }}
-        allowFullScreen
-      ></iframe>
-    </div>
-    </>
-  )
+export const metadata = {
+  title: "Shopify Development Company | Hire Expert Shopify Developers Mohali",
+  description:
+    "Looking for a reliable Shopify development company in Mohali? Hire expert Shopify developers at Base2Brand to build, optimize, and scale your e-commerce store with custom solutions.",
+
+  alternates: {
+    canonical: "https://www.base2brand.com/hire-shopify-developers",
+  },
+
+  openGraph: {
+    title: "Hire Expert Shopify Developers | Base2Brand",
+    description:
+      "Hire expert Shopify developers to build fast, scalable, and high-converting Shopify stores.",
+    url: "https://www.base2brand.com/hire-shopify-developers",
+    siteName: "Base2Brand",
+    images: [
+      {
+        url: "https://www.base2brand.com/img/portfolio/b1.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+  },
+};
+
+export default function Page() {
+  return <Frame />;
 }
-
-export default page

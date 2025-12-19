@@ -44,12 +44,14 @@ function Home() {
   const [totalBlogs, setTotalBlogs] = useState(0);
   const [totalPages, setTotalPages] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
+  const [loading, setLoading] = useState(false);
   const itemsPerPage = 21;
 
   // const [blogs, setBlogs] = useState<BlogData[]>([]);
 
   useEffect(() => {
     const fetchBlogs = async () => {
+      setLoading(true);
       try {
         const response = await axios.get('https://adminbackend.base2brand.com/api/B2Badmin/blogs', {
           params: {
@@ -67,6 +69,8 @@ function Home() {
         setTotalPages(totalPages);
       } catch (error) {
         console.error("Error fetching blogs:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -84,7 +88,7 @@ function Home() {
     //     window.removeEventListener('popstate', handlePopState);
     //   };
     // }
-  }, [blogsRoute, currentPage]);  // Dependencies
+  }, [currentPage, blogsRoute]);  // Dependencies - removed fetchBlogs to prevent unnecessary re-renders
 
   const handleImageClick = (id: string, slugUrl: string) => {
     // Navigate using the Next.js router
@@ -135,16 +139,16 @@ function Home() {
   };
 
   const renderBlogs = () => {
-    if (data.length === 0) {
+    if (loading) {
       return (
-        <div>
+        <div key="loader">
           <LoaderComponent />
         </div>
       );
     }
 
-    return data.map((blog) => (
-      <div key={blog._id} className="col-12 col-sm-6 mb-sm-4 mb-4 col-md-6 col-lg-6 col-xl-4">
+    return data.map((blog, index) => (
+      <div key={blog._id || `blog-${index}`} className="col-12 col-sm-6 mb-sm-4 mb-4 col-md-6 col-lg-6 col-xl-4">
         <div className="blog_section bg-dark h-100" onClick={() => handleImageClick(blog._id, blog.slugUrl)}>
           <img className="blog" src={blog.imageUrl} alt="Blog" />
           <div className="p-4 pb-3 position-relative" style={{ background: "#1F222F" }}>
@@ -208,16 +212,18 @@ function Home() {
 
             {renderBlogs()}
 
-            <div className='center_pagination'>
-              <Stack spacing={2} alignItems="center">
-                <Pagination
-                  count={totalPages}
-                  page={currentPage}
-                  onChange={handlePageChange}
-                  size="large"
-                />
-              </Stack>
-            </div>
+            {!loading && data.length > 0 && (
+              <div className='center_pagination'>
+                <Stack spacing={2} alignItems="center">
+                  <Pagination
+                    count={totalPages}
+                    page={currentPage}
+                    onChange={handlePageChange}
+                    size="large"
+                  />
+                </Stack>
+              </div>
+            )}
           </div>
           <Footer />
         </div>
