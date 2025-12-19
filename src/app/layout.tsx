@@ -212,7 +212,11 @@ const ratingSchema ={
     description: "Base2Brand Infotech 23423 is a leading agency offering digital marketing, SEO, web development, and Shopify development services for businesses."
   }
 }
-
+export const metadata = {
+    icons: {
+    icon: "/favicon.ico",   
+  },
+}
 export default function RootLayout({ 
   children,
 }: {
