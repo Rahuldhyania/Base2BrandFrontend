@@ -112,7 +112,11 @@ export default async function Dynamicservicepage(
           <Hirefaq faqData={data.data.faqSection.faqs} />
         </div>
       ) : (
+        <div>
+        <Header />
         <Notfound />
+        <Footer/>
+        </div>
       )}
       <Footer />
     </div>
