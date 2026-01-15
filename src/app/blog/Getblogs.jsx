@@ -311,7 +311,7 @@ const Getblogs = () => {
                 ))
               ) : (
                 featuredBlogs.slice(0, showfeature).map((item, index) => {
-                  const formattedDate = new Date(item.updatedAt).toLocaleDateString(
+                  const formattedDate = new Date(item.createdAt).toLocaleDateString(
                     "en-GB",
                     {
                       day: "2-digit",

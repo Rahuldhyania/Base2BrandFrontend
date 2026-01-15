@@ -18,7 +18,7 @@ interface Blog {
   imageUrl: string;
   heading: string;
   description: string;
-  updatedAt: string;
+  createdAt: string;
   blogViews : Number ;
 }
 
@@ -127,7 +127,7 @@ export default async function BlogDetail(
       <div className="bgblack">
         <div className="py-md-5">
           <NewblogDetail 
-           updatedAt={blog.updatedAt}
+           updatedAt={blog.createdAt}
            heading={blog.heading} 
            description={blog.description}
            id={blog.id}
