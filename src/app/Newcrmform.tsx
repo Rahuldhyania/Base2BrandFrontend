@@ -3,7 +3,12 @@
 import React, { useState } from "react";
 import "./Newcrmform.css";
 import { toast } from "react-toastify";
-function Newcrmform({ onCloseModal }) {
+
+interface CrmFormProps {
+  onCloseModal?: () => void;
+}
+
+function Newcrmform({ onCloseModal }:CrmFormProps) {
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",

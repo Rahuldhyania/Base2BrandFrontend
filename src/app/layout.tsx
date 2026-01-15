@@ -184,7 +184,7 @@ const localBusinessSchema = {
 //     description: "Base2Brand Infotech is a leading agency offering digital marketing, SEO, web development, and Shopify development services for businesses."
 //   }
 // };
-const ratingSchema ={
+const ratingSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Base 2 Brand Infotech Pvt. Ltd",
@@ -213,11 +213,11 @@ const ratingSchema ={
   }
 }
 export const metadata = {
-    icons: {
-    icon: "/favicon.ico",   
+  icons: {
+    icon: "/favicon.ico",
   },
 }
-export default function RootLayout({ 
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -226,8 +226,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <Ukwebsitemeta/>
-        <Canonical/>
+        <Ukwebsitemeta />
+        <Canonical />
         {/* Google Fonts preconnect */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -263,24 +263,24 @@ export default function RootLayout({
           ></iframe>
         </noscript>
 
-<Script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@graph": [
-        organizationSchema,
-        websiteSchema,
-        webpageSchema,
-        faqSchema,
-        serviceSchema,
-        localBusinessSchema,
-        // reviewRatingSchema,
-        ratingSchema
-      ],
-    }),
-  }}
-/>
+        <Script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                organizationSchema,
+                websiteSchema,
+                webpageSchema,
+                faqSchema,
+                serviceSchema,
+                localBusinessSchema,
+                // reviewRatingSchema,
+                ratingSchema
+              ],
+            }),
+          }}
+        />
 
       </head>
       <body>
@@ -364,9 +364,9 @@ export default function RootLayout({
             `
           }}
         />
-  
-        
-           
+
+
+
 
 
         <noscript>

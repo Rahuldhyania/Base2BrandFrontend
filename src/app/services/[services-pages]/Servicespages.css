@@ -23,13 +23,22 @@
     margin: 0 auto;
 }
 
+.hover-primary {
+    transition: all 0.5s;
+}
+
+.hover-primary:hover {
+    text-decoration: underline;
+}
 
 span {
     color: #fff !important;
 }
+
 strong {
     color: #fff !important;
 }
+
 .bg_blue_right {
     background: linear-gradient(84deg, rgb(34, 24, 83) 5%, #111616 50%);
 }

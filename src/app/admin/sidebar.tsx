@@ -47,6 +47,11 @@ export default function Page() {
               <i className="fa fa-pencil-square-o me-2" aria-hidden="true"></i>  Quotes List
             </a>
           )}
+           {userRole === 'superAdmin' && (
+            <a onClick={() => handleNavigate("/admin/blog-categories")} className="sidebar__nav">
+              <i className="fa fa-pencil-square-o me-2" aria-hidden="true"></i>  Blog Categories
+            </a>
+          )}
           <a className="logout_admin" onClick={handleLogout}><i className="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
         </div>
       </div>

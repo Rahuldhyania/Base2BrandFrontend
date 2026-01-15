@@ -18,6 +18,8 @@ interface BlogData {
   pageDescription: string;
   slugUrl: string;
   status: boolean;
+  category:string;
+  featured:boolean
 }
 
 export default function EditBlogPage() {
@@ -66,6 +68,9 @@ export default function EditBlogPage() {
   const handleStatusChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setBlogData((prev) => (prev ? { ...prev, status: e.target.checked } : null));
   };
+  const handleFeaturedChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setBlogData((prev) => (prev ? { ...prev, featured: e.target.checked } : null));
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -78,7 +83,9 @@ export default function EditBlogPage() {
     formData.append("pageTitle", blogData.pageTitle);
     formData.append("pageDescription", blogData.pageDescription);
     formData.append("slugUrl", blogData.slugUrl);
+    formData.append('category',blogData.category)
     formData.append("status", blogData.status.toString());
+    formData.append("featured", blogData.featured.toString());
     if (image) {
       formData.append("image", image);
     }
@@ -210,6 +217,16 @@ export default function EditBlogPage() {
             className="form-control"
           />
         </div>
+          <div className="form-group mb-2">
+          <label>Category</label>
+          <input
+            type="text"
+            name="category"
+            value={blogData?.category || ""}
+            onChange={handleInputChange}
+            className="form-control"
+          />
+        </div>
         <div className="d-flex justify-content-between align-items-center mt-3">
         <div className="form-group mb-2">
           <div className="d-flex gap-2 align-items-center">
@@ -219,6 +236,17 @@ export default function EditBlogPage() {
             onChange={handleStatusChange}
           />
           <label htmlFor="status" className="check__box">Status</label>
+
+          </div>
+        </div>
+          <div className="form-group mb-2">
+          <div className="d-flex gap-2 align-items-center">
+          <input id="featured" name='featured'
+            type="checkbox"
+            checked={blogData?.featured || false}
+            onChange={handleFeaturedChange}
+          />
+          <label htmlFor="featured" className="check__box">featured</label>
 
           </div>
         </div>

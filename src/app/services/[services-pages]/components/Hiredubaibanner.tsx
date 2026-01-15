@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Request from "../../../request-form";
 import Image from "next/image";
+import Link from "next/link";
 type dubaibanner = {
   pagetitle: string;
   pagedescription: string;
@@ -56,6 +57,24 @@ const Hiredubaibanner = ({
                 >
                   Request a Quote
                 </button>
+                 <li className="m-auto mt-4 d-flex justify-content-center">
+                    <Link href="tel:+919872487850">
+                      <div className="align-items-center d-flex gap-2 align-items-center">
+                        <div className="phoneMenuIcon m-0">
+                          <Image
+                            src="https://cdn.shopify.com/s/files/1/0835/6334/8002/files/india_mvji31.svg"
+                            alt=""
+                            width="30"
+                            height="24"
+                            style={{ maxWidth: "30px" }}
+                          />
+                        </div>
+                        <h3 className="b2b-title-text text-white m-0 hover-primary">
+                          +91 (987) 248 7850
+                        </h3>
+                      </div>
+                    </Link>
+                  </li>
               </div>
             </div>
             {/* <div className="col-12 col-lg-6 d-flex justify-content-center">
