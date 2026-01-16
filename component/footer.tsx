@@ -63,7 +63,7 @@ const Footer = () => {
       </div>
       <div className="whatsapp_home_logo position-fixed z-3  "
         style={{ width: "60px" }}>
-        <a href='https://wa.me/9041700209' target='_blank' >
+        <a href='https://wa.me/9872487850' target='_blank' >
           <Player
             src="/json/about-us/whtasappjson.json"
             loop

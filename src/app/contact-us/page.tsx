@@ -201,7 +201,7 @@ import Newcontactform from "./Newcontactform";
                         <div className="call-us mobileHide">
                             <ul>
                                 <li className="mail" data-aos="fade-up" data-aos-delay="300"><a href="mailto:tech@base2brand.com ">tech@base2brand.com </a></li>
-                                <li className="phone-link Ind" data-aos="fade-up" data-aos-delay="300"><span>IND: </span><a href="tel:+918360116967">+918360116967</a></li>
+                                <li className="phone-link Ind" data-aos="fade-up" data-aos-delay="300"><span>IND: </span><a href="tel:+919872487850">+91 9872487850</a></li>
                                 <li className="phone-link" data-aos="fade-up" data-aos-delay="300"><span>USA: </span><a href="tel:+1720903-5933">+1 720 9035933</a></li>
                                 <li className="phone-link" data-aos="fade-up" data-aos-delay="300"><span>UK: </span><a href="tel:+442080953232">+442080953232</a></li>
                                 <li className="phone-link" data-aos="fade-up" data-aos-delay="300"><span>UK: </span><a href="tel:+4407448435973">+4407448435973</a></li>
