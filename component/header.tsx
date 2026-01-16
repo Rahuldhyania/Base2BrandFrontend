@@ -544,6 +544,91 @@ export default function Header() {
               <li className="d-block d-xl-none">
                 <Link href="/contact-us">Contact Us</Link>
               </li>
+              <li className="d-block d-xl-none">
+                <Link href="/blog">Blogs</Link>
+              </li>
+              <div className="header_socialmedia d-flex flex-column d-xl-none">
+                <li className="m-auto mt-4 d-flex justify-content-start">
+                  <Link href="tel:+919872487850">
+                    <div className="align-items-center d-flex gap-2 align-items-center">
+                      <div className="phoneMenuIcon m-0">
+                        <Image
+                          src="https://cdn.shopify.com/s/files/1/0835/6334/8002/files/india_mvji31.svg"
+                          alt=""
+                          width="30"
+                          height="24"
+                          style={{ maxWidth: "30px" }}
+                        />
+                      </div>
+                      <h3 className="b2b-title-text text-white m-0 hover-primary">
+                        +91 (987) 248 7850
+                      </h3>
+                    </div>
+                  </Link>
+                </li>
+                <div className="social d-flex gap-3 mt-2">
+                  <a
+                    href="https://www.facebook.com/TechBase2Brand/"
+                    target="_blank"
+                  >
+                    <Image
+                      src="https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Facebook.png"
+                      className="SocialIcon"
+                      alt="Facebook"
+                      width={100}
+                      height={100}
+                    />{" "}
+                  </a>
+                  <a
+                    href="https://www.instagram.com/techbase2brand/?hl=en"
+                    target="_blank"
+                  >
+                    <Image
+                      src="https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Instagram.png"
+                      className="SocialIcon"
+                      alt="Instagram"
+                      width={100}
+                      height={100}
+                    />{" "}
+                  </a>
+                  <a href="https://twitter.com/techBase2Brand" target="_blank">
+                    <Image
+                      src="https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Twitter.png"
+                      className="SocialIcon"
+                      alt="Twitter"
+                      width={100}
+                      height={100}
+                    />{" "}
+                  </a>
+
+                  <a
+                    href="https://in.linkedin.com/company/techbase2brand"
+                    target="_blank"
+                  >
+                    <Image
+                      src="https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Linkedin.png"
+                      className="SocialIcon"
+                      alt="Linkedin"
+                      width={100}
+                      height={100}
+                    />{" "}
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCEHsjR1TFlEfsbcYQPlLW4Q"
+                    target="_blank"
+                  >
+                    <Image
+                      src="https://cdn.shopify.com/s/files/1/0835/6334/8002/files/youtube.png"
+                      className="SocialIcon"
+                      alt="Youtube"
+                      width={100}
+                      height={100}
+                    />{" "}
+                  </a>
+
+                  {/* <a href="https://maps.app.goo.gl/xMquw6oWpdiJwLBh8"><img src={Googlemap.src} className="SocialIcon" alt="Googlemap"/> </a> */}
+                </div>
+              </div>
             </ul>
           </div>
           <div className="d-flex flex-wrap align-items-center contact-num">
@@ -678,7 +763,7 @@ export default function Header() {
                             width="28"
                             height="28"
                             style={{ maxWidth: "28px" }}
-                          // quality="auto"
+                            // quality="auto"
                           />
                         </div>
                         <h3 className="b2b-sub-text-gk text-white">
@@ -697,7 +782,7 @@ export default function Header() {
                             width="28"
                             height="28"
                             style={{ maxWidth: "28px" }}
-                          // quality="auto"
+                            // quality="auto"
                           />
                         </div>
                         <h3 className="b2b-sub-text-gk text-white">
