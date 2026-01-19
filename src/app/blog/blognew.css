@@ -342,10 +342,29 @@
   color: #8db0ff !important;
   font-weight: 500;
 }
+
 .title_description.blog_detail_description h3 strong {
   color: #8db0ff !important;
   font-weight: 500;
 }
+
+.title_description.blog_detail_description h1,
+.title_description.blog_detail_description h2,
+.title_description.blog_detail_description h3,
+.title_description.blog_detail_description h4,
+.title_description.blog_detail_description h5,
+.title_description.blog_detail_description h6 {
+  color: #8db0ff !important;
+  font-weight: 500;
+}
+
+.title_description.blog_detail_description p a,
+.title_description.blog_detail_description p a strong {
+  color: #004cff !important;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
 .title_description.blog_detail_description ul {
   background: #ffffff10;
   border-radius: 30px;
@@ -497,12 +516,15 @@
   .newletterouter {
     margin-top: 20px;
   }
+
   .blogdetail_heading_outer {
     padding-block: 20px;
   }
+
   .blogdetail_heading {
     font-size: 28px;
   }
+
   .overallcard {
     padding: 30px;
   }

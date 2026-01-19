@@ -330,7 +330,7 @@ const NewblogDetail = ({ updatedAt, heading, description, id, blogViews }) => {
               className="overallcard"
               style={{ backgroundImage: `url(${bluebg.src})` }}
             >
-              <div className="row gap-3">
+              <div className="row gap-y-3">
                 <div className="col-12 col-md-6 col-lg-4 text-center  ">
                   <div className="text-center overallbox ">
                     <h4 className="blogdetaillower_heading text-white">
