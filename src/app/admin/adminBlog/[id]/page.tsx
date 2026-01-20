@@ -1,13 +1,19 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef, useMemo, useCallback } from "react";
 import { useParams, useRouter } from "next/navigation";
 import axios from "axios";
 import dynamic from "next/dynamic";
 import "react-quill/dist/quill.snow.css";
 import Sidebar from "../../sidebar";
 
-const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
+const ReactQuill = dynamic(
+  async () => {
+    const { default: RQ } = await import("react-quill");
+    return ({ forwardedRef, ...props }: any) => <RQ ref={forwardedRef} {...props} />;
+  },
+  { ssr: false }
+);
 
 interface BlogData {
   _id?: string;
@@ -28,6 +34,7 @@ export default function EditBlogPage() {
   const [blogData, setBlogData] = useState<BlogData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [image, setImage] = useState<File | null>(null);
+  const quillRef = useRef<any>(null);
 
   useEffect(() => {
     if (id) {
@@ -118,22 +125,71 @@ export default function EditBlogPage() {
     }
   };
 
+  // Custom image handler for Quill editor - uploads to server instead of base64
+  const imageHandler = useCallback(function(this: any) {
+    const input = document.createElement("input");
+    input.setAttribute("type", "file");
+    input.setAttribute("accept", "image/*");
+    input.click();
+
+    const quill = this.quill; // 'this' is the toolbar instance, this.quill gives us the editor
+
+    input.onchange = async () => {
+      const file = input.files?.[0];
+      if (file) {
+        try {
+          const formData = new FormData();
+          formData.append("image", file);
+
+          // Upload image to server
+          const response = await axios.post(
+            "https://adminbackend.base2brand.com/api/B2Badmin/blogs/upload-editor-image",
+            formData,
+            {
+              headers: {
+                "Content-Type": "multipart/form-data",
+              },
+            }
+          );
+
+          // Get the image URL from response
+          const imageUrl = response.data.url;
+
+          // Insert the image at cursor position
+          if (quill) {
+            const range = quill.getSelection(true);
+            quill.insertEmbed(range.index, "image", imageUrl);
+            quill.setSelection(range.index + 1);
+          }
+        } catch (error) {
+          console.error("Error uploading image:", error);
+          alert("Failed to upload image. Please try again.");
+        }
+      }
+    };
+  }, []);
+
+  // Custom toolbar for Quill editor with custom image handler
+  const modules = useMemo(() => ({
+    toolbar: {
+      container: [
+        [{ header: [1, 2, 3, 4, 5, 6, false] },  { font: [] }],
+        [{ list: "ordered" }, { list: "bullet" }],
+        ["bold", "italic", "underline"],
+        ["link", "blockquote"], 
+        [{ 'color': [] }, { 'background': [] }],
+        [{ align: [] }],
+        ["image"], // Button to insert image
+      ],
+      handlers: {
+        image: imageHandler,
+      },
+    },
+  }), [imageHandler]);
+
   if (isLoading) {
     return <p>Loading...</p>;
   }
-
-  // Custom toolbar for Quill editor
-  const modules = {
-    toolbar: [
-      [{ header: [1, 2, 3, 4, 5, 6, false] },  { font: [] }],
-      [{ list: "ordered" }, { list: "bullet" }],
-      ["bold", "italic", "underline"],
-      ["link", "blockquote"], 
-      [{ 'color': [] }, { 'background': [] }],
-      [{ align: [] }],
-      ["image"], // Button to insert image
-    ],
-  };
  
   return (
 
@@ -163,6 +219,7 @@ export default function EditBlogPage() {
         <div className="form-group mb-2">
           <label>Content</label>
           <ReactQuill
+            forwardedRef={quillRef}
             value={blogData?.description || ""}
             onChange={handleEditorChange}
             modules={modules}

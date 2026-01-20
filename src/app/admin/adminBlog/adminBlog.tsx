@@ -1,6 +1,14 @@
 "use client";
 
-import React, { useState, useEffect, ChangeEvent, FormEvent } from "react";
+import React, {
+  useState,
+  useEffect,
+  ChangeEvent,
+  FormEvent,
+  useRef,
+  useMemo,
+  useCallback,
+} from "react";
 import axios from "axios";
 import Modal from "../adminModal/Modal";
 import dynamic from "next/dynamic";
@@ -12,13 +20,19 @@ import Swal from "sweetalert2";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
+const ReactQuill = dynamic(
+  async () => {
+    const { default: RQ } = await import("react-quill");
+    return ({ forwardedRef, ...props }: any) => <RQ ref={forwardedRef} {...props} />;
+  },
+  { ssr: false }
+);
 
 interface BlogData {
   id?: string;
   heading: string;
   description: string;
-  createdAt:string;
+  createdAt: string;
   image?: File | null;
   imageUrl?: string;
   pageTitle: string;
@@ -35,20 +49,19 @@ export default function AdminBlog() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
   const router = useRouter();
+  const quillRef = useRef<any>(null);
 
   const [searchTerm, setSearchTerm] = useState("");
   const [startDate, setStartDate] = useState<Date | null>(null);
   const [endDate, setEndDate] = useState<Date | null>(null);
   const [filteredBlogs, setFilteredBlogs] = useState<BlogData[]>([]);
 
-
-
   const [selectedData, setSelectedData] = useState<BlogData>({
     heading: "",
     description: "",
     image: null,
     pageTitle: "",
-    createdAt:'',
+    createdAt: "",
     pageDescription: "",
     pageUrl: "",
     slugUrl: "",
@@ -59,30 +72,30 @@ export default function AdminBlog() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const dateRange = startDate && endDate
-        ? `${startDate.toLocaleDateString('en-GB')} to ${endDate.toLocaleDateString('en-GB')}`
-        : "";
+        const dateRange =
+          startDate && endDate
+            ? `${startDate.toLocaleDateString("en-GB")} to ${endDate.toLocaleDateString("en-GB")}`
+            : "";
 
         const response = await axios.get(
           "https://adminbackend.base2brand.com/api/B2Badmin/blogs/search",
           {
             params: {
-              query: searchTerm,         // Search query
-              page: currentPage,         // Current page number
-              limit: itemsPerPage,       // Number of items per page
-              dateRange: dateRange,      // Date range filter
+              query: searchTerm, // Search query
+              page: currentPage, // Current page number
+              limit: itemsPerPage, // Number of items per page
+              dateRange: dateRange, // Date range filter
             },
-          }
+          },
         );
-       
+
         setBlogs(response.data.blogs);
         setTotalBlogs(response.data.totalBlogs);
         const totalPages = Math.ceil(response.data.totalBlogs / itemsPerPage);
         setTotalPages(totalPages);
-
       } catch (error) {
         console.error("Error fetching blogs:", error);
-        alert('No blogs found matching the criteria.')
+        alert("No blogs found matching the criteria.");
       }
     };
 
@@ -93,7 +106,7 @@ export default function AdminBlog() {
     setSelectedData({
       heading: "",
       description: "",
-      createdAt:'',
+      createdAt: "",
       image: null,
       pageTitle: "",
       pageDescription: "",
@@ -109,7 +122,7 @@ export default function AdminBlog() {
   };
 
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setSelectedData((prevState) => ({ ...prevState, [name]: value }));
@@ -158,25 +171,29 @@ export default function AdminBlog() {
           headers: {
             "Content-Type": "multipart/form-data",
           },
-        }
+        },
       );
-      
+
       // Revalidate cache immediately for new blog (no secret needed for internal route)
       try {
-        await axios.post("/api/revalidate-blog", {
-          slug: selectedData.slugUrl,
-        }, {
-          withCredentials: true, // Send cookies for authentication
-        });
+        await axios.post(
+          "/api/revalidate-blog",
+          {
+            slug: selectedData.slugUrl,
+          },
+          {
+            withCredentials: true, // Send cookies for authentication
+          },
+        );
       } catch (revalidateError) {
         console.log("Revalidation failed (non-critical):", revalidateError);
       }
-      
+
       alert("Blog created successfully");
 
       handleCloseModal();
       const response = await axios.get(
-        "https://adminbackend.base2brand.com/api/B2Badmin/blogs"
+        "https://adminbackend.base2brand.com/api/B2Badmin/blogs",
       );
       setBlogs(response.data.blogs);
     } catch (error) {
@@ -199,7 +216,7 @@ export default function AdminBlog() {
     if (result.isConfirmed) {
       try {
         await axios.delete(
-          `https://adminbackend.base2brand.com/api/B2Badmin/blogs/${id}`
+          `https://adminbackend.base2brand.com/api/B2Badmin/blogs/${id}`,
         );
         Swal.fire("Deleted!", "Your blog has been deleted.", "success");
         setBlogs(blogs.filter((blog) => blog.id !== id));
@@ -214,10 +231,6 @@ export default function AdminBlog() {
     setCurrentPage(value);
   };
 
-
-
- 
-
   const handleSearchChange = (e: ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(e.target.value);
   };
@@ -228,20 +241,72 @@ export default function AdminBlog() {
     setEndDate(end);
   };
 
-    console.log('snfosnfoern',blogs);
-    
-  // Custom toolbar for Quill editor
-  const modules = {
-    toolbar: [
-      [{ header: [1, 2, 3, 4, 5, 6, false] },  { font: [] }],
-      [{ list: "ordered" }, { list: "bullet" }],
-      ["bold", "italic", "underline"],
-      ["link", "blockquote"], 
-      [{ 'color': [] }, { 'background': [] }],
-      [{ align: [] }],
-      ["image"], // Button to insert image
-    ],
-  };
+  console.log("snfosnfoern", blogs);
+
+  // Custom image handler for Quill editor - uploads to server instead of base64
+  const imageHandler = useCallback(function (this: any) {
+    const input = document.createElement("input");
+    input.setAttribute("type", "file");
+    input.setAttribute("accept", "image/*");
+    input.click();
+
+    const quill = this.quill; // 'this' is the toolbar instance, this.quill gives us the editor
+
+    input.onchange = async () => {
+      const file = input.files?.[0];
+      if (file) {
+        try {
+          const formData = new FormData();
+          formData.append("image", file);
+
+          // Upload image to server
+          const response = await axios.post(
+            "https://adminbackend.base2brand.com/api/B2Badmin/blogs/upload-editor-image",
+            formData,
+            {
+              headers: {
+                "Content-Type": "multipart/form-data",
+              },
+            },
+          );
+
+          // Get the image URL from response
+          const imageUrl = response.data.url;
+
+          // Insert the image at cursor position
+          if (quill) {
+            const range = quill.getSelection(true);
+            quill.insertEmbed(range.index, "image", imageUrl);
+            quill.setSelection(range.index + 1);
+          }
+        } catch (error) {
+          console.error("Error uploading image:", error);
+          alert("Failed to upload image. Please try again.");
+        }
+      }
+    };
+  }, []);
+
+  // Custom toolbar for Quill editor with custom image handler
+  const modules = useMemo(
+    () => ({
+      toolbar: {
+        container: [
+          [{ header: [1, 2, 3, 4, 5, 6, false] }, { font: [] }],
+          [{ list: "ordered" }, { list: "bullet" }],
+          ["bold", "italic", "underline"],
+          ["link", "blockquote"],
+          [{ color: [] }, { background: [] }],
+          [{ align: [] }],
+          ["image"], // Button to insert image
+        ],
+        handlers: {
+          image: imageHandler,
+        },
+      },
+    }),
+    [imageHandler],
+  );
 
   const renderBlogs = () => {
     if (blogs.length === 0) {
@@ -265,12 +330,11 @@ export default function AdminBlog() {
           <tbody>
             {blogs.map((blog, index) => (
               <tr key={blog.id} className="table-row">
-                 
                 <td>
-                  <div style={{ width:'115px'}}>
-                  {new Date(blog.createdAt).toLocaleDateString()}
+                  <div style={{ width: "115px" }}>
+                    {new Date(blog.createdAt).toLocaleDateString()}
                   </div>
-                  </td>
+                </td>
                 <td>{blog.heading}</td>
                 <td>{blog.pageTitle}</td>
                 <td>{blog.status ? "Active" : "Inactive"}</td>
@@ -294,9 +358,7 @@ export default function AdminBlog() {
                 <td className="actions">
                   <div className="d-flex">
                     <button
-                      onClick={() =>
-                        router.push(`/admin/adminBlog/${blog.id}`)
-                      }
+                      onClick={() => router.push(`/admin/adminBlog/${blog.id}`)}
                       className="btn-edit-admin"
                     >
                       <i className="fa fa-edit"></i>
@@ -317,43 +379,39 @@ export default function AdminBlog() {
     );
   };
 
-
-   
-
   return (
     <>
       <div className="container-fluid mb-4">
         <div className="d-flex justify-content-between align-items-center bg__heading_admin">
           <h2 className="title">Blogs</h2>
           <div className="d-flex align-items-center gap-3">
-        {/* Search Bar */}
-        <div className="search-bar d-flex align-items-center position-relative">
-          {/* <i className="fa fa-search search-icon"></i> */}
-          <input
-            type="search"
-            className="form-control"
-            placeholder="Search blogs..."
-            value={searchTerm}
-            onChange={handleSearchChange}
-          />
-        </div>
+            {/* Search Bar */}
+            <div className="search-bar d-flex align-items-center position-relative">
+              {/* <i className="fa fa-search search-icon"></i> */}
+              <input
+                type="search"
+                className="form-control"
+                placeholder="Search blogs..."
+                value={searchTerm}
+                onChange={handleSearchChange}
+              />
+            </div>
 
-        {/* Date Range Picker */}
-        <DatePicker
-          selected={startDate}
-          onChange={handleDateChange}
-          startDate={startDate}
-          endDate={endDate}
-          selectsRange
-          isClearable
-          placeholderText="Select date range"
-          className="form-control"
-        />
-          <button onClick={handleOpenModal} className="btn-create">
-            Create new
-          </button>
-       
-        </div>
+            {/* Date Range Picker */}
+            <DatePicker
+              selected={startDate}
+              onChange={handleDateChange}
+              startDate={startDate}
+              endDate={endDate}
+              selectsRange
+              isClearable
+              placeholderText="Select date range"
+              className="form-control"
+            />
+            <button onClick={handleOpenModal} className="btn-create">
+              Create new
+            </button>
+          </div>
         </div>
         {renderBlogs()}
         <Stack spacing={2} alignItems="center">
@@ -389,11 +447,12 @@ export default function AdminBlog() {
               theme="snow"
             /> */}
             <ReactQuill
-            value={selectedData?.description || ""}
-            onChange={handleEditorChange}
-            modules={modules}
-            theme="snow"
-          />
+              forwardedRef={quillRef}
+              value={selectedData?.description || ""}
+              onChange={handleEditorChange}
+              modules={modules}
+              theme="snow"
+            />
           </div>
           <div className="form-group mb-2">
             <label>Featured Image</label>
