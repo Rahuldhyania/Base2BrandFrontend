@@ -15,7 +15,7 @@ const QUILL_MODULES = {
         [{ 'color': [] }],
         // [{ 'list': 'ordered' }, { 'list': 'bullet' },
         // { 'indent': '-1' }, { 'indent': '+1' }],
-        // ['link', 'image', 'video'],
+        ['link', 'image', 'video'],
         ['clean']
     ],
 };
@@ -23,9 +23,9 @@ const QUILL_MODULES = {
 const QUILL_FORMATS = [
     // 'header', 'font', 'size',
     'bold', 'italic', 'underline', 'strike', 'blockquote',
-    'color'
+    'color',
     // 'list', 'bullet', 'indent',
-    // 'link', 'image', 'video'
+    'link', 'image', 'video'
 ];
 
 const initialFormData = {
