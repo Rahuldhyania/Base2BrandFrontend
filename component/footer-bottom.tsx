@@ -118,7 +118,7 @@ export default function FooterBottom() {
       </div>
       <div className="text-center p-3">
         <p className="m-0 text-white">
-          © 2025 All rights reserved |  <Link className="text-white" href="/"> Base2Brand</Link> |  <Link className="text-white" href="/disclaimer"> Disclaimer</Link> |
+          ©  {new Date().getFullYear()} All rights reserved |  <Link className="text-white" href="/"> Base2Brand</Link> |  <Link className="text-white" href="/disclaimer"> Disclaimer</Link> |
           <Link className="text-white" href="/privacy-policy"> Privacy Policy</Link> |  <Link className="text-white" href="/terms-of-service">Terms of Service</Link>
 
         </p>

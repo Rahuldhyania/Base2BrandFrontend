@@ -36,7 +36,7 @@ export default function Header() {
             
   </div> */}
 
-      <nav className="navbar navbar-expand-xl pt-4 pb-4 ps-3 pe-3 position-relative">
+      <nav className={` ${currentRoute == '/new-home-page' ?  'bg-black' :  ''} navbar  navbar-expand-xl pt-4 pb-4 ps-3 pe-3 position-relative`}>
         <div className="container-fluid">
           <Link href="/" className="flex items-center navbar-brand pt-0">
             {/* <Image
