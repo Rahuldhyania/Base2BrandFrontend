@@ -4,7 +4,12 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { toast } from "react-toastify";
 
-function NewFooterForm() {
+interface from_props {
+  title?: string;
+  description?: string
+}
+
+function NewFooterForm({ title, description }: from_props) {
   const [formData, setFormData] = useState({
     fullname: "",
     mobile: "",
@@ -75,18 +80,18 @@ function NewFooterForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{height : '100%'}}>
+    <form onSubmit={handleSubmit} style={{ height: '100%' }}>
       <div
         className="newfooterFormmain"
         style={{ backgroundImage: "url(/newhomepage/newfrombg.webp)" }}
       >
         <div className="newfooterouter">
           <h2 className="b2b-sub-heading">
-             Fill Out Your Project Details to Get Started!
+            {title ? title : 'Fill Out Your Project Details to Get Started!'}
           </h2>
 
           <p className="b2b-sub-text pt-lg-2 pt-2 col-12 col-lg-10">
-            Share the details of your project – like scope or business challenges – and our team will review them carefully to plan the next steps with you.
+            {description ? description : ' Share the details of your project – like scope or business challenges – and our team will review them carefully to plan the next steps with you.'}
           </p>
 
           <div>

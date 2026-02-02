@@ -8,7 +8,7 @@ const sloutionData1 = [
     cardimage: "/newhomepage/E-commerce.webp",
     cardTitle: "E-commerce",
     carddescription:
-      "Engage users globally with seamless language detection and translation.",
+      "We deliver scalable e-commerce solutions including store development, payment integration, performance optimization, security, analytics globally.",
     cardLink: ""
   },
   {
@@ -16,7 +16,7 @@ const sloutionData1 = [
     cardimage: "/newhomepage/Beauty & Personal Care.webp",
     cardTitle: "Beauty & Personal Care",
     carddescription:
-      "Engage users globally with seamless language detection and translation.",
+      "We provide tailored solutions for beauty brands including e-commerce platforms, CRM systems, inventory management, automation.",
     cardLink: ""
   },
   {
@@ -24,7 +24,7 @@ const sloutionData1 = [
     cardimage: "/newhomepage/Fitness & Wellness.webp",
     cardTitle: "Fitness & Wellness",
     carddescription:
-      "Your AI Agent ensures the utmost safety by refusing sensitive or unauthorized requests.",
+      "Our solutions support fitness businesses with app development, booking systems, data tracking, cloud platforms, engagement.",
     cardLink: ""
   },
   {
@@ -32,7 +32,7 @@ const sloutionData1 = [
     cardimage: "/newhomepage/AI & IOT.webp",
     cardTitle: "AI & IOT",
     carddescription:
-      "Your AI Agent ensures the utmost safety by refusing sensitive or unauthorized requests.",
+      "We build solutions including AI development, IoT integration, data analytics, automation, cloud infrastructure, and security.",
     cardLink: ""
   },
   {
@@ -40,7 +40,7 @@ const sloutionData1 = [
     cardimage: "/newhomepage/Food & Beverage.webp",
     cardTitle: "Food & Beverage",
     carddescription:
-      "Your AI Agent ensures the utmost safety by refusing sensitive or  unauthorized requests.",
+      "We create digital solutions for food businesses including POS systems, online ordering, inventory management, automation.",
     cardLink: ""
   },
   //copy for marquee issue
@@ -49,7 +49,7 @@ const sloutionData1 = [
     cardimage: "/newhomepage/E-commerce.webp",
     cardTitle: "E-commerce",
     carddescription:
-      "Engage users globally with seamless language detection and translation.",
+      "We deliver scalable e-commerce solutions including store development, payment integration, performance optimization, security, analytics globally.",
     cardLink: ""
   },
   {
@@ -57,7 +57,7 @@ const sloutionData1 = [
     cardimage: "/newhomepage/Beauty & Personal Care.webp",
     cardTitle: "Beauty & Personal Care",
     carddescription:
-      "Engage users globally with seamless language detection and translation.",
+      "We provide tailored solutions for beauty brands including e-commerce platforms, CRM systems, inventory management, automation.",
     cardLink: ""
   },
   {
@@ -65,7 +65,7 @@ const sloutionData1 = [
     cardimage: "/newhomepage/Fitness & Wellness.webp",
     cardTitle: "Fitness & Wellness",
     carddescription:
-      "Your AI Agent ensures the utmost safety by refusing sensitive or unauthorized requests.",
+      "Our solutions support fitness businesses with app development, booking systems, data tracking, cloud platforms, engagement.",
     cardLink: ""
   },
   {
@@ -73,7 +73,7 @@ const sloutionData1 = [
     cardimage: "/newhomepage/AI & IOT.webp",
     cardTitle: "AI & IOT",
     carddescription:
-      "Your AI Agent ensures the utmost safety by refusing sensitive or unauthorized requests.",
+      "We build solutions including AI development, IoT integration, data analytics, automation, cloud infrastructure, and security.",
     cardLink: ""
   },
   {
@@ -81,24 +81,25 @@ const sloutionData1 = [
     cardimage: "/newhomepage/Food & Beverage.webp",
     cardTitle: "Food & Beverage",
     carddescription:
-      "Your AI Agent ensures the utmost safety by refusing sensitive or  unauthorized requests.",
+      "We create digital solutions for food businesses including POS systems, online ordering, inventory management, automation.",
     cardLink: ""
   }
 ];
 const sloutionData2 = [
-  {
-    id: 1,
-    cardimage: "/newhomepage/Works across channels.webp",
-    cardTitle: "Works across channels",
-    carddescription: "Easily integrate your AI Agent with various platforms like Slack, WhatsApp, and web widgets.",
-    cardLink: ""
-  },
+  // {
+  //   id: 1,
+  //   cardimage: "/newhomepage/Works across channels.webp",
+  //   cardTitle: "Works across channels",
+  //   carddescription:
+  //     "Easily integrate your AI Agent with various platforms like Slack, WhatsApp, and web widgets.",
+  //   cardLink: ""
+  // },
   {
     id: 2,
     cardimage: "/newhomepage/Real Estate.webp",
     cardTitle: "Real Estate",
     carddescription:
-      "Easily integrate your AI Agent with various platforms like Slack, WhatsApp, and web widgets.",
+      "We build digital platforms for real estate enabling property listings, workflows, automation, analytics, secure integrations.",
     cardLink: ""
   },
   {
@@ -106,7 +107,7 @@ const sloutionData2 = [
     cardimage: "/newhomepage/Education & E-learning.webp",
     cardTitle: "Education & E-learning",
     carddescription:
-      "Your AI Agent ensures the utmost safety by refusing sensitive or unauthorized requests.",
+      "We create education platforms supporting e-learning, virtual classrooms, content management, analytics, automation, and cloud access.",
     cardLink: ""
   },
   {
@@ -114,7 +115,7 @@ const sloutionData2 = [
     cardimage: "/newhomepage/SaaS.webp",
     cardTitle: "SaaS",
     carddescription:
-      "Your AI Agent ensures the utmost safety by refusing sensitive or unauthorized requests.",
+      "We develop scalable SaaS products with robust architecture, seamless integrations, automation, security layers, performance optimization.",
     cardLink: ""
   },
   {
@@ -122,7 +123,7 @@ const sloutionData2 = [
     cardimage: "/newhomepage/Automotive.webp",
     cardTitle: "Automotive",
     carddescription:
-      "Your AI Agent ensures the utmost safety by refusing sensitive or  unauthorized requests.",
+      "We design systems for automotive businesses covering diagnostics, fleet management, automation, analytics, and connected operations.",
     cardLink: ""
   },
   {
@@ -130,57 +131,50 @@ const sloutionData2 = [
     cardimage: "/newhomepage/Travel & Tourism.webp",
     cardTitle: "Travel & Tourism",
     carddescription:
-      "Your AI Agent ensures the utmost safety by refusing sensitive or  unauthorized requests.",
+      "We power travel brands with booking platforms, customer engagement tools, automation, analytics, mobile experiences, scalability.",
     cardLink: ""
   },
   //copy for marquee issue
-  {
+   {
     id: 7,
-    cardimage: "/newhomepage/Works across channels.webp",
-    cardTitle: "Works across channels",
-    carddescription: "Easily integrate your AI Agent with various platforms like Slack, WhatsApp, and web widgets.",
+    cardimage: "/newhomepage/Real Estate.webp",
+    cardTitle: "Real Estate",
+    carddescription:
+      "We build digital platforms for real estate enabling property listings, workflows, automation, analytics, secure integrations.",
     cardLink: ""
   },
   {
     id: 8,
-    cardimage: "/newhomepage/Real Estate.webp",
-    cardTitle: "Real Estate",
+    cardimage: "/newhomepage/Education & E-learning.webp",
+    cardTitle: "Education & E-learning",
     carddescription:
-      "Easily integrate your AI Agent with various platforms like Slack, WhatsApp, and web widgets.",
+      "We create education platforms supporting e-learning, virtual classrooms, content management, analytics, automation, and cloud access.",
     cardLink: ""
   },
   {
     id: 9,
-    cardimage: "/newhomepage/Education & E-learning.webp",
-    cardTitle: "Education & E-learning",
+    cardimage: "/newhomepage/SaaS.webp",
+    cardTitle: "SaaS",
     carddescription:
-      "Your AI Agent ensures the utmost safety by refusing sensitive or unauthorized requests.",
+      "We develop scalable SaaS products with robust architecture, seamless integrations, automation, security layers, performance optimization.",
     cardLink: ""
   },
   {
     id: 10,
-    cardimage: "/newhomepage/SaaS.webp",
-    cardTitle: "SaaS",
+    cardimage: "/newhomepage/Automotive.webp",
+    cardTitle: "Automotive",
     carddescription:
-      "Your AI Agent ensures the utmost safety by refusing sensitive or unauthorized requests.",
+      "We design systems for automotive businesses covering diagnostics, fleet management, automation, analytics, and connected operations.",
     cardLink: ""
   },
   {
     id: 11,
-    cardimage: "/newhomepage/Automotive.webp",
-    cardTitle: "Automotive",
-    carddescription:
-      "Your AI Agent ensures the utmost safety by refusing sensitive or  unauthorized requests.",
-    cardLink: ""
-  },
-  {
-    id: 12,
     cardimage: "/newhomepage/Travel & Tourism.webp",
     cardTitle: "Travel & Tourism",
     carddescription:
-      "Your AI Agent ensures the utmost safety by refusing sensitive or  unauthorized requests.",
+      "We power travel brands with booking platforms, customer engagement tools, automation, analytics, mobile experiences, scalability.",
     cardLink: ""
-  }
+  },
 ];
 const SolutionsCards = () => {
   return (

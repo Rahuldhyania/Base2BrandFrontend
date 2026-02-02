@@ -1,21 +1,18 @@
 import React from "react";
-import "./NewHome.css";
-import NewHomeBanner from "./NewHomeBanner";
-import ServicesCards from "./ServicesCards";
-import SolutionsCards from "./SolutionsCards";
-import BringIdeas from "./BringIdeas";
-import SolutionAccelerator from "./SolutionAccelerator";
-import ProductsBuild from "./ProductsBuild";
-import B2bKeysMetric from "./B2bKeysMetric";
-import TrustedPartnersBrand from "./TrustedPartnersBrand";
-import WhatGet from "./WhatGet";
-import Faqs from "./Faqs";
-import HaveADream from "./HaveADream";
-import LetsBegin from "../LetsBegin";
-import HomeFrom from "./HomeFrom";
-import FeedBack from "./FeedBack";
-import TechnologyStack from "./TechnologyStack";
-import FooterNew from "../FooterNew";
+import "../Component/B2bautomation/Automation.css";
+import "../Component/NewHomePage/NewHome.css";
+import Header from "../../../component/header";
+import FooterNew from "../Component/FooterNew";
+import AutomationBanner from "../Component/B2bautomation/AutomationBanner";
+import AutomationPricing from "../Component/B2bautomation/AutomationPricing";
+import AutomationStats from "../Component/B2bautomation/AutomationStats";
+import WhyChooseB2bAutomation from "../Component/B2bautomation/WhyChooseB2bAutomation";
+import AutomationForm from "../Component/B2bautomation/AutomationForm";
+import PlatformMatrix from "../Component/B2bautomation/AutomationPlatformMatrix";
+import LetsBegin from "../Component/LetsBegin";
+import Faqs from "../Component/NewHomePage/Faqs";
+
+
 const faqdata = [
   {
     id: 0,
@@ -66,32 +63,31 @@ const faqdata = [
       "You can connect with Base2Brand through the website, email, or phone. After understanding your goals, the team provides a tailored strategy, timeline, and budget to begin collaboration."
   }
 ];
-
-
-const NewHomeWrap = () => {
+const page = () => {
   return (
     <div>
-      <NewHomeBanner />
-      <ServicesCards />
-      <SolutionsCards />
-      <BringIdeas />
-      <SolutionAccelerator />
-      <TechnologyStack />
-      <ProductsBuild />
-      <B2bKeysMetric />
-      <TrustedPartnersBrand />
-      <WhatGet />
-      <FeedBack />
-      <Faqs title={"Frequently Asked Questions"} faqdata={faqdata} />
-      <HaveADream />
-      <LetsBegin 
-         title={'Your project deserves the perfect team. Let’s make it happen.'}
-         description={'Work with experts who deliver custom-built solutions, modern technology, seamless workflows, and dependable engineering designed to turn your vision into reality.'}
+      <Header />
+      <AutomationBanner 
+       title={'B2B Wholesale Automation: <br/> <span class="gradient_text"> Eliminate Manual Order Processing Without Enterprise Platform Costs </span>'}
+       description={'Mid-market wholesale distributors lose operational efficiency to manual order processing and pricing reconciliation. SAAS Integrator automates tier pricing, credit enforcement, and order synchronization between your ERP and e-commerce platforms—reducing fulfillment cycle time while eliminating pricing errors that compromise customer relationships.'}
+       topbar_title={"The Shopify Plus Alternative for Mid-Market Wholesalers"}
       />
-      <HomeFrom />
+      <AutomationPricing  
+       title={`B2B TIER PRICING AUTOMATION`}
+       description={`Customer-specific rates without manual updates. Streamline your wholesale operations with automated pricing and order management.`}
+      />
+      <AutomationStats />
+      <WhyChooseB2bAutomation />
+      <AutomationForm />
+      <PlatformMatrix />
+      <LetsBegin  
+        title={'Deploy B2B Wholesale Automation'}
+        description={'Product data, pricing, customer information, and inventory levels maintained in single system of record—automatic synchronization ensures consistency across all customer touchpoints.'}
+      />
+      <Faqs title={"Frequently Asked Questions"} faqdata={faqdata} />
       <FooterNew />
     </div>
   );
 };
 
-export default NewHomeWrap;
+export default page;

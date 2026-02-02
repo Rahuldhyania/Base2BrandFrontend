@@ -78,7 +78,7 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <section className="testimonial_slider_section b2b-black-bg py-5">
+    <section className="testimonial_slider_section b2b-black-bg pb-5 pt-md-5">
       <div className="xxl_container py-4">
         <div className="slider_header">
           <h2 className="SolutionAccelerator_heading text-white">
@@ -100,10 +100,10 @@ const TestimonialSlider = () => {
             }}
             onSwiper={handleSwiperInit}
             breakpoints={{
-              768: {
+              900: {
                 slidesPerView: 2
               },
-              1024: {
+             1280: {
                 slidesPerView: 3
               }
             }}
@@ -168,7 +168,7 @@ const TestimonialSlider = () => {
                     <div className="slide_corner_badge">
                       <svg
                         width="20"
-                        height="20"
+                        height="20" 
                         viewBox="0 0 24 24"
                         fill="none"
                       >

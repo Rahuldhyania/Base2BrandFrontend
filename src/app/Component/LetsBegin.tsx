@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import RequestForm from "../request-form";
 
-const LetsBegin = () => {
+const LetsBegin = ({ title, description }) => {
   const [showModal, setShowModal] = useState(false);
 
   const toggleModal = () => {
@@ -25,13 +25,14 @@ const LetsBegin = () => {
       >
         <div className="xxl_container row py-5 m-auto">
           <div className="col-12 col-md-6">
-            <h2 className="new_subheading text-white">
-              Your project deserves the perfect team. Let’s make it happen.
-            </h2>
+            <h2
+              className="new_subheading text-white"
+              dangerouslySetInnerHTML={{ __html: title }}
+            />
           </div>
           <div className="col-12 col-md-6">
-            <p className="new_subdescription text-white col-xl-10">
-              Work with experts who deliver custom-built solutions, modern technology, seamless workflows, and dependable engineering designed to turn your vision into reality.
+            <p className="new_subdescription text-white ">
+              {description}
             </p>
             <div className="row mt-3">
               <div className="col-lg-12">

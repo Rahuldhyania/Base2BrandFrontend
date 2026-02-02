@@ -2,7 +2,7 @@
 import RequestForm from "@/app/request-form";
 import React, { useState } from "react";
 
-const IndustriesBanner = () => {
+const IndustriesBanner = ({ title, description }) => {
   const [showModal, setShowModal] = useState(false);
 
   const toggleModal = () => {
@@ -15,7 +15,7 @@ const IndustriesBanner = () => {
     }, 200);
   };
   return (
-    <div className="px-3 py-3 b2b-black-bg">
+    <div className="px-md-3 py-md-3 b2b-black-bg">
       <div
         className="indusries-bg position-relative"
         style={{
@@ -23,16 +23,14 @@ const IndustriesBanner = () => {
         }}
       >
         <div className="bg-overlay" />
-
-        <h1 className="indusries_haeding text-center text-white">
-          E-commerce Business with Base2brand
-        </h1>
+        <h1
+          className="indusries_haeding text-center text-white"
+          dangerouslySetInnerHTML={{ __html: title }}
+        />
         <p className="b2b-title-text text-center text-white indusries_haeding_description pt-2">
-          In Shopify development services, we don't just meet expectations; we
-          exceed them. With a proven track record of success, we outperform in
-          every aspect of Shopify development.
+          {description}
         </p>
-        <div className="pt-5 d-flex justify-content-center">
+        <div className="pt-3 pt-xxl-5 d-flex justify-content-center">
           <button className="b2b-btn b2b-btn-sm m-0" onClick={toggleModal}>
             Discover Our Solutions
           </button>
