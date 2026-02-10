@@ -1,25 +1,16 @@
-// "use client";
-
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Index from './index';
+import Index from "./index";
 import { AppStateProvider } from "./context/AppStateContext";
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import Head from 'next/head';
-
-import Header from "../../component/header";
-import Footer from "../../component/footer";
-import Footerbar from "./footerbar";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Callbackcus from "./customer-support/Callbackcus";
 import Ukwebsitemeta from "./Ukwebsitemeta";
 import Canonical from "./Canonical";
+import ToastProvider from "./Component/ToastProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -58,7 +49,8 @@ const websiteSchema = {
   "@type": "WebSite",
   url: "https://www.base2brand.com",
   name: "Base 2 Brand Infotech Pvt. Ltd",
-  description: "Base2Brand Infotech is a leading agency offering digital marketing, SEO, web development, and Shopify development services for businesses.",
+  description:
+    "Base2Brand Infotech is a leading agency offering digital marketing, SEO, web development, and Shopify development services for businesses.",
   potentialAction: {
     "@type": "SearchAction",
     target: "https://www.base2brand.com/?s={search_term_string}",
@@ -71,7 +63,8 @@ const webpageSchema = {
   "@type": "WebPage",
   url: "https://www.base2brand.com",
   name: "Base2Brand - Hire Shopify Developers",
-  description: "Looking to hire Shopify developers? Get expert Shopify development services for your online store. Affordable, experienced, and professional developers.",
+  description:
+    "Looking to hire Shopify developers? Get expert Shopify development services for your online store. Affordable, experienced, and professional developers.",
   publisher: {
     "@type": "Organization",
     name: "Base 2 Brand Infotech Pvt. Ltd",
@@ -100,7 +93,7 @@ const serviceSchema = {
     "@type": "Offer",
     url: "https://www.base2brand.com/hire-shopify-developers",
     priceCurrency: "INR",
-    price: "0",  // Adjust price as number (use 0 or actual price)
+    price: "0", // Adjust price as number (use 0 or actual price)
     priceValidUntil: "2025-12-31",
     eligibleRegion: {
       "@type": "Place",
@@ -121,10 +114,12 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "How can your Shopify expert services help increase my store’s conversions?",
+      name:
+        "How can your Shopify expert services help increase my store’s conversions?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "We implement strategies like optimized checkout processes, abandoned cart recovery emails."
+        text:
+          "We implement strategies like optimized checkout processes, abandoned cart recovery emails."
       }
     },
     {
@@ -132,7 +127,8 @@ const faqSchema = {
       name: "Do you offer custom Shopify store development?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, we build fully customized Shopify stores tailored to your brand’s needs, ensuring seamless navigation and mobile responsiveness."
+        text:
+          "Yes, we build fully customized Shopify stores tailored to your brand’s needs, ensuring seamless navigation and mobile responsiveness."
       }
     }
   ]
@@ -196,7 +192,7 @@ const ratingSchema = {
     bestRating: "5",
     worstRating: "1"
   },
-  "review": {
+  review: {
     "@type": "Review",
     reviewRating: {
       "@type": "Rating",
@@ -209,16 +205,17 @@ const ratingSchema = {
       name: "Mohit"
     },
     datePublished: "2025-01-01",
-    description: "Base2Brand Infotech 23423 is a leading agency offering digital marketing, SEO, web development, and Shopify development services for businesses."
+    description:
+      "Base2Brand Infotech 23423 is a leading agency offering digital marketing, SEO, web development, and Shopify development services for businesses."
   }
-}
+};
 export const metadata = {
   icons: {
-    icon: "/favicon.ico",
-  },
-}
+    icon: "/favicon.ico"
+  }
+};
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) {
@@ -237,17 +234,10 @@ export default function RootLayout({
         />
         {/* Google Fonts */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,700;1,100;1,300&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Montserrat:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Content:wght@400;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,700;1,100;1,300&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet"
-        />
+
         {/* Font Awesome CDN */}
         <link
           rel="stylesheet"
@@ -260,7 +250,7 @@ export default function RootLayout({
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
+          />
         </noscript>
 
         <Script
@@ -277,11 +267,10 @@ export default function RootLayout({
                 localBusinessSchema,
                 // reviewRatingSchema,
                 ratingSchema
-              ],
-            }),
+              ]
+            })
           }}
         />
-
       </head>
       <body>
         <AppStateProvider>
@@ -291,7 +280,7 @@ export default function RootLayout({
           </Index>
         </AppStateProvider>
 
-        <ToastContainer />
+        <ToastProvider />
         {/* Popper & Bootstrap JS */}
         <Script
           async
@@ -304,10 +293,15 @@ export default function RootLayout({
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
           integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
           crossOrigin="anonymous"
+          strategy="lazyOnload"
         />
 
         {/* Google Analytics */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-82ZFJ2HBGY" />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-82ZFJ2HBGY"
+          strategy="afterInteractive"
+        />
+
         <Script
           dangerouslySetInnerHTML={{
             __html: `
@@ -321,6 +315,7 @@ export default function RootLayout({
 
         {/* Microsoft Clarity */}
         <Script
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               (function(c,l,a,r,i,t,y){
@@ -334,21 +329,37 @@ export default function RootLayout({
 
         {/* Google Tag Manager */}
         <Script
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-              (function(w,d,s,l,i){
-                w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-                var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-                j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-                f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-WF8GV7S');
-            `
+      (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),
+            dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WF8GV7S');
+    `
           }}
         />
-
+        <Script
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "mn7dqg0czt");
+    `
+          }}
+        />
         {/* Facebook Pixel */}
         <Script
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               !function(f,b,e,v,n,t,s)
@@ -364,11 +375,6 @@ export default function RootLayout({
             `
           }}
         />
-
-
-
-
-
         <noscript>
           <img
             height="1"
