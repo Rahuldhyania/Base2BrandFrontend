@@ -67,29 +67,30 @@ const faqdata = [
   }
 ];
 
-
 const NewHomeWrap = () => {
   return (
     <div>
       <NewHomeBanner />
       <ServicesCards />
       <SolutionsCards />
-      <BringIdeas />
+      <BringIdeas />  
       <SolutionAccelerator />
       <TechnologyStack />
       <ProductsBuild />
-      <B2bKeysMetric />
+      <B2bKeysMetric /> 
       <TrustedPartnersBrand />
       <WhatGet />
       <FeedBack />
       <Faqs title={"Frequently Asked Questions"} faqdata={faqdata} />
-      <HaveADream />
-      <LetsBegin 
-         title={'Your project deserves the perfect team. Let’s make it happen.'}
-         description={'Work with experts who deliver custom-built solutions, modern technology, seamless workflows, and dependable engineering designed to turn your vision into reality.'}
+      <HaveADream /> 
+      <LetsBegin
+        title={"Your project deserves the perfect team. Let’s make it happen."}
+        description={
+          "Work with experts who deliver custom-built solutions, modern technology, seamless workflows, and dependable engineering designed to turn your vision into reality."
+        }
       />
       <HomeFrom />
-      <FooterNew />
+      <FooterNew /> 
     </div>
   );
 };

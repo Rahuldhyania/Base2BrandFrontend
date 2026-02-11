@@ -218,7 +218,7 @@ function NewFooterForm({ title, description }: from_props) {
               </div>
             </div>
 
-            <div className="col-12 col-md-4 d-flex align-items-end justify-content-end">
+            <div className="col-12 mt-4 mt-md-0 col-md-4 d-flex align-items-end justify-md-content-end">
               <button type="submit" className="b2b-btn b2b-btn-lg">
                 Let’s Talk
               </button>

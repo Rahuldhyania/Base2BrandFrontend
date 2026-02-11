@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import {useState } from "react";
 
 const tabs = [
   "All",
@@ -194,7 +194,7 @@ const technologies = [
   {
     id: 30,
     name: "Node.js",
-    image: "/newhomepage/technology/Nodejs.webp",
+    image: "/newhomepage/technology/nodejsnew.webp",
     category: ["All", "Back-End"]
   },
   {
@@ -213,9 +213,8 @@ const technologies = [
 
 const TechnologyStack = () => {
   const [activeTab, setActiveTab] = useState("All");
-
   return (
-    <div className="b2b-black-bg py-5">
+    <div className="b2b-black-bg py-3 py-md-5">
       <div className="xxl_container">
         <div className="text-center">
           <h2 className="b2b-heading text-white">Smart Technology Stack We use For <br/> Smart Solutions</h2>
@@ -247,9 +246,10 @@ const TechnologyStack = () => {
                   <Image
                     src={item.image}
                     alt={item.name}
-                    width={1000}
-                    height={500}
+                    width={200}
+                    height={100}
                     className=""
+                    fetchPriority="high"
                   />
                 </div>
               );

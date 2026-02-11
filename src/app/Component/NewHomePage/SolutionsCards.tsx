@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Marquee from "react-fast-marquee";
 
 const sloutionData1 = [
@@ -135,7 +136,7 @@ const sloutionData2 = [
     cardLink: ""
   },
   //copy for marquee issue
-   {
+  {
     id: 7,
     cardimage: "/newhomepage/Real Estate.webp",
     cardTitle: "Real Estate",
@@ -174,9 +175,44 @@ const sloutionData2 = [
     carddescription:
       "We power travel brands with booking platforms, customer engagement tools, automation, analytics, mobile experiences, scalability.",
     cardLink: ""
-  },
+  }
 ];
 const SolutionsCards = () => {
+  const [showMarquee, setShowMarquee] = useState(false);
+  const [speed, setSpeed] = useState(30);
+  const dragging = useRef(false);
+  const lastX = useRef(0);
+  const speedRef = useRef(speed);
+
+  useEffect(() => {
+    setTimeout(() => setShowMarquee(true), 2000);
+  }, []);
+
+  // Function to handle when dragging starts (for mouse or touch)
+  const handleDragStart = e => {
+    dragging.current = true;
+    lastX.current = e.clientX || e.touches[0].clientX;
+  };
+
+  const handleDragEnd = () => {
+    dragging.current = false;
+  };
+
+  const handleDragMove = e => {
+    if (dragging.current) {
+      const currentX = e.clientX || e.touches[0].clientX;
+      const deltaX = currentX - lastX.current;
+      lastX.current = currentX;
+
+      const newSpeed = Math.max(
+        10,
+        Math.min(100, speedRef.current - deltaX / 100)
+      );
+      setSpeed(newSpeed);
+      speedRef.current = newSpeed;
+    }
+  };
+
   return (
     <div className="b2b-black-bg py-5">
       <div className="b2b-container-lg">
@@ -193,56 +229,78 @@ const SolutionsCards = () => {
           </div>
         </div>
       </div>
-      <div className="pt-5">
-        <div>
-          <Marquee>
-            {sloutionData1.map((data, index) =>
-              <div className="sloutioncard p-3" key={index}>
-                <Image
-                  src={data.cardimage}
-                  alt={data.cardTitle}
-                  width={1000}
-                  height={500}
-                  className="sloutioncardimage"
-                />
-                <div className="pt-3">
-                  <h4 className="sloutiontitle text-white">
-                    {data.cardTitle}
-                  </h4>
+      {showMarquee
+        ? <div className="pt-5">
+            <div
+              className="marquee-container"
+              onMouseDown={handleDragStart}
+              onTouchStart={handleDragStart}
+              onMouseUp={handleDragEnd}
+              onTouchEnd={handleDragEnd}
+              onMouseMove={handleDragMove}
+              onTouchMove={handleDragMove}
+              style={{ cursor: "grab" }}
+            >
+              <Marquee speed={speed} gradient={false}>
+                {sloutionData1.map((data, index) =>
+                  <div className="sloutioncard p-3" key={index}>
+                    <Image
+                      src={data.cardimage}
+                      alt={data.cardTitle}
+                      width={1000}
+                      height={500}
+                      className="sloutioncardimage"
+                    />
+                    <div className="pt-3">
+                      <h4 className="sloutiontitle text-white">
+                        {data.cardTitle}
+                      </h4>
 
-                  <p className="sloutiondescription text-white">
-                    {data.carddescription}
-                  </p>
-                </div>
-              </div>
-            )}
-          </Marquee>
-        </div>
-        <div className="pt-3">
-          <Marquee direction="right">
-            {sloutionData2.map((data, index) =>
-              <div className="sloutioncard p-3" key={index}>
-                <Image
-                  src={data.cardimage}
-                  alt={data.cardTitle}
-                  width={1000}
-                  height={500}
-                  className="sloutioncardimage"
-                />
-                <div className="pt-3">
-                  <h4 className="sloutiontitle text-white">
-                    {data.cardTitle}
-                  </h4>
+                      <p className="sloutiondescription text-white">
+                        {data.carddescription}
+                      </p>
+                    </div>
+                  </div>
+                )}
+              </Marquee>
+            </div>
+            <div className="pt-3">
+              <div
+                className="marquee-container"
+                onMouseDown={handleDragStart}
+                onTouchStart={handleDragStart}
+                onMouseUp={handleDragEnd}
+                onTouchEnd={handleDragEnd}
+                onMouseMove={handleDragMove}
+                onTouchMove={handleDragMove}
+                style={{ cursor: "grab" }}
+              >
+                <Marquee speed={speed} direction="right">
+                  {sloutionData2.map((data, index) =>
+                    <div className="sloutioncard p-3" key={index}>
+                      <Image
+                        src={data.cardimage}
+                        alt={data.cardTitle}
+                        width={1000}
+                        height={500}
+                        className="sloutioncardimage"
+                      />
+                      <div className="pt-3">
+                        <h4 className="sloutiontitle text-white">
+                          {data.cardTitle}
+                        </h4>
 
-                  <p className="sloutiondescription text-white">
-                    {data.carddescription}
-                  </p>
-                </div>
+                        <p className="sloutiondescription text-white">
+                          {data.carddescription}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </Marquee>
               </div>
-            )}
-          </Marquee>
-        </div>
-      </div>
+            </div>
+          </div>
+        : null}
     </div>
   );
 };
