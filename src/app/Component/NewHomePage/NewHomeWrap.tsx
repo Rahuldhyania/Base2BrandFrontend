@@ -16,6 +16,7 @@ import HomeFrom from "./HomeFrom";
 import FeedBack from "./FeedBack";
 import TechnologyStack from "./TechnologyStack";
 import FooterNew from "../FooterNew";
+import SolutionsCardsph from "./SolutionsCardsph";
 const faqdata = [
   {
     id: 0,
@@ -72,7 +73,12 @@ const NewHomeWrap = () => {
     <div>
       <NewHomeBanner />
       <ServicesCards />
-      <SolutionsCards />
+      <div className="d-none d-md-block">
+        <SolutionsCards />
+      </div>
+      <div className="d-md-none">
+        <SolutionsCardsph />
+      </div>
       <BringIdeas />  
       <SolutionAccelerator />
       <TechnologyStack />
