@@ -180,7 +180,7 @@ const sloutionData2 = [
 ];
 const SolutionsCardsph = () => {
   return (
-    <div className="b2b-black-bg py-5">
+    <div className="b2b-black-bg py-5 overflow-hidden">
       <div className="b2b-container-lg">
         <div className="row">
           <div className="col-md-12">
@@ -209,7 +209,7 @@ const SolutionsCardsph = () => {
           centeredSlides={true}
           speed={1000}
           modules={[Autoplay]}
-          slidesPerView={1.3}
+          slidesPerView={1.2}
         >
           {sloutionData1.map((data, index) =>
             <SwiperSlide key={index}>
@@ -249,7 +249,7 @@ const SolutionsCardsph = () => {
           centeredSlides={true}
           speed={1000}
           modules={[Autoplay]}
-          slidesPerView={1.3}
+          slidesPerView={1.2}
           dir="ltr"
         >
           {sloutionData2.map((data, index) =>
