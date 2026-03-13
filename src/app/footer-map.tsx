@@ -88,8 +88,8 @@ export default function FooterMap() {
                                     className="tooltipText"
                                     place="top"
                                     html="<p class='tooltipTitle'>Uk</p>
-                                       	7 Snow Avenue, Blaby, LE8 4BR,<br />
-                                        UK +44 7448435973"
+                                       	
+                                        UK +44 7441913940"
                                 />
                                 <div className="address3" data-aos="zoom-in" data-aos-delay="800">
                                     <span data-tooltip-id="my-tooltip-3" className="addressDot"></span>
@@ -129,7 +129,7 @@ export default function FooterMap() {
                                             onChange={handleChange}
                                             required
                                         >
-                                            <option value="" selected>
+                                            <option value="" >
                                                 Select Services
                                             </option>
                                             <option value="digital marketing">Digital Marketing</option>

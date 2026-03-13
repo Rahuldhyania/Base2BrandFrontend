@@ -101,15 +101,11 @@ export default function FooterBottom() {
           <div className="mb-sm-0 mb-4 footerMenu">
             <h6>UK</h6>
             <ul className="mb-0">
-              <li>7 Snow Avenue, Blaby, LE8 4BR
-                <br />
+              <li>
                 UK
-                <a className="text-white" href="tel:+44-2080-953232"> +44 2080953232
+                <a className="text-white" href="tel:+447441913940"> +44 7441913940
                 </a>
                 <br />
-                UK
-                <a className="text-white" href="tel:+44-7552-535341"> +44 7448435973
-                </a>
               </li>
 
             </ul>

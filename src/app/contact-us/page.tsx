@@ -262,9 +262,8 @@ import Newcontactform from "./Newcontactform";
                                     </div>
                                 </div>
                                 <div className="address">
-                                    <p>7 Snow Avenue, Blaby, LE8 4BR, <br />
-                                    UK +44 2080953232 <br />
-                                    UK +44 7448435973 </p>
+                                    <p>
+                                    UK +44 7441913940  </p>
                                 </div>
                             </div>
                         </div>
