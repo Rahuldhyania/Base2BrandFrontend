@@ -74,7 +74,7 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY_LIVE }}
           script: |
             cd /var/www/html/newbase2brand/
-            pm2 reload newbase2brand || pm2 start "npm run start" --name newbase2brand
+            PORT=3002 pm2 reload newbase2brand || PORT=3002 pm2 start "npm run start" --name newbase2brand
             pm2 save
 
       - name: Health check

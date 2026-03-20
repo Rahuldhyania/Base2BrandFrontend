@@ -83,6 +83,7 @@ export default function FooterMap() {
                                 <div className="address2" data-aos="zoom-in" data-aos-delay="700">
                                     <span data-tooltip-id="my-tooltip-2" className="addressDot"></span>
                                 </div>
+                                
                                 <Tooltip
                                     id="my-tooltip-2"
                                     className="tooltipText"
