@@ -1,0 +1,981 @@
+@import url('./our-project.css');
+.banner-back-offce {
+    font-family: 'Poppins';
+    background-color: rgb(35, 28, 65);
+}
+.banner-back-offce h1.heading{
+    font-weight: 600;
+    font-size:90px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.banner-back-offce h2 .highlight-text {
+    color: #d94e26;
+}
+.banner-back-offce h2{
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#FFF;
+}
+.banner-back-offce p {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #fff;
+    margin:20px 0 50px 0;
+}
+.banner-wraper-back {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.banner-back-property {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 97px;
+}
+.banner-back-property p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding-top: 4px;
+    font-family: 'Poppins';
+    margin: 9px 0 0px 0;
+}
+.item-back-office svg {
+    width: 43px;
+    height: 43px;
+}
+.right_content .submit-btn {
+    margin-top: 25px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #7411E1 0%, #396ADB 100%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    width: 100%;
+    transition:ease-in-out 0.5s;
+}
+.right_content .submit-btn:hover{
+    background:#000;
+    color:#fff;
+}
+.right_content .form-group label {
+    margin-bottom: 0px;
+    font-weight: 400;
+    color: #575757;
+}
+
+/* banner css end here */
+
+
+/* top service css start here */
+.top-service {
+    background: linear-gradient(90deg, #181232, #0f051a);
+    padding: 70px 0;
+}
+.top-service h2 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height:normal;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #fff;
+    margin-bottom:29px;
+}
+.top-service h2 span{
+     color: #d94e26;
+}
+.top-service .top-service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+.top-service-grid .top-service-wraper {
+    position: relative;
+    background: #d9d9d917;
+    padding: 26px 42px;
+    border-radius: 22px;
+    box-shadow: rgb(255 255 255 / 30%) 0px 1px 2px 0px, rgb(255 255 255 / 19%) 0px 1px 3px 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.top-service-grid .top-service-wraper:hover{
+    transform: translateY(-10px);
+}
+.top-service-grid .top-service-wraper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #0f051b 0%, #7411E1 100%);
+    border-radius: 22px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 0;
+}
+.top-service-grid .top-service-wraper:hover::before {
+    opacity: 1;
+}
+
+.top-service-grid .top-service-wraper > * {
+    position: relative; 
+    z-index: 1;
+}
+p.top-service-title {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 20px;
+    color: #fff;
+}
+.top-service-icon {
+    background: #FFFFFF1A;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: rgb(255 255 255 / 30%) 0px 1px 2px 0px, rgb(255 255 255 / 19%) 0px 1px 3px 1px;
+}
+.top-service-icon svg{
+    width:30px;
+    height:30px;
+}
+
+/* top service css end here */
+
+/* who we are css start here */
+.back-who-we-wr {
+    display: flex;
+    gap: 80px;
+}
+.back-who-we-wr .image,
+.back-who-we-wr .content {
+    width: calc(50% - 40px);
+}
+.back-who-we-wr .image{
+    border-radius:30px;
+    overflow: hidden;
+}
+.back-who-we-are{
+    background: linear-gradient(90deg, #181232, #0f051a);
+}
+.back-who-we-wr .content h2 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #f47b52;
+}
+.back-who-we-wr .content h3 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.back-who-we-wr .content p {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    padding:10px 0 40px 0;
+    color: #fff;
+}
+
+
+
+
+.back-office-support-tool {
+    background: linear-gradient(90deg, #181232, #0f051a);
+    padding: 80px 0;
+}
+.back-office-support-tool h3,
+.back-office-support-tool h2 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: normal;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #fff;
+    margin:0;
+}
+.back-office-support-tool h3 {
+    color:#f47b52;
+}
+.warper-back-tool {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top:30px;
+    gap: 44px;
+}
+.back-tool-item {
+    background: #d9d9d917;
+    border-radius: 30px;
+    padding: 23px 35px;
+    position: relative;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+    box-shadow: rgb(255 255 255 / 30%) 0px 1px 2px 0px, rgb(255 255 255 / 19%) 0px 1px 3px 1px;
+}
+.back-tool-item:hover{
+    transform: translateY(-10px);
+}
+.back-tool-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #0f051b 0%, #7411E1 100%);
+    border-radius: 22px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 0;
+}
+.back-tool-item:hover::before {
+    opacity: 1;
+}
+.back-tool-item h4 {
+    display: flex;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #fff;
+    align-items: center;
+    gap: 5px;
+}
+.back-tool-item h2,
+.back-tool-item h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: left;
+    vertical-align: middle;
+    color: #fff;
+}
+.back-tool-item .inner-ct-itm {
+    margin-top: 15px;
+}
+
+
+
+
+
+.back-office-about {
+    background: linear-gradient(90deg, #181232, #0f051a);
+    padding-top:70px;
+}
+.back-office-about .b2b-container-lg {
+    background: #d9d9d917;
+    padding: 44px;
+    border-radius: 40px;
+}
+.back-office-about .image-right-cmt {
+    border-radius: 33px;
+    overflow: hidden;
+}
+.back-office-about .wraper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+.back-office-about .wraper .content p{
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    padding: 10px 0 40px 0;
+    color: #fff;
+}
+.back-office-about .wraper .content h3{
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+}
+.back-office-about .wraper .content h3  span.highlight{
+   color: #f47b52;
+}
+.back-office-about .wraper .content h2{
+    font-weight: 600;
+    font-size: 51px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#fff;
+}
+.back-office-about .wraper .content h2 span.highlight{
+    color: #f47b52;
+}
+
+
+
+
+.main-top-reason {
+    background: linear-gradient(90deg, #181232, #0f051a);
+}
+.main-top-reason .right-content {
+    background: #D9D9D933;
+    padding: 40px;
+    border: 1px solid #D9D9D933;
+    border-radius: 40px;
+    display: grid;
+    gap: 20px;
+}
+.top-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+.inner-top-items {
+    border-bottom: 1px solid #878787;
+}
+.inner-top-items:last-child{
+    border-bottom:0;
+}
+.inner-top-items h3 {
+    font-weight: 600;
+    font-size:19px;
+    line-height: normal;
+    letter-spacing: 0%;
+    color: #ffff;
+}
+.top-inner .left-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.inner-top-items p {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    color: #fff;
+}
+.main-top-reason .left-content h3,
+.main-top-reason .left-content h2 {
+    color: #f47b52;
+    font-weight: 600;
+    font-size: 51px;
+    margin:0;
+    letter-spacing: 0%;
+}
+.main-top-reason .left-content h3{
+    color:#fff;
+}
+/* who we are css end here */
+
+
+/* proven result css start here */
+.back-proven-result{
+    background: linear-gradient(90deg, #181232, #0f051a);
+    padding:70px 0; 
+}
+.back-proven-result h2 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: normal;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #fff;
+}
+.back-proven-result h2 span.highlighttext{
+    color:#f47b52;
+}
+.proven-result-wr {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+.proven-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.proven-item .ring-wrap {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.proven-item .ring-wrap svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.proven-item .ring-number {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proven-item .ring-value {
+  font-size: 36px;
+  font-weight:600;
+  color: #ffffff;
+  line-height: 1;
+}
+.proven-item .ring-label {
+    margin: 0;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #fff;
+    max-width: 280px;
+}
+/* proven result css end here */
+
+
+/* Industries We Serve css start here */
+.back-industries-we-serve{  
+    background: linear-gradient(90deg, #181232, #0f051a);
+}
+.back-industries-we-serve .inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 100px;
+}
+.right-we-image img {
+    max-height: 700px;
+    width: auto;
+    border-radius: 47px;
+}
+.back-serve-skill {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 35px;
+    row-gap: 6px;
+}
+.back-serve-skill h4.skill-item {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    color: #fff;
+    background: #76757636;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #D9D9D933;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.back-serve-skill h4.skill-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #0f051b 0%, #7411E1 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: -1; 
+}
+
+.back-serve-skill h4.skill-item:hover::before {
+    opacity: 1;
+}
+
+.back-serve-skill h4.skill-item:hover {
+    color: #fff; 
+}
+
+.back-industries-we-serve .left-we h2 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: normal;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.back-industries-we-serve .left-we h2 span.highlighttext{
+    color:#f47b52;
+}
+/* Industries We Serve css end here */
+
+/* Ready to scale css start here */
+.back-ready-scale{
+    background: linear-gradient(90deg, #181232, #0f051a);
+    padding:70px 0;
+}
+.back-ready-scale .inner-ready-wr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #806da5;
+    border-radius: 30px;
+    padding:70px 0px 0 100px;
+}
+.back-ready-scale h2{
+    font-weight: 600;
+    font-size: 41px;
+    margin: 0;
+    letter-spacing: 0%;
+    color: #fff;
+}
+.back-ready-scale h2 span.highlighttext{
+    color:#f47b52;
+}
+.back-ready-scale .inner-ready-wr .left p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: normal;
+    letter-spacing: 0%;
+    color: #fff;
+    max-width: 400px;
+    padding: 10px 0 30px 0;
+}
+.back-client-testimonilas{
+    background: linear-gradient(90deg, #181232, #0f051a);
+    padding-top:70px;
+}
+.back-client-testimonilas .clinet_con_inner{
+    height:100%;
+}
+.back-client-testimonilas .swiper-pagination {
+    position: static;
+}
+.back-client-testimonilas .clinet_container {
+    padding: 3% 10%;
+}
+.back-client-testimonilas .swiper-pagination-bullet{
+    background-color:#452A76;
+    width:15px;
+    height: 15px;
+}
+.back-client-testimonilas .swiper-pagination-bullet-active{
+    background-color: #B99CEE;
+    width:20px;
+    height:20px;
+}
+
+
+.back-our-global {
+    background: linear-gradient(90deg, #181232, #0f051a);
+    padding-top: 70px;
+}
+.back-our-global .mapWrapper-lg {
+    transform: unset;
+}
+.back-our-global h2 {
+    font-weight: 600;
+    font-size: 51px;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 0%;
+    padding-bottom: 32px;
+}
+.back-our-global h2 span{
+    color: #f47b52;
+}
+
+.back-client-testimonilas .b2b-heading svg{
+    display:none;
+}
+.back-client-testimonilas h2{
+    font-weight: 600;
+    font-size: 51px;
+    margin: 0;
+    letter-spacing: 0%;
+}
+
+
+.back-trusted-by-leadibng{
+    background: linear-gradient(90deg, #181232, #0f051a);
+    padding-top:70px;
+}
+.back-trusted-wr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+.left-back-trst {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    background-color:#fff;
+    border-radius:48px;
+    padding:50px;
+}
+.left-back-trst .logo-item img {
+    object-fit: contain;
+}
+.right-back-trs h3,
+.right-back-trs h2 {
+    font-weight: 600;
+    font-size: 51px;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 0%;
+}
+.right-back-trs h2 span.highlight{
+    color: #f47b52;
+}
+/* Ready to scale  css end here */
+
+
+@media all and (max-width:1024px){
+    .back-who-we-wr .content h3,
+    .back-who-we-wr .content h2,
+    .back-proven-result h2,
+    .back-industries-we-serve .left-we h2,
+    .back-office-about .wraper .content h2,
+    .back-office-support-tool h3, 
+    .back-office-support-tool h2,
+    .main-top-reason .left-content h3,
+    .main-top-reason .left-content h2,
+    .back-our-global h2,
+    .back-client-testimonilas h2,
+    .back-ready-scale h2,
+    .right-back-trs h2,
+    .right-back-trs h3,
+    .top-service h2{
+        font-size: 30px;
+    }
+
+    .proven-item .ring-label,
+    .back-office-about .wraper .content p,
+    .inner-top-items p,
+    .back-tool-item h4,
+    .back-who-we-wr .content p{
+        font-size: 14px;
+        line-height: 29px;
+    }
+
+
+    .back-office-support-tool .back-tool-item h2, 
+    .back-office-support-tool .back-tool-item h3{
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .back-tool-item,
+    .back-tool-item::before{
+        border-radius: 14px;
+        padding: 20px;
+    }
+    .warper-back-tool{
+        gap: 24px;
+    }
+    .main-top-reason .right-content{
+        border-radius: 20px;
+        padding: 22px;
+    }
+    .inner-top-items h3{
+        font-size: 14px;
+    }
+
+    .top-service-grid .top-service-wraper{
+        border-radius: 10px;
+    }
+    p.top-service-title{
+        font-size: 14px;
+        line-height: normal;
+    }
+    .top-service .top-service-grid{
+        gap: 20px;
+    }
+    .proven-item .ring-value{
+        font-size: 26px;
+    }
+
+}
+
+@media all and (max-width:768px){
+    .top-inner{
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .left-back-trst{
+        border-radius: 15px;
+        padding: 26px;
+    }
+    .back-trusted-wr{
+        gap: 31px;
+    }
+    .banner-wraper-back{
+        grid-template-columns: 1fr;
+    }
+    .banner-back-offce h2,
+    .banner-back-offce h1.heading{
+        font-size: 54px;
+        text-align: center;
+    }
+    .banner-back-offce p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        margin: 11px 0 33px 0;
+    }
+
+    .banner-back-offce a.backbutton-action {
+        display: flex;
+        justify-content: center;
+    }
+    .banner-back-property {
+        gap: 30px;
+        margin-top: 58px;
+        justify-content: center;
+    }
+    .banner-back-property .icon-back-pro {
+        text-align: center;
+    }
+
+    .back-ready-scale,
+    .back-office-support-tool,
+    .back-proven-result,
+    .top-service{
+        padding: 41px 0;
+    }
+
+    .back-our-global,
+    .back-trusted-by-leadibng,
+    .back-client-testimonilas,
+    .back-office-about{
+        padding-top: 41px;
+    }
+    .back-office-about .wraper,
+    .back-industries-we-serve .inner{
+        grid-template-columns: 1fr;
+    }
+    .warper-back-tool{
+        grid-template-columns: 1fr 1fr;
+    }
+    .back-serve-skill h4.skill-item{
+        font-size: 13px;
+    }
+    .back-ready-scale .inner-ready-wr{
+        padding: 40px;
+    }
+    .back-serve-skill{
+        column-gap: 22px;
+    }
+    .back-industries-we-serve .inner{
+        gap: 42px;
+    }
+    .back-office-about .wraper .content p{
+        padding: 10px 0 0px 0;
+    }
+    .main-top-reason .left-content h2,
+    .main-top-reason .left-content h3{
+        text-align: center;
+    }
+
+    .back-who-we-wr .image img{
+        height: 100%;
+        width:100%;
+    }
+    .back-who-we-wr .image, .back-who-we-wr .content {
+        width: 100%;
+    }
+    .back-who-we-wr{
+        gap: 41px;
+    }
+    .back-office-about .b2b-container-lg{
+        border-radius: 0;
+        padding:44px 22px;
+    }
+    .top-service-grid .top-service-wraper{
+        padding: 20px;
+    }
+
+    .back-office-about .wraper .content h3{
+        font-size: 25px;
+    }
+    .back-industries-we-serve .left-we h2{
+        text-align: center;
+    }
+    .right-we-image img {
+        max-height: fit-content;
+        width: 100%;
+        border-radius: 19px;
+    }
+    .proven-item .ring-wrap svg,
+    .proven-item .ring-wrap {
+        width: 113px;
+        height: 113px;
+    }
+    .proven-result-wr{
+        gap:0;
+        flex-wrap: nowrap;
+        margin-top: 37px;
+    }
+    .proven-item .ring-label{
+        font-size: 14px;
+        line-height: normal;
+        max-width: max-content;
+    }
+    .banner-back-offce{
+        padding-top: 60px;
+    }
+    .top-inner .left-content{
+        gap: 20px;
+    }
+}
+
+
+@media all and (max-width:480px){
+    .top-service .top-service-grid{
+        grid-template-columns: 1fr;
+    }
+    .top-service-grid .top-service-wraper{
+        text-align: center;
+    }
+    .top-service-icon{
+        margin:0 auto;
+    }
+    .back-who-we-wr{
+        flex-wrap: wrap;
+    }
+    .back-who-we-wr .content p{
+        padding: 10px 0 13px 0;
+    }
+    .warper-back-tool{
+        grid-template-columns: 1fr;
+    }
+    .proven-result-wr{
+        display: grid;
+        gap:20px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .back-serve-skill {
+        column-gap: 8px;
+        row-gap: 1px;
+    }
+    .back-serve-skill h4.skill-item {
+        font-size: 10px;
+    }
+    .back-tool-item h4{
+        font-size: 13px;
+        line-height: normal;
+    }
+    .banner-back-offce h2, .banner-back-offce h1.heading {
+        font-size: 30px;
+    }
+    .banner-wraper-back{
+        padding:0;
+    }
+    .banner-back-property{
+        gap:13px;
+    }
+    .back-ready-scale .inner-ready-wr .left p {
+        font-size: 13px;
+        line-height: normal;
+        padding: 10px 0 9px 0;
+    }
+    .back-ready-scale .inner-ready-wr{
+        padding: 22px;
+        border-radius: 19px;
+        grid-template-columns: 1fr;
+        gap:40px;
+    }
+    .back-ready-scale h2{
+        font-size: 22px;
+    }
+    .back-trusted-wr{
+        grid-template-columns: 1fr;
+    }
+    .proven-item .ring-value {
+        font-size: 19px;
+    }
+    .back-office-about .wraper .content h3 {
+        font-size: 18px;
+    }
+    .back-office-about .wraper .content p {
+        font-size: 13px;
+        line-height: 26px;
+    }
+    .banner-back-property .item-back-office p{
+        font-size: 13px;
+        line-height: normal;
+    }
+    .banner-wraper-back .right_content .form-wrapper{
+        margin:0;
+    }
+    .item-back-office svg {
+        width: 30px;
+        height: 30px;
+    }
+    .back-office-about .b2b-container-lg {
+        padding: 44px 22px 25px 22px;
+    }
+    .back-office-about .wraper{
+        gap: 25px;
+    }
+    .inner-top-items p{
+        font-size: 13px;
+        line-height: 24px;
+    }
+    .banner-wraper-back .right_content .form-wrapper .crm-form h2{
+        font-size: 20px !important;
+    }
+
+    .back-client-testimonilas .clinet_container {
+        padding: 3% 0%;
+    }
+    .left-back-trst{
+        order:2;
+    }
+    .right-back-trs{
+        order:1;
+    }
+    .right-back-trs h3, .right-back-trs h2{
+        text-align: center;
+    }
+
+    .back-who-we-wr .content h3,
+    .back-who-we-wr .content h2, 
+    .back-proven-result h2, 
+    .back-industries-we-serve .left-we h2, 
+    .back-office-about .wraper .content h2, 
+    .back-office-support-tool h3, 
+    .back-office-support-tool h2, 
+    .main-top-reason .left-content h3, 
+    .main-top-reason .left-content h2, 
+    .back-our-global h2, 
+    .back-client-testimonilas h2,
+    .back-ready-scale h2, 
+    .right-back-trs h3, 
+    .right-back-trs h2,
+    .top-service h2{
+        font-size: 24px;
+    }
+}
