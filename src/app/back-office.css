@@ -854,7 +854,17 @@ p.top-service-title {
 
 @media all and (max-width:480px){
     .top-service .top-service-grid{
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr 1fr;
+    }
+    .top-service-grid .top-service-wraper{
+        gap:10px;
+    }
+    .top-service-grid .top-service-wraper::before{
+        border-radius: 9px;
+    }
+    p.top-service-title {
+        font-size: 12px;
+        line-height: normal;
     }
     .top-service-grid .top-service-wraper{
         text-align: center;
@@ -893,8 +903,14 @@ p.top-service-title {
     .banner-wraper-back{
         padding:0;
     }
-    .banner-back-property{
-        gap:13px;
+    .banner-back-property {
+        gap: 13px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .back-client-testimonilas .slider_cotss img {
+        width: 36px;
     }
     .back-ready-scale .inner-ready-wr .left p {
         font-size: 13px;

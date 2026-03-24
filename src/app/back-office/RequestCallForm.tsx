@@ -78,10 +78,11 @@ function RequestCallForm() {
 
         <div className="grid">
           <div className="form-group">
-            <label>First Name</label>
+            <label>First Name*</label>
             <input
               type="text"
               name="firstname"
+              required
               value={formData.firstname}
               onChange={handleChange}
             />
@@ -97,20 +98,22 @@ function RequestCallForm() {
             />
           </div>
           <div className="form-group">
-            <label>Mobile Phone</label>
+            <label>Mobile Phone*</label>
             <input
               type="text"
               name="mobile"
+              required
               value={formData.mobile}
               onChange={handleChange}
             />
           </div>
 
           <div className="form-group">
-            <label>Email</label>
+            <label>Email*</label>
             <input
               type="email"
               name="email"
+              required
               value={formData.email}
               onChange={handleChange}
             />
@@ -120,6 +123,7 @@ function RequestCallForm() {
             <label>Country</label>
             <input
               type="text"
+              
               name="country"
               value={formData.country}
               onChange={handleChange}
