@@ -8,7 +8,6 @@ interface BackReadyScaleProps {
   buttonUrl?: string;
   image?: string;
 }
-
 const BackReadyScale = ({ title, description, buttonTitle, buttonUrl, image }: BackReadyScaleProps) => {
   return (
     <div className="back-ready-scale">
