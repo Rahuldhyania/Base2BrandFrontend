@@ -5,6 +5,7 @@ interface BackReadyScaleProps {
   title?: string;
   description?: string;
   buttonTitle?: string;
+  buttonUrl?: string;
   image?: string;
 }
 
