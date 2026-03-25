@@ -49,7 +49,7 @@ export default function Motionfactcard() {
                   />
                   <div className="factnumber_outer">
                     <h2 className="fact_card_title sm_skyblue">
-                      <CountUp end={data.factnumber} enableScrollSpy />{'+'}
+                      <CountUp end={data.factnumber || 0} enableScrollSpy />{'+'}
                     </h2>
                   </div>
                 </div>

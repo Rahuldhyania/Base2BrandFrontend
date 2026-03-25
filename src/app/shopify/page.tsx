@@ -57,7 +57,7 @@ export default function services() {
                     </svg>
 
                     {/* <svg viewBox="0 0 1320 300">
-                         <text x="50%" y="50%" dy=".35em" text-anchor="middle" stroke-dasharray="5,5">
+                         <text x="50%" y="50%" dy=".35em" text-anchor="middle" strokeDasharray="5,5">
                              SHOPIFY EXPERTS
                          </text>
                      </svg> */}

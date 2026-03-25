@@ -6,59 +6,71 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const TestimonialSlider = () => {
+const testimonialsdata = [
+  {
+    id: 1,
+    name: "Dr. James Whitmore",
+    role: "General Physician",
+    date: "May 2024",
+    content:
+      "Base2Brand delivered an exceptional healthcare website design that reflects patient trust and professionalism. Their expertise improved appointments and overall engagement significantly.",
+    rating: 5
+  },
+  {
+    id: 2,
+    name: "Rahul Verma",
+    role: "Hospital Operations Manager",
+    date: "February 2025",
+    content:
+      "Our hospital needed a scalable, secure platform. Base2Brand’s healthcare web design improved speed, clarity, and workflows, enhancing patient and staff experience.",
+    rating: 5
+  },
+  {
+    id: 3,
+    name: "Emily Carter",
+    role: "Dental Surgeon",
+    date: "January 2024",
+    content:
+      "Base2Brand created a clean, patient-friendly healthcare website design. It improved online enquiries, credibility, and accessibility across all devices.",
+    rating: 5
+  },
+  {
+    id: 4,
+    name: "Suresh Iyer",
+    role: "Healthcare IT Administrator",
+    date: "December 2025",
+    content:
+      "Security and compliance were critical. Base2Brand built a robust, scalable healthcare website design aligned with data protection standards.",
+    rating: 4
+  },
+  {
+    id: 5,
+    name: "Dr. Ritu Malhotra",
+    role: "Clinical Psychologist",
+    date: "November 2023",
+    content:
+      "The calm, professional healthcare web design Base2Brand created improved engagement and reduced appointment drop-offs effectively.",
+    rating: 5
+  },
+  {
+    id: 6,
+    name: "Daniel Thompson",
+    role: "Diagnostic Center Director",
+    date: "November 2023",
+    content:
+      "Our new healthcare website design modernized our digital presence, increased online bookings, and strengthened brand authority.",
+    rating: 4
+  }
+];
+interface Testimonial  {
+  testimonials? : any
+}
+const TestimonialSlider = ({testimonials}:Testimonial) => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const paginationRef = useRef(null);
   const swiperRef = useRef(null);
 
-  const testimonials = [
-    {
-      id: 1,
-      name: "Sarah Johnson",
-      role: "CEO, TechNova Solutions",
-      date: "March 2024",
-      content:
-        "The attention to detail and strategic approach delivered exceptional ROI. Their expertise in Shopify development is unparalleled in the industry.",
-      rating: 5
-    },
-    {
-      id: 2,
-      name: "Michael Chen",
-      role: "Director, Digital Innovations",
-      date: "February 2024",
-      content:
-        "From concept to launch, the team delivered excellence at every stage. Our conversion rates improved dramatically and customer satisfaction is at an all-time high.",
-      rating: 5
-    },
-    {
-      id: 3,
-      name: "Priya Sharma",
-      role: "Founder, UrbanStyle Co.",
-      date: "January 2024",
-      content:
-        "Working with this team transformed our e-commerce platform. The results exceeded all expectations and our revenue grew by 300% in just 6 months.",
-      rating: 5
-    },
-    {
-      id: 4,
-      name: "Robert Wilson",
-      role: "Head of E-commerce",
-      date: "December 2023",
-      content:
-        "Their innovative solutions and technical expertise helped us scale our operations seamlessly. A truly professional partnership.",
-      rating: 4
-    },
-    {
-      id: 5,
-      name: "Emily Davis",
-      role: "Marketing Director",
-      date: "November 2023",
-      content:
-        "The team's dedication and problem-solving skills are remarkable. They delivered beyond our requirements and timelines.",
-      rating: 5
-    }
-  ];
 
   const handleSwiperInit = swiper => {
     swiperRef.current = swiper;
@@ -109,7 +121,7 @@ const TestimonialSlider = () => {
             }}
             className="testimonial_swiper"
           >
-            {testimonials.map((testimonial, index) =>
+            {testimonials || testimonialsdata.map((testimonial, index) =>
               <SwiperSlide key={testimonial.id}>
                 <div className="testimonial_slide">
                   <div className="slide_top_decoration">

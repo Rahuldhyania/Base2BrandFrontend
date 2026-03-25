@@ -68,8 +68,8 @@ const page = () => {
     <div>
       <Header />
       <AutomationBanner 
-       title={'B2B Wholesale Automation: <br/> <span class="gradient_text"> Eliminate Manual Order Processing Without Enterprise Platform Costs </span>'}
-       description={'Mid-market wholesale distributors lose operational efficiency to manual order processing and pricing reconciliation. SAAS Integrator automates tier pricing, credit enforcement, and order synchronization between your ERP and e-commerce platforms—reducing fulfillment cycle time while eliminating pricing errors that compromise customer relationships.'}
+       title={'B2B Wholesale Automation: <br/> <span class="gradient_text"> Eliminate Manual Order Processing </span>'}
+       description={'Mid-market wholesale distributors lose operational efficiency to manual order processing and pricing reconciliation. SAAS Integrator automates tier pricing, '}
        topbar_title={"The Shopify Plus Alternative for Mid-Market Wholesalers"}
       />
       <AutomationPricing  

@@ -75,12 +75,16 @@ export default function HomeBanner() {
       </div> */}
       <div className="position-relative">
         <div
-          className="home_banner_new d-flex flex-column align-items-center" >
+          className="home_banner_new d-flex flex-column align-items-center" 
+           style={{
+            backgroundImage : `url(https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Group_1707480262_nqjig2.jpg)`
+           }}
+          >
 
           <div className="inner_banner_con">
             <div>
               <h2 className="b2b-heading text-white text-center new_banner_text ">
-                Empowering <span className="sub_heading_new_banner new_banner_color">Businesses</span> With <br /> Seamless <span className="sub_heading_new_banner new_banner_color"> Websites,</span> Intuitive <span className="sub_heading_new_banner new_banner_color">Apps</span> <br />
+               Empowering <span className="sub_heading_new_banner new_banner_color">Businesses</span> With <br /> Seamless <span className="sub_heading_new_banner new_banner_color"> Websites,</span> Intuitive <span className="sub_heading_new_banner new_banner_color">Apps</span> <br />
                 & Data-Driven <span className="sub_heading_new_banner new_banner_color">Marketing</span>
               </h2>
             </div>

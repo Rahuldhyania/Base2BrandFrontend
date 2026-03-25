@@ -24,7 +24,7 @@ const RiskManagementModern = ({ title, description, btnname, maindata }) => {
                 className="text-white gradient_text mx-auto mx-md-0"
                 style={{ width: "fit-content" }}
               >
-                Risk Framework
+                Grwoth Model
               </h5>
 
               <h2

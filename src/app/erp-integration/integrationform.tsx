@@ -126,7 +126,7 @@ export default function Integrationform() {
                     onChange={handleChange}
                     required
                   >
-                    <option value="" selected>
+                    <option value="">
                       Subject
                     </option>
                     <option value="uni commerce">Uni Commerce</option>

@@ -172,7 +172,7 @@ function devbanner() {
                     <div className="ms-2 w-100">
                       <h2 className="text-white text-start ps-2">
                         <CountUp
-                          end={99.9}
+                          end={99}
                           enableScrollSpy
                           decimals={1}
                           decimal="."

@@ -62,7 +62,7 @@ const B2bKeysMetric = () => {
                     : "metricCount metricCountreverce"}`}
                 >
                   <span className="metricCountnumber">
-                    <CountUp end={data.number} enableScrollSpy /> +
+                    <CountUp end={data.number || 0 } enableScrollSpy /> +
                   </span>
                   <span className="metricCountdescription">
                     {data.metricName}

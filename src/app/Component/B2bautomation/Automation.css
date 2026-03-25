@@ -14,7 +14,9 @@
     z-index: 2;
     position: relative;
 }
-
+.border-t-lite {
+    border-top: 2px solid #ffffff40;
+}
 .automatoin_haeding_description {
     max-width: 1400px;
     margin: auto;
@@ -27,7 +29,7 @@
     align-items: center;
     gap: 10px;
     width: fit-content;
-    margin-inline: auto;
+    /* margin-inline: auto; */
     margin-bottom: 10px;
     border: 2px solid #fff;
     padding: 8px 16px;
@@ -48,16 +50,15 @@
     height: 100%;
     z-index: 1;
     inset: 0;
-    background: rgb(0 0 0 / 70%);
+    /* background: rgb(0 0 0 / 70%); */
 
 }
 
 /* AutomationPricing  */
 .pricing-automation-container {
-    background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 100%);
+    background: #111616;
     min-height: 100vh;
     padding: 80px 0;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .pricing-header {
@@ -96,7 +97,7 @@
 }
 
 .pricing-feature-card {
-    background: rgba(30, 41, 59, 0.7);
+    background: #111616;
     backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 40px;

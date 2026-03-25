@@ -1,7 +1,6 @@
 .home_banner_new {
     display: flex;
     justify-content: center;
-    background-image: url("https://cdn.shopify.com/s/files/1/0835/6334/8002/files/Group_1707480262_nqjig2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -127,11 +127,9 @@ export default function BringIdeas() {
               )}
             </div>
 
-            <div className="row mt-4">
+            <div className="row mt-md-4">
               <div
                 className="col-lg-12 text-center"
-                data-aos="fade-up"
-                data-aos-delay="1200"
               >
                 <button onClick={toggleModal} className="b2b-btn b2b-btn-lg">
                   Request a Quote

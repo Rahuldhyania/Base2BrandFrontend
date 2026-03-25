@@ -2,14 +2,25 @@
 import RequestForm from "@/app/request-form";
 import React, { useState } from "react";
 
+interface MonthlyGrowth {
+   title? :string ,
+  description_left? : string
+  btnname : string ,
+  YourProfit : any ,
+  growth : any ,
+  description_right :string
+  tagname? : any
+}
+
 const IndustriesMonthlyGrowth = ({
   title,
   description_left,
   btnname,
   YourProfit,
   growth,
-  description_right
-}) => {
+  description_right,
+  tagname
+}: MonthlyGrowth) => {
   const [showModal, setShowModal] = useState(false);
 
   const toggleModal = () => {
@@ -49,7 +60,7 @@ const IndustriesMonthlyGrowth = ({
               <div className="MonthlyGrowthgraph">
                 <div className="d-flex justify-content-between">
                   <div>
-                    <h5 className="text-white">Your Profit</h5>
+                    <h5 className="text-white">{tagname || ''}</h5>
                     <h2 className="MonthlyGrowthgraph_heading">
                       {YourProfit}
                     </h2>

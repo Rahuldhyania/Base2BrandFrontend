@@ -91,7 +91,7 @@ export default function FooterMap() {
                                     </div>
                                     <div className="col-lg-6 mb-3">
                                         <select className="form-control removeBorder" id="" name="service" value={formData.service} onChange={handleChange} required>
-                                            <option value="" selected>Select Services</option>
+                                            <option value="">Select Services</option>
                                             <option value="digital marketing">Digital Marketing</option>
                                             <option value="ecommerce development">Ecommerce Development</option>
                                             <option value="graphic design">Graphic Design</option>

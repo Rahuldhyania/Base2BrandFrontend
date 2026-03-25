@@ -1,16 +1,16 @@
 import React from "react";
-import IndustriesBanner from "../Component/IndustriesPages/IndustriesBanner";
-import Header from "../../../component/header";
-import FooterNew from "../Component/FooterNew";
-import "../Component/IndustriesPages/Industries.css";
-import "../Component/NewHomePage/NewHome.css";
-import IndustriesMonthlyGrowth from "../Component/IndustriesPages/IndustriesMonthlyGrowth";
-import IndustriesHowWork from "../Component/IndustriesPages/IndustriesHowWork";
-import IndustriesGlobal from "../Component/IndustriesPages/IndustriesGlobal";
-import OurRiskManagement from "../Component/IndustriesPages/OurRiskManagement";
-import ProcessWorkingModel from "../Component/IndustriesPages/ProcessWorkingModel";
-import IndustriesTestimonialSection from "../Component/IndustriesPages/IndustriesTestimonialSection";
-import Faqs from "../Component/NewHomePage/Faqs";
+import IndustriesBanner from "../../Component/IndustriesPages/IndustriesBanner";
+import Header from "../../../../component/header";
+import FooterNew from "../../Component/FooterNew";
+import "../../Component/IndustriesPages/Industries.css";
+import "../../Component/NewHomePage/NewHome.css";
+import IndustriesMonthlyGrowth from "../../Component/IndustriesPages/IndustriesMonthlyGrowth";
+import IndustriesHowWork from "../../Component/IndustriesPages/IndustriesHowWork";
+import IndustriesGlobal from "../../Component/IndustriesPages/IndustriesGlobal";
+import OurRiskManagement from "../../Component/IndustriesPages/OurRiskManagement";
+import ProcessWorkingModel from "../../Component/IndustriesPages/ProcessWorkingModel";
+import IndustriesTestimonialSection from "../../Component/IndustriesPages/IndustriesTestimonialSection";
+import Faqs from "../../Component/NewHomePage/Faqs";
 const faqdata = [
   {
     id: 0,
@@ -120,6 +120,8 @@ const riskData = [
       "Building scalable systems that adapt to change while maintaining stability."
   }
 ];
+
+
 const page = () => {
   return (
     <div>
@@ -143,6 +145,7 @@ const page = () => {
         description_right={
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Temporibus nesciunt sint omnis, nihil quo molestiae vero. Dolor quo aut numquam quaerat error consequatur accusamus unde distinctio dicta fugiat voluptate, inventore omnis magni quis laboriosam rerum esse dignissimos atque? Ratione, nemo dignissimos! Explicabo, similique. Assumenda quisquam corporis delectus expedita."
         }
+        tagname={''}
       />
       <IndustriesHowWork
         title={
@@ -175,7 +178,9 @@ const page = () => {
         btnname={"Discover Our Solutions"}
         maindata={riskData}
       />
-      <ProcessWorkingModel />
+      {/* <ProcessWorkingModel 
+       stepdata={step}
+      /> */}
       <IndustriesTestimonialSection />
       <Faqs title={"Frequently Asked Questions"} faqdata={faqdata} />
       <FooterNew />
