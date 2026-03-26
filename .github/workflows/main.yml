@@ -20,17 +20,21 @@ jobs:
           node-version: '20.15.1'
           cache: 'npm'
 
-      - name: Install dependencies (bypass postinstall)
+      # - name: Install dependencies (bypass postinstall)
+      #   run: |
+      #     # Environment variable use karke postinstall script disable karo
+      #     npm ci --ignore-scripts
+      #     npm install --save-dev @types/node
+      #     echo "Dependencies installed without postinstall scripts"
+      #   env:
+      #     NPM_CONFIG_IGNORE_SCRIPTS: true
+      - name: Install dependencies
+        run: npm ci 
+        
+      - name: Build application
         run: |
-          # Environment variable use karke postinstall script disable karo
-          npm ci --ignore-scripts
-          npm install --save-dev @types/node
-          echo "Dependencies installed without postinstall scripts"
-        env:
-          NPM_CONFIG_IGNORE_SCRIPTS: true
-
-      - name: Build application (direct Next.js build)
-        run: npx next build
+           rm -rf ~/.cache/next-swc
+           npm run build
         env:
           NODE_ENV: production
           NODE_OPTIONS: --max_old_space_size=4096
