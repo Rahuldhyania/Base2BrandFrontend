@@ -100,7 +100,7 @@ const Page = () => {
                 subheading="and why agencies trust us"
                 description="Base2Brand is a performance-driven digital marketing and technology partner helping businesses grow faster online. We specialize in data-driven marketing, high-converting campaigns, and scalable digital strategies designed to increase leads, sales, and brand visibility."
                 buttonTitle="See how we can grow your business" 
-                buttonUrl="/"
+                buttonUrl="/services"
                 flexDirection={false} 
             />
             <BackProvenResult 
