@@ -20,9 +20,7 @@ export default function Header() {
       once: false
     });
   }, []);
-  useEffect(() => {
-    import("bootstrap/dist/js/bootstrap.bundle.min.js");
-  }, []);
+
   const blogsLoad = e => {
     setBlogsRoute(true); // Your logic to set the route
   };
