@@ -14,6 +14,72 @@ import BackClientReview from './BackClientReview';
 import BackOurGlobal from './BackOurGlobal';
 import BackTrsustByLogo from './BackTrsustByLogo';
 import './back-office.css'
+import '../our-project.css'
+import "../Component/IndustriesPages/Industries.css";
+import "../Component/NewHomePage/NewHome.css";
+import TestimonialSlider from '../Component/IndustriesPages/IndustriesTestimonialSection';
+
+const testimonials = [
+  {
+    id: 1,
+    name: "Dr. James Whitmore",
+    role: "General Physician",
+    date: "May 2024",
+    content:
+      "Base2Brand delivered an exceptional healthcare website design that reflects patient trust and professionalism. Their expertise improved appointments and overall engagement significantly.",
+    rating: 5
+  },
+  {
+    id: 2,
+    name: "Rahul Verma",
+    role: "Hospital Operations Manager",
+    date: "February 2025",
+    content:
+      "Our hospital needed a scalable, secure platform. Base2Brand’s healthcare web design improved speed, clarity, and workflows, enhancing patient and staff experience.",
+    rating: 5
+  },
+  {
+    id: 3,
+    name: "Emily Carter",
+    role: "Dental Surgeon",
+    date: "January 2024",
+    content:
+      "Base2Brand created a clean, patient-friendly healthcare website design. It improved online enquiries, credibility, and accessibility across all devices.",
+    rating: 5
+  },
+  {
+    id: 4,
+    name: "Suresh Iyer",
+    role: "Healthcare IT Administrator",
+    date: "December 2025",
+    content:
+      "Security and compliance were critical. Base2Brand built a robust, scalable healthcare website design aligned with data protection standards.",
+    rating: 4
+  },
+  {
+    id: 5,
+    name: "Dr. Ritu Malhotra",
+    role: "Clinical Psychologist",
+    date: "November 2023",
+    content:
+      "The calm, professional healthcare web design Base2Brand created improved engagement and reduced appointment drop-offs effectively.",
+    rating: 5
+  },
+  {
+    id: 6,
+    name: "Daniel Thompson",
+    role: "Diagnostic Center Director",
+    date: "November 2023",
+    content:
+      "Our new healthcare website design modernized our digital presence, increased online bookings, and strengthened brand authority.",
+    rating: 4
+  }
+];
+
+export const metadata = {
+  title : 'Back Office Customer Support - Services - Tool | Base2Brand',
+  description : 'Base2Brand offers expert back office customer support services to streamline your operations. Improve service quality & productivity. Contact us for tailored solutions!'
+}
 const Page = () => {
   return (
     <div>
@@ -64,7 +130,8 @@ const Page = () => {
               subheading=" leading brands"
             />
             <BackOurGlobal />
-            <BackClientReview />
+            {/* <BackClientReview /> */}
+            <TestimonialSlider testimonials={testimonials}/>
             <BackReadyScale 
               title="Ready to scale your business"
               description="with smart back officecustomer support?"

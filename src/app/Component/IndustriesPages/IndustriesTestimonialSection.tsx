@@ -121,7 +121,7 @@ const TestimonialSlider = ({testimonials}:Testimonial) => {
             }}
             className="testimonial_swiper"
           >
-            {testimonials || testimonialsdata.map((testimonial, index) =>
+            {(testimonials || testimonialsdata).map((testimonial, index) =>
               <SwiperSlide key={testimonial.id}>
                 <div className="testimonial_slide">
                   <div className="slide_top_decoration">
