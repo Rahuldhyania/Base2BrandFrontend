@@ -52,7 +52,7 @@ const bannerProperty =[
 
 const BackOfficeBanner = ({ Title, subtitle, description, buttonText, buttonUrl }: BackOfficeBannerProps) => {
   return (
-    <div className='banner-back-offce'
+    <div className='banner-back-offce pb-3'
       style={{
         backgroundImage: `url(${backofficeimg.src})`,
         backgroundSize: 'cover',

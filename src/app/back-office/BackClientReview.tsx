@@ -4,9 +4,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import '../Component/IndustriesPages/Industries.css'
+// import '../Component/IndustriesPages/Industries.css'
 const sliderData = [
   {
     c_img: "https://cdn.shopify.com/s/files/1/0835/6334/8002/files/image_6_iiednj.png",

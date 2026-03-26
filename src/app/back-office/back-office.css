@@ -272,9 +272,11 @@ p.top-service-title {
     text-align: left;
     vertical-align: middle;
     color: #fff;
+    position: relative;
 }
 .back-tool-item .inner-ct-itm {
     margin-top: 15px;
+    position: relative;
 }
 
 
@@ -570,19 +572,21 @@ p.top-service-title {
 }
 .back-client-testimonilas .swiper-pagination {
     position: static;
+    display: flex;
+    justify-content: center;
 }
 .back-client-testimonilas .clinet_container {
     padding: 3% 10%;
 }
 .back-client-testimonilas .swiper-pagination-bullet{
     background-color:#452A76;
-    width:15px;
-    height: 15px;
+    width:10px;
+    height: 10px;
 }
 .back-client-testimonilas .swiper-pagination-bullet-active{
     background-color: #B99CEE;
-    width:20px;
-    height:20px;
+    width:10px;
+    height:10px;
 }
 
 

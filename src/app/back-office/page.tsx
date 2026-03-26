@@ -18,7 +18,7 @@ import '../our-project.css'
 import "../Component/IndustriesPages/Industries.css";
 import "../Component/NewHomePage/NewHome.css";
 import TestimonialSlider from '../Component/IndustriesPages/IndustriesTestimonialSection';
-
+import '../back-office-services/backoffice.css'
 const testimonials = [
   {
     id: 1,
@@ -130,8 +130,8 @@ const Page = () => {
               subheading=" leading brands"
             />
             <BackOurGlobal />
-            {/* <BackClientReview /> */}
-            <TestimonialSlider testimonials={testimonials}/>
+            <BackClientReview />
+            {/* <TestimonialSlider testimonials={testimonials}/> */}
             <BackReadyScale 
               title="Ready to scale your business"
               description="with smart back officecustomer support?"
