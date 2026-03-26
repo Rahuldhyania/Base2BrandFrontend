@@ -484,6 +484,7 @@ p.top-service-title {
     column-gap: 35px;
     row-gap: 6px;
 }
+
 .back-serve-skill h4.skill-item {
     position: relative;
     font-weight: 500;
@@ -897,7 +898,7 @@ p.top-service-title {
         row-gap: 1px;
     }
     .back-serve-skill h4.skill-item {
-        font-size: 10px;
+        font-size: 14px;
     }
     .back-tool-item h4{
         font-size: 13px;
