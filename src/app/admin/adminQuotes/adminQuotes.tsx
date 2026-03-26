@@ -51,7 +51,7 @@ export default function AdminQuotes() {
       ? `${startDate.toLocaleDateString('en-GB')} to ${endDate.toLocaleDateString('en-GB')}`
       : "";
 
-      const response = await axios.get('https://adminbackend.base2brand.com/api/B2Badmin/quotes/search',{
+      const response = await axios.get('https://admin.b2bcampus.com/api/v2/api//B2Badmin/quotes/search',{
         params: {
           query: searchTerm, // Search term
           dateRange: dateRange, // Date range filter
@@ -123,10 +123,10 @@ export default function AdminQuotes() {
     e.preventDefault();
     try {
       if (isEditing && selectedData._id) {
-        await axios.put(`https://adminbackend.base2brand.com/api/B2Badmin/quotes/${selectedData._id}`, selectedData);
+        await axios.put(`https://admin.b2bcampus.com/api/v2/api//B2Badmin/quotes/${selectedData._id}`, selectedData);
         alert('Quote updated successfully');
       } else {
-        await axios.post('https://adminbackend.base2brand.com/api/B2Badmin/quotes', selectedData);
+        await axios.post('https://admin.b2bcampus.com/api/v2/api//B2Badmin/quotes', selectedData);
         alert('Quote created successfully');
       }
       handleCloseModal();
@@ -142,7 +142,7 @@ export default function AdminQuotes() {
 
     if (window.confirm("Are you sure you want to delete this quote?")) {
       try {
-        await axios.delete(`https://adminbackend.base2brand.com/api/B2Badmin/quotes/${id}`);
+        await axios.delete(`https://admin.b2bcampus.com/api/v2/api//B2Badmin/quotes/${id}`);
         alert('Quote deleted successfully');
         fetchQuotes();
       } catch (error) {

@@ -74,12 +74,12 @@ export default function AdminBlog() {
 
   // ========= CONFIG =========
   const UPLOAD_EDITOR_IMAGE_URL =
-    "https://adminbackend.base2brand.com/api/B2Badmin/blogs/upload-editor-image";
+    "https://admin.b2bcampus.com/api/v2/api//B2Badmin/blogs/upload-editor-image";
 
   // NOTE: Agar tumhare backend me ye endpoint nahi hai, to bhi koi issue nahi hoga (catch me ignore hai).
   // If you have a correct endpoint for "content paste log", replace this URL:
   const PASTE_LOG_URL =
-    "https://adminbackend.base2brand.com/api/B2Badmin/blogs/paste-log";
+    "https://admin.b2bcampus.com/api/v2/api//B2Badmin/blogs/paste-log";
 
   // ========= FETCH BLOGS =========
   useEffect(() => {
@@ -93,7 +93,7 @@ export default function AdminBlog() {
             : "";
 
         const response = await axios.get(
-          "https://adminbackend.base2brand.com/api/B2Badmin/blogs/search",
+          "https://admin.b2bcampus.com/api/v2/api//B2Badmin/blogs/search",
           {
             params: {
               query: searchTerm,
@@ -395,7 +395,7 @@ export default function AdminBlog() {
         formData.append("image", selectedData.image);
       }
 
-      await axios.post("https://adminbackend.base2brand.com/api/B2Badmin/blogs", formData, {
+      await axios.post("https://admin.b2bcampus.com/api/v2/api//B2Badmin/blogs", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
@@ -414,7 +414,7 @@ export default function AdminBlog() {
       handleCloseModal();
 
       const response = await axios.get(
-        "https://adminbackend.base2brand.com/api/B2Badmin/blogs"
+        "https://admin.b2bcampus.com/api/v2/api//B2Badmin/blogs"
       );
       setBlogs(response.data.blogs);
     } catch (error) {
@@ -438,7 +438,7 @@ export default function AdminBlog() {
     if (result.isConfirmed) {
       try {
         await axios.delete(
-          `https://adminbackend.base2brand.com/api/B2Badmin/blogs/${id}`
+          `https://admin.b2bcampus.com/api/v2/api//B2Badmin/blogs/${id}`
         );
         Swal.fire("Deleted!", "Your blog has been deleted.", "success");
         setBlogs(blogs.filter((blog) => blog.id !== id));

@@ -25,7 +25,7 @@ interface Blog {
 async function getBlogBySlug(slug: string) {
   try {
     const res = await fetch(
-      `https://adminbackend.base2brand.com/api/B2Badmin/blogs/slug/${slug}`,
+      `https://admin.b2bcampus.com/api/v2/api//B2Badmin/blogs/slug/${slug}`,
       {
         next: {
           revalidate,
@@ -48,7 +48,7 @@ async function getBlogBySlug(slug: string) {
 export async function generateStaticParams() {
   try {
     const res = await fetch(
-      "https://adminbackend.base2brand.com/api/B2Badmin/blogs?page=1&limit=500",
+      "https://admin.b2bcampus.com/api/v2/api//B2Badmin/blogs?page=1&limit=500",
       {
         next: { revalidate },
         headers: {

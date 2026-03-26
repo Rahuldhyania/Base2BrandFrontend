@@ -41,7 +41,7 @@ function BlogDetail() {
       const fetchBlogs = async () => {
         try {
           const response = await axios.get(
-            "https://adminbackend.base2brand.com/api/B2Badmin/blogs",
+            "https://admin.b2bcampus.com/api/v2/api//B2Badmin/blogs",
             {
               params: {
                 page: currentPage, // Send current page

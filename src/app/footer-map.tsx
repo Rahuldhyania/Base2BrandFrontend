@@ -30,7 +30,7 @@ export default function FooterMap() {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         try {
-            const response = await fetch('https://adminbackend.base2brand.com/api/B2Badmin/contact-us', {
+            const response = await fetch('https://admin.b2bcampus.com/api/v2/api//B2Badmin/contact-us', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

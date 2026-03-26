@@ -59,7 +59,7 @@ const RequestForm: React.FC<ModalProps> = ({ onCloseModal }) => {
       // 1) SUBMIT TO YOUR BACKEND FIRST
       // ----------------------------------------------------
       const response = await fetch(
-        "https://adminbackend.base2brand.com/api/B2Badmin/quotes",
+        "https://admin.b2bcampus.com/api/v2/api//B2Badmin/quotes",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

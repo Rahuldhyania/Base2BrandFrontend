@@ -27,7 +27,7 @@ export default function Uifrom() {
     e.preventDefault();
     try {
       const response = await fetch(
-        "https://adminbackend.base2brand.com/api/B2Badmin/contact-us",
+        "https://admin.b2bcampus.com/api/v2/api//B2Badmin/contact-us",
         {
           method: "POST",
           headers: {

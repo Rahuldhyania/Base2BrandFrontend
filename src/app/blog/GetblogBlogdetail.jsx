@@ -100,7 +100,7 @@ const GetblogBlogdetail = () => {
                     let res;
                     if (search.trim()) {
                         res = await axios.get(
-                            "https://adminbackend.base2brand.com/api/B2Badmin/blogs/search",
+                            "https://admin.b2bcampus.com/api/v2/api/B2Badmin/blogs/search",
                             {
                                 params: {
                                     query: search,
@@ -114,7 +114,7 @@ const GetblogBlogdetail = () => {
                         setTotalPages(res?.data?.totalPages || 0);
                     } else {
                         res = await axios.get(
-                            "https://adminbackend.base2brand.com/api/B2Badmin/blogs/category",
+                            "https://admin.b2bcampus.com/api/v2/api/B2Badmin/blogs/category",
                             {
                                 params: {
                                     categoriesType: category,

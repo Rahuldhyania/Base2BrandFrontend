@@ -57,7 +57,7 @@ const RequestForm: React.FC<ModalProps> = ({ onCloseModal }) => {
     try {
       // Your form submission logic goes here
       const response = await fetch(
-        "https://adminbackend.base2brand.com/api/B2Badmin/quotes",
+        "https://admin.b2bcampus.com/api/v2/api//B2Badmin/quotes",
         {
           method: "POST",
           headers: {

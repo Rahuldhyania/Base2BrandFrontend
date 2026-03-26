@@ -80,7 +80,7 @@
 //   };
 //   // Fetch dynamic URLs from APIs
 //   const blogUrls = await fetchDynamicUrls(
-//     "https://adminbackend.base2brand.com/api/B2Badmin/blogs?page=1&limit=500"
+//     "https://admin.b2bcampus.com/api/v2/api//B2Badmin/blogs?page=1&limit=500"
 //   );
 
 //   const urls = [...staticUrls, ...blogUrls];

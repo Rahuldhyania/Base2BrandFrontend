@@ -53,7 +53,7 @@ function Home() {
     const fetchBlogs = async () => {
       setLoading(true);
       try {
-        const response = await axios.get('https://adminbackend.base2brand.com/api/B2Badmin/blogs', {
+        const response = await axios.get('https://admin.b2bcampus.com/api/v2/api//B2Badmin/blogs', {
           params: {
             page: currentPage,   // Send current page
             limit: itemsPerPage  // Send items per page

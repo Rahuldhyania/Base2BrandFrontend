@@ -18,7 +18,7 @@ const BASE_URL = "https://www.base2brand.com";
 async function getServicePage(slug: string) {
   try {
     const res = await fetch(
-      `https://adminbackend.base2brand.com/api/B2Badmin/slug/${slug}`,
+      `https://admin.b2bcampus.com/api/v2/api//B2Badmin/slug/${slug}`,
       { next: { revalidate, tags: [
         `service-page`,
         `service-page:${slug}`
@@ -35,7 +35,7 @@ async function getServicePage(slug: string) {
 export async function generateStaticParams() {
   try {
     const res = await fetch(
-      "https://adminbackend.base2brand.com/api/B2Badmin/page/getall",
+      "https://admin.b2bcampus.com/api/v2/api//B2Badmin/page/getall",
       { next: { revalidate } }
     );
     const result = await res.json();
