@@ -960,6 +960,10 @@ p.top-service-title {
     .back-office-about .wraper{
         gap: 25px;
     }
+    .back-office-about .image-right-cmt{
+        order: 2;
+        border-radius: 12px;
+    }
     .inner-top-items p{
         font-size: 13px;
         line-height: 24px;
