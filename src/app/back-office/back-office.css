@@ -951,6 +951,7 @@ p.top-service-title {
     }
     .banner-wraper-back .right_content .form-wrapper{
         margin:0;
+        width:100%;
     }
     .item-back-office svg {
         width: 30px;

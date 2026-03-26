@@ -77,6 +77,7 @@ export default function BackClientReview() {
               speed={1000}
               modules={[Autoplay, Pagination, Navigation]}
               slidesPerView={1}
+              spaceBetween={20}
             >
               {sliderData?.map((data, index) =>
                 <SwiperSlide key={index}>
