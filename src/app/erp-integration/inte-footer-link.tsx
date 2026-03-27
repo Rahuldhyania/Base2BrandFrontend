@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Intefooterlink() {
   const currentRoute = usePathname();
-  console.log(currentRoute);
+  // console.log(currentRoute);
   return (
     <div
       style={{

@@ -114,7 +114,7 @@ export default function Digital() {
 
 
               const btnID = tabbtn.getAttribute("data-tab-id");
-              // console.log(btnID);
+              // // console.log(btnID);
 
               // if(btnID !== null){
               //   const btnSection = document.querySelector(`#${btnID}`);
@@ -124,7 +124,7 @@ export default function Digital() {
             } else {
 
               const btnID = tabbtn.getAttribute("data-tab-id");
-              // console.log(btnID);
+              // // console.log(btnID);
 
               // if(btnID !== null){
               //   const btnSection = document.querySelector(`#${btnID}`);
@@ -137,9 +137,9 @@ export default function Digital() {
               stepcount = parseInt(tabbtn.getAttribute("data-step"));
               stepcount--;
               if (stepcount > 0) {
-                console.log(`.tab1-step-${stepcount}`);
+                // console.log(`.tab1-step-${stepcount}`);
                 const stepSection1 = document.querySelector(`.tab1-step-${stepcount}`);
-                console.log(stepSection1, 'sadasda');
+                // console.log(stepSection1, 'sadasda');
 
                 stepSection1.classList.add('tab-active');
 

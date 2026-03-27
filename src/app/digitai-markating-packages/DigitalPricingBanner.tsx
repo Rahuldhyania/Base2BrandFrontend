@@ -64,7 +64,7 @@ const DigitalPricing = () => {
         console.error("An error occurred while submitting the form:", error);
       }
     } else {
-      console.log("Please fill in all required fields.");
+      // console.log("Please fill in all required fields.");
     }
   }
 

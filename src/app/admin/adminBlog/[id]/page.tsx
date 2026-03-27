@@ -114,7 +114,7 @@ export default function EditBlogPage() {
           withCredentials: true, // Send cookies for authentication
         });
       } catch (revalidateError) {
-        console.log("Revalidation failed (non-critical):", revalidateError);
+        // console.log("Revalidation failed (non-critical):", revalidateError);
       }
       
       alert("Blog updated successfully");

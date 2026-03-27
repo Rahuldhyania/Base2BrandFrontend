@@ -44,9 +44,9 @@ const MyComponent = () => {
   //     infinite: false,
   //   });
   //   const memoriesSection = document.querySelector(".tabMainWrap");
-  //   console.log('test');
+  //   // console.log('test');
   //   if (slider.length > 0) {
-  //     console.log('test1');
+  //     // console.log('test1');
   //     slider.slick({
   //       slidesToShow: 1,
   //       slidesToScroll: 1,
@@ -60,10 +60,10 @@ const MyComponent = () => {
   //       $('body').on('wheel', function (e) {
   //         const memoriesSectionY = memoriesSection.getBoundingClientRect().y;
           
-  //         console.log('tab:'+memoriesSectionY);
+  //         // console.log('tab:'+memoriesSectionY);
   //         if(memoriesSectionY == $('header').height()){
 
-  //           console.log('header:'+$('header').height());
+  //           // console.log('header:'+$('header').height());
 
   //           e.preventDefault();
   //           $("body").css("overflow", "hidden");

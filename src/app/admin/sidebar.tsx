@@ -9,7 +9,6 @@ import Image from "next/image";
 export default function Page() {
   const router = useRouter();
   const [userRole, setUserRole] = useState('');
-  console.log(userRole, 'userRoleuserRole')
   useEffect(() => {
     const role = Cookies.get('userRole'); // Get the role from cookies
     setUserRole(role);

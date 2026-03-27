@@ -70,7 +70,7 @@
 //       mappedData = result?.blogs?.map(
 //         (item) => `https://www.base2brand.com/blog/${item.slugUrl}`
 //       );
-//       console.log("mappedData",);
+//       // console.log("mappedData",);
       
 //       return mappedData;
 //     } catch (error) {

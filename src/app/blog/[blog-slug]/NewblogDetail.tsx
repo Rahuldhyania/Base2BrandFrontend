@@ -218,7 +218,7 @@ export const BlogDetailBanner = ({ updatedAt, heading, blogid, blogViews }) => {
     setLike(newLike);
     localStorage.setItem(storageKey, JSON.stringify(newLike));
   };
-  console.log("blogViews", blogViews);
+  // console.log("blogViews", blogViews);
 
   const handleShare = async () => {
     const shareData = {
@@ -231,7 +231,7 @@ export const BlogDetailBanner = ({ updatedAt, heading, blogid, blogViews }) => {
       try {
         await navigator.share(shareData);
       } catch (err) {
-        console.log("Share cancelled", err);
+        // console.log("Share cancelled", err);
       }
     } else {
       navigator.clipboard.writeText(shareData.url);

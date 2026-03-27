@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 export default function WebApplication() {
 
     const currentRoute = usePathname();
-    console.log(currentRoute);
+    // console.log(currentRoute);
     return (
         <>
             <div className='container mb-md-5 mb-3 pt-5 '>

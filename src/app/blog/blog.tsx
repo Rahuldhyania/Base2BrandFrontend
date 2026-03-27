@@ -39,7 +39,7 @@ function Home() {
   const [article, setArticle] = useState(null);
   const router = useRouter();
   const pathname = usePathname();
-  // console.log(data, 'datadatadatadatadatadatadata111111111');
+  // // console.log(data, 'datadatadatadatadatadatadata111111111');
 
   const [totalBlogs, setTotalBlogs] = useState(0);
   const [totalPages, setTotalPages] = useState(0);

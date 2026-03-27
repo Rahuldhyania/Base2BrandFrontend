@@ -24,7 +24,7 @@ export default function Page() {
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
     try {
       const response = await axios.post('https://admin.b2bcampus.com/api/v2/api//auth/login', data);
-      console.log(response.data);
+      // console.log(response.data);
       Cookies.set('userRole', response.data.role, { expires: 7 }); // Expires in 7 days
 
       router.push('/admin/adminBlog');

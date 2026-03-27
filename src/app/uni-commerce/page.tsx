@@ -71,7 +71,7 @@ export default function UniCommerce() {
     const isUsingWWW = window.location.href.includes("www.");
     canonical = isUsingWWW ? wwwURL : baseURL;
   }
-  console.log('isUsingWWWisUsingWWW')
+  // console.log('isUsingWWWisUsingWWW')
   const PageMeta = {
     title: "Uni-Commerce Integration with Shopify | Base2Brand",
     description: "Base2Brand offers expert Uni-Commerce integration services with Shopify, including custom API integration and platform solutions to streamline your business operations.",

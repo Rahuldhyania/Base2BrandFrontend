@@ -5,7 +5,7 @@ import { AppStateContext } from "./context/AppStateContext";
 
 export default function Index({ children }) {
   const pathname = usePathname();
-  // console.log("pathname22222",pathname);
+  // // console.log("pathname22222",pathname);
   
   // const searchParams = useSearchParams();
   // const query = searchParams.toString();

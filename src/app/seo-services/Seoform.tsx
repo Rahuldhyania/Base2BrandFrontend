@@ -20,7 +20,7 @@ export default function Seoform() {
     competitorUrl: ""
   });
 
-  // console.log("formData", formData);
+  // // console.log("formData", formData);
 
   const handleChange = (
     e:

@@ -9,3 +9,4 @@ node_modules
 
 # If using custom compression
 *.gz
+.vercel

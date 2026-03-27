@@ -140,7 +140,7 @@ const RequestForm: React.FC<ModalProps> = ({ onCloseModal }) => {
     prevForm();
   };
   const handleClick = event => {
-    console.log("event22222222222", event);
+    // console.log("event22222222222", event);
     event.preventDefault();
 
     // Get all checkboxes with name "service"

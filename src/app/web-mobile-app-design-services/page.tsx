@@ -67,7 +67,7 @@ export default function page() {
     const isUsingWWW = window.location.href.includes("www.");
     canonical = isUsingWWW ? wwwURL : baseURL;
   }
-  console.log("isUsingWWWisUsingWWW");
+  // console.log("isUsingWWWisUsingWWW");
   const PageMeta = {
     title: "Web & Mobile App Design Services for Businesses | Base2Brand",
     description:

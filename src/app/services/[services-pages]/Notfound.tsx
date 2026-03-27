@@ -3,7 +3,7 @@
 // import Header from '../../../../component/header';
 // import Footer from '../../../../component/footer';
 // export default function Notfound() {
-//   console.log("hello from not found");
+//   // console.log("hello from not found");
   
 //   return  <>
 //   <Header/>

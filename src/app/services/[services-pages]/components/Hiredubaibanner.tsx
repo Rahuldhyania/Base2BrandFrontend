@@ -15,7 +15,7 @@ const Hiredubaibanner = ({
   bannerimage,
   right_banner
 }: dubaibanner) => {
-  console.log("right_banner", right_banner);
+  // console.log("right_banner", right_banner);
 
   const [showModal, setShowModal] = useState(false);
 

@@ -31,7 +31,7 @@
 //        cache: "no-store"
 //      } 
 //     );
-//     console.log(res, 'fjnsdjfbsdkj');
+//     // console.log(res, 'fjnsdjfbsdkj');
     
 //     if (res.status === 404) return null;
 //     if (!res.ok) return null;
@@ -70,7 +70,7 @@
 // ): Promise<Metadata> {
 //   const slug = params["blog-slug"];
 //   const blog = await getBlogBySlug(slug);
-//    console.log(blog , 'blogblog');
+//    // console.log(blog , 'blogblog');
    
 //   if (!blog) {
 //     return {
@@ -116,12 +116,12 @@
 // ) {
 //   const slug = params["blog-slug"];
 //   const blog = await getBlogBySlug(slug);
-//   // console.log(blog , 'blog blog');
+//   // // console.log(blog , 'blog blog');
   
 //   if (!blog) {
 //     notFound();
 //   }
-//     console.log('hello');
+//     // console.log('hello');
 //   return (
 //     <>
 //       <Header />

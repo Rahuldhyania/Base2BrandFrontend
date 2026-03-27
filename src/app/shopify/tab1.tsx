@@ -42,7 +42,7 @@ export default function Tab1() {
 
 
               const btnID = tabbtn.getAttribute("data-tab-id");
-              // console.log(btnID);
+              // // console.log(btnID);
 
               if (btnID !== null) {
                 const btnSection = document.querySelector(`#${btnID}`);
@@ -52,7 +52,7 @@ export default function Tab1() {
             } else {
 
               const btnID = tabbtn.getAttribute("data-tab-id");
-              // console.log(btnID);
+              // // console.log(btnID);
 
               if (btnID !== null) {
                 const btnSection = document.querySelector(`#${btnID}`);
@@ -65,9 +65,9 @@ export default function Tab1() {
               stepcount = parseInt(tabbtn.getAttribute("data-step"));
               stepcount--;
               if (stepcount > 0) {
-                console.log(`.tab1-step-${stepcount}`);
+                // console.log(`.tab1-step-${stepcount}`);
                 const stepSection1 = document.querySelector(`.tab1-step-${stepcount}`);
-                console.log(stepSection1);
+                // console.log(stepSection1);
 
                 stepSection1.classList.add('tab-active');
 

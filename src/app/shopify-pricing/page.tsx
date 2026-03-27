@@ -76,9 +76,9 @@ const Page = () => {
         phone: "",
         message: "",
       });
-      console.log("Form submitted successfully:", formData);
+      // console.log("Form submitted successfully:", formData);
     } else {
-      console.log("Please fill in all required fields.");
+      // console.log("Please fill in all required fields.");
     }
   };
 

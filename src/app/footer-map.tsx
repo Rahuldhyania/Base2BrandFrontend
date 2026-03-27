@@ -20,7 +20,7 @@ export default function FooterMap() {
         comment: ''
     });
 
-    // console.log("formData", formData);
+    // // console.log("formData", formData);
 
     const handleChange = (e: ChangeEvent<HTMLSelectElement> | ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;

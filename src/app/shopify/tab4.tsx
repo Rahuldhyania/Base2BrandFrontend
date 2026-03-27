@@ -37,7 +37,7 @@ export default function Tab4() {
                   if(tabSectionY <= (headerHeight + 180)){
                     
                       const btnID = tabbtn.getAttribute("data-tab-id");
-                      // console.log(btnID);
+                      // // console.log(btnID);
                       
                       if(btnID !== null){
                         const btnSection = document.querySelector(`#${btnID}`);
@@ -46,7 +46,7 @@ export default function Tab4() {
                       
                   }else{
                       const btnID = tabbtn.getAttribute("data-tab-id");
-                      // console.log(btnID);
+                      // // console.log(btnID);
                       
                       if(btnID !== null){
                         const btnSection = document.querySelector(`#${btnID}`);

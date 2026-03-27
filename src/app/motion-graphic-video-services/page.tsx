@@ -65,7 +65,7 @@ export default function page() {
     const isUsingWWW = window.location.href.includes("www.");
     canonical = isUsingWWW ? wwwURL : baseURL;
   }
-  console.log("isUsingWWWisUsingWWW");
+  // console.log("isUsingWWWisUsingWWW");
   const PageMeta = {
     title: "Motion Graphic Video Services | Graphics Design | Base2Brand",
     description:

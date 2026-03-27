@@ -123,7 +123,7 @@ const RequestForm: React.FC<ModalProps> = ({ onCloseModal }) => {
       }, 800);
     } catch (error) {
       toast.error("Error submitting form");
-      console.log("CRM ERROR:", error);
+      // console.log("CRM ERROR:", error);
     }
 
     setLoading(false);
@@ -184,7 +184,7 @@ const RequestForm: React.FC<ModalProps> = ({ onCloseModal }) => {
     prevForm();
   };
   const handleClick = event => {
-    console.log("event22222222222", event);
+    // console.log("event22222222222", event);
     event.preventDefault();
 
     // Get all checkboxes with name "service"

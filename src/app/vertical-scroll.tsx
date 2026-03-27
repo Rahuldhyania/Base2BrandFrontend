@@ -35,7 +35,7 @@ const MyComponent = () => {
   //       swipeToSlide:true,
   //     });
      
-  //     console.log('slider.length'+slider.length);
+  //     // console.log('slider.length'+slider.length);
   //       $('body').on('wheel', function (e) {
           
   //           const memoriesSectionY = memoriesSection.getBoundingClientRect().y;
@@ -50,7 +50,7 @@ const MyComponent = () => {
              
   //           }
 
-  //         console.log('memoriesSection'+memoriesSectionY);
+  //         // console.log('memoriesSection'+memoriesSectionY);
           
   //         if(memoriesSectionY == headerHeight){
   //           e.preventDefault();

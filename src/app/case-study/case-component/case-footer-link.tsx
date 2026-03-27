@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 export default function WebApplication() {
   const currentRoute = usePathname();
-  console.log(currentRoute);
+  // console.log(currentRoute);
 
   const navigationlinks =[
     {

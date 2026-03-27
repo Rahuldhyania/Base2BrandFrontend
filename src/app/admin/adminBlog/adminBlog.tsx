@@ -407,7 +407,7 @@ export default function AdminBlog() {
           { withCredentials: true }
         );
       } catch (revalidateError) {
-        console.log("Revalidation failed (non-critical):", revalidateError);
+        // console.log("Revalidation failed (non-critical):", revalidateError);
       }
 
       alert("Blog created successfully");

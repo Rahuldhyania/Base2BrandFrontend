@@ -2265,7 +2265,7 @@ const Pagecase: React.FC = () => {
   const parts = pathname.split("/");
   const slug = parts.pop() || "";
   var data = obj.find(p => p.slug === slug);
-  console.log(" Case study Slug:", data.slug);
+  // console.log(" Case study Slug:", data.slug);
   useEffect(() => {
     const allowedPaths = [
       '/case-study/zoom-auto-car-rental',

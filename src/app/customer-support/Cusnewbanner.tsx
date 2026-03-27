@@ -14,7 +14,7 @@ export default function Cusnewbanner() {
     mobileNo: '0'
   });
 
-  // console.log("formData", formData);
+  // // console.log("formData", formData);
 
   const handleChange = (
     e:
