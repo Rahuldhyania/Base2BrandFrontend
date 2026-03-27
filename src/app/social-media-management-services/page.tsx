@@ -15,7 +15,7 @@ import "../ui-ux-services/uiux.css";
 import Uiuxform from "../ui-ux-services/Uiuxform";
 import PageHead from "../../../component/PageHead";
 import "../socialmediamain.css";
-import "../web-mobile-app-design-services/webmobile.css"
+import "../web-mobile-app-design-services/webmobileNew.css"
 import Uifaqs from "../ui-ux-services/Uifaqs";
 const faqs = [
   {

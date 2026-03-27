@@ -3,7 +3,7 @@ import Header from "../../../component/header";
 import Footer from "../../../component/footer";
 import Motionbanner from "./Motionbanner";
 import "../socialmediamain.css";
-import "../web-mobile-app-design-services/webmobile.css";
+import "../web-mobile-app-design-services/webmobileNew.css";
 import "../ui-ux-services/uiux.css";
 import "../social-media-management-services/smservices.css";
 import "./motion.css";

@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../../component/header";
 import Footer from "../../../component/footer";
 import Webbanner from "./Webbanner";
-import "./webmobile.css";
+import "./webmobileNew.css";
 import "../socialmediamain.css";
 import "../social-media-management-services/smservices.css";
 import "../ui-ux-services/uiux.css";

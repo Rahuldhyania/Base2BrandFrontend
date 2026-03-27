@@ -12,7 +12,7 @@ import Uifaqs from "./Uifaqs";
 import Uiclient from "./Uiclient";
 import Uiuxform from "./Uiuxform";
 import PageHead from "../../../component/PageHead";
-import "../web-mobile-app-design-services/webmobile.css";
+import "../web-mobile-app-design-services/webmobileNew.css";
 const faqsdata = [
   {
     id: 1,
