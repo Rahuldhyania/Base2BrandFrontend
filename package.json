@@ -48,7 +48,7 @@
     "react-slick": "^0.29.0",
     "react-toastify": "^10.0.5",
     "react-tooltip": "^5.26.4",
-    "sharp": "^0.33.2",
+    "sharp": "0.32.6",
     "slick-carousel": "^1.8.1",
     "splitting": "^1.0.6",
     "sweetalert2": "^11.14.5",
