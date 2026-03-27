@@ -20,7 +20,7 @@ const AdminPages = () => {
 
   const fetchPages = async () => {
     try {
-      const response = await axios.get(`https://admin.b2bcampus.com/api/v2/api//B2Badmin/page/getall`);
+      const response = await axios.get(`https://admin.b2bcampus.com/api/v2/api/B2Badmin/page/getall`);
 
       if (response.data && response.data.data) {
         const allPages = response.data.data;
@@ -48,7 +48,7 @@ const AdminPages = () => {
 
     if (result.isConfirmed) {
       try {
-        await axios.delete(`https://admin.b2bcampus.com/api/v2/api//B2Badmin/page/delete/${id}`);
+        await axios.delete(`https://admin.b2bcampus.com/api/v2/api/B2Badmin/page/delete/${id}`);
         Swal.fire("Deleted!", "Your page has been deleted.", "success");
 
         const updatedPages = pages.filter((page) => page._id !== id);

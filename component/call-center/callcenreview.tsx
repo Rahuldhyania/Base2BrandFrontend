@@ -31,7 +31,7 @@ export default function FooterMap() {
         e.preventDefault();
         try {
             // Your form submission logic goes here
-            const response = await fetch('https://admin.b2bcampus.com/api/v2/api//B2Badmin/contact-us', {
+            const response = await fetch('https://admin.b2bcampus.com/api/v2/api/B2Badmin/contact-us', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

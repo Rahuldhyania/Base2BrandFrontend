@@ -41,7 +41,7 @@ export default function EditBlogPage() {
       const fetchBlog = async () => {
         try {
           const response = await axios.get(
-            `https://admin.b2bcampus.com/api/v2/api//B2Badmin/blogs/${id}`
+            `https://admin.b2bcampus.com/api/v2/api/B2Badmin/blogs/${id}`
           );
           setBlogData(response.data.blog);
           setIsLoading(false);
@@ -99,7 +99,7 @@ export default function EditBlogPage() {
 
     try {
       await axios.put(
-        `https://admin.b2bcampus.com/api/v2/api//B2Badmin/blogs/${id}`,
+        `https://admin.b2bcampus.com/api/v2/api/B2Badmin/blogs/${id}`,
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
@@ -143,7 +143,7 @@ export default function EditBlogPage() {
 
           // Upload image to server
           const response = await axios.post(
-            "https://admin.b2bcampus.com/api/v2/api//B2Badmin/blogs/upload-editor-image",
+            "https://admin.b2bcampus.com/api/v2/api/B2Badmin/blogs/upload-editor-image",
             formData,
             {
               headers: {

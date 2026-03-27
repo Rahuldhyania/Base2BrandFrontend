@@ -88,10 +88,12 @@ const Getblogs = () => {
   const [search, setSearch] = useState("");
   const [category, setcategory] = useState(null);
   const [showfeature, setShofeature] = useState(3)
-  console.log("category", category);
+  // console.log("category", category);
 
   const [categoryCounts, setcategoryCounts] = useState(null);
   const itemsPerPage = 20;
+
+  
   useEffect(
     () => {
       const fetchblogs = async () => {

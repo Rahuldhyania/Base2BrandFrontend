@@ -57,7 +57,7 @@ export default function AdminContactUs() {
       ? `${startDate.toLocaleDateString('en-GB')} to ${endDate.toLocaleDateString('en-GB')}`
       : "";
       
-      const response = await axios.get('https://admin.b2bcampus.com/api/v2/api//B2Badmin/contacts/search', {
+      const response = await axios.get('https://admin.b2bcampus.com/api/v2/api/B2Badmin/contacts/search', {
         params: {
           query: searchTerm, // Search term
           dateRange: dateRange, // Date range filter
@@ -119,10 +119,10 @@ export default function AdminContactUs() {
     e.preventDefault();
     try {
       if (isEditing && selectedData._id) {
-        await axios.put(`https://admin.b2bcampus.com/api/v2/api//B2Badmin/contacts/${selectedData._id}`, selectedData);
+        await axios.put(`https://admin.b2bcampus.com/api/v2/api/B2Badmin/contacts/${selectedData._id}`, selectedData);
         alert('Contact updated successfully');
       } else {
-        await axios.post('https://admin.b2bcampus.com/api/v2/api//B2Badmin/contact-us', selectedData);
+        await axios.post('https://admin.b2bcampus.com/api/v2/api/B2Badmin/contact-us', selectedData);
         alert('Contact created successfully');
       }
       handleCloseModal();

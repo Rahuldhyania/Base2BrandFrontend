@@ -6,7 +6,7 @@ export async function GET() {
   const fetchBlogUrls = async () => {
     try {
       const response = await fetch(
-        "https://admin.b2bcampus.com/api/v2/api//B2Badmin/page/getall",
+        "https://admin.b2bcampus.com/api/v2/api/B2Badmin/page/getall",
         { next: { revalidate: 60 } } // cache control for Next.js
       );
       const result = await response.json();

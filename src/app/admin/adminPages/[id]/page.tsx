@@ -116,7 +116,7 @@ const Page = () => {
     useEffect(() => {
         if (id) {
             axios
-                .get(`https://admin.b2bcampus.com/api/v2/api//B2Badmin/page/${id}`)
+                .get(`https://admin.b2bcampus.com/api/v2/api/B2Badmin/page/${id}`)
                 .then((res) => {
                     if (res.data?.data) {
                         const incoming = res.data.data;
@@ -267,7 +267,7 @@ const Page = () => {
 
             if (id) {
                 await axios.put(
-                    `https://admin.b2bcampus.com/api/v2/api//B2Badmin/page/update/${id}`,
+                    `https://admin.b2bcampus.com/api/v2/api/B2Badmin/page/update/${id}`,
                     form
                 );
                 Swal.fire("Success", "Page updated successfully!", "success");

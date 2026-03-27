@@ -1,3 +1,5 @@
+export const revalidate = 60; 
+export const dynamicParams = true;
 import Header from "../../../../component/header";
 import Footer from "../../../../component/footer";
 import BlogListing from "../blog-listing";
@@ -6,7 +8,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import NewblogDetail from "./NewblogDetail";
 
-export const revalidate = 60; 
 
 const BASE_URL = "https://www.base2brand.com";
 
@@ -25,7 +26,7 @@ interface Blog {
 async function getBlogBySlug(slug: string) {
   try {
     const res = await fetch(
-      `https://admin.b2bcampus.com/api/v2/api//B2Badmin/blogs/slug/${slug}`,
+      `https://admin.b2bcampus.com/api/v2/api/B2Badmin/blogs/slug/${slug}`,
       {
         next: {
           revalidate,
@@ -36,6 +37,8 @@ async function getBlogBySlug(slug: string) {
         }
       }
     );
+    console.log(res, 'fjnsdjfbsdkj');
+    
     if (res.status === 404) return null;
     if (!res.ok) return null;
     const data = await res.json();
@@ -45,35 +48,36 @@ async function getBlogBySlug(slug: string) {
   }
 }
 
-export async function generateStaticParams() {
-  try {
-    const res = await fetch(
-      "https://admin.b2bcampus.com/api/v2/api//B2Badmin/blogs?page=1&limit=500",
-      {
-        next: { revalidate },
-        headers: {
-          'Content-Type': 'application/json',
-        }
-      }
-    );
-    if (!res.ok) return [];
-    const result = await res.json();
-    const blogs = result?.blogs || [];
+// export async function generateStaticParams() {
+//   try {
+//     const res = await fetch(
+//       "https://admin.b2bcampus.com/api/v2/api/B2Badmin/blogs?page=1&limit=500",
+//       {
+//         next: { revalidate },
+//         headers: {
+//           'Content-Type': 'application/json',
+//         }
+//       }
+//     );
+//     if (!res.ok) return [];
+//     const result = await res.json();
+//     const blogs = result?.blogs || [];
 
-    return blogs.map((blog: any) => ({
-      "blog-slug": blog.slugUrl || blog._id,
-    }));
-  } catch {
-    return [] as { [key: string]: string }[];
-  }
-}
+//     return blogs.map((blog: any) => ({
+//       "blog-slug": blog.slugUrl || blog._id,
+//     }));
+//   } catch {
+//     return [] as { [key: string]: string }[];
+//   }
+// }
 
 export async function generateMetadata(
   { params }: { params: { "blog-slug": string } }
 ): Promise<Metadata> {
   const slug = params["blog-slug"];
   const blog = await getBlogBySlug(slug);
-
+   console.log(blog , 'blogblog');
+   
   if (!blog) {
     return {
       robots: { index: false, follow: true },
@@ -118,9 +122,12 @@ export default async function BlogDetail(
 ) {
   const slug = params["blog-slug"];
   const blog = await getBlogBySlug(slug);
+  // console.log(blog , 'blog blog');
+  
   if (!blog) {
     notFound();
   }
+    console.log('hello');
   return (
     <>
       <Header />

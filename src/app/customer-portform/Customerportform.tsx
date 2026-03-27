@@ -32,7 +32,7 @@ export default function Cusoform() {
     try {
       // Your form submission logic goes here
       const response = await fetch(
-        "https://admin.b2bcampus.com/api/v2/api//B2Badmin/contact-us",
+        "https://admin.b2bcampus.com/api/v2/api/B2Badmin/contact-us",
         {
           method: "POST",
           headers: {

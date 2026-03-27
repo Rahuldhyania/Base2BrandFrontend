@@ -277,7 +277,7 @@ const AdminPageCreate = () => {
 
 
 
-            await axios.post("https://admin.b2bcampus.com/api/v2/api//B2Badmin/page/create", form);
+            await axios.post("https://admin.b2bcampus.com/api/v2/api/B2Badmin/page/create", form);
             Swal.fire("Success", "Page created successfully!", "success");
             router.push("/admin/adminPages");
         } catch (error: any) {
