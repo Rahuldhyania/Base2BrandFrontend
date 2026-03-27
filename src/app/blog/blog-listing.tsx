@@ -6,8 +6,6 @@ import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import axios from "axios";
 import "../blog/blog.css";
-import { log } from "console";
-
 interface BlogItem {
   _id: string;
   heading: string;
@@ -63,9 +61,7 @@ function BlogDetail() {
       };
 
       fetchBlogs();
-    },
-    [currentPage]
-  ); // Dependencies
+    }, [currentPage]); // Dependencies
 
   const handlePageChange = (event, value) => {
     setCurrentPage(value);

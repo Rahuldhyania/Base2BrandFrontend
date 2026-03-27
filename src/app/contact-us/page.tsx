@@ -26,13 +26,13 @@ import Newcontactform from "./Newcontactform";
  
   function ContactUs() { 
     const [loading, setLoading] = useState(false);
-    const context = useContext(AppStateContext);
-    console.log(context, 'contextcontextvvvvvvvvvvvv'); // This should now show both `blogsRoute` and `setBlogsRoute`
+    // const context = useContext(AppStateContext);
+    // console.log(context, 'contextcontextvvvvvvvvvvvv'); // This should now show both `blogsRoute` and `setBlogsRoute`
 
-    if (!context) {
-        throw new Error("useContext(AppStateContext) must be used within an AppStateProvider");
-    } 
-    const { blogsRoute, setBlogsRoute } = context;
+    // if (!context) {
+    //     throw new Error("useContext(AppStateContext) must be used within an AppStateProvider");
+    // } 
+    // const { blogsRoute, setBlogsRoute } = context;
      
     const baseURL = "https://base2brand.com/contact-us";
     const wwwURL = "https://www.base2brand.com/contact-us";
