@@ -27,15 +27,9 @@ async function getBlogBySlug(slug: string) {
   try {
     const res = await fetch(
       `https://admin.b2bcampus.com/api/v2/api/B2Badmin/blogs/slug/${slug}`,
-      {
-        next: {
-          revalidate,
-          tags: [
-            `blog-page`,
-            `blog-page:${slug}`
-          ]
-        }
-      }
+     {
+       cache: "no-store"
+     } 
     );
     console.log(res, 'fjnsdjfbsdkj');
     
