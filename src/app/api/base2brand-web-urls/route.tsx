@@ -17,7 +17,7 @@ export async function GET() {
     `${baseUrl}/contact-us`,
     `${baseUrl}/ai-services`,
     `${baseUrl}/app-development`,
-    `${baseUrl}/back-office`,
+    `${baseUrl}/back-office-services`,
     `${baseUrl}/case-study`,
     `${baseUrl}/content-writing-services`,
     `${baseUrl}/conversion-rate-optimization-services`,

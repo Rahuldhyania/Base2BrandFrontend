@@ -172,7 +172,7 @@ const ServicesCards = () => {
             </Link>
           </div>
           <div className="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="500">
-            <Link href='/back-office' >
+            <Link href='/back-office-services' >
               <div className="service_box_outer yellowGradiant">
                 <div className="service_box_gradiant ">
                   <div className="serviceIcon">
