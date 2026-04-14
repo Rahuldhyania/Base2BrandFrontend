@@ -56,7 +56,7 @@ export async function generateMetadata(
 
   const title = data.data.seoPageTitle || data.data.heroSection?.title || "Base2Brand";
   const description = data.data.pageKeywords || data.data.heroSection?.description || "";
-  const canonical = `${BASE_URL}/service/${slug}`;
+  const canonical = `${BASE_URL}/services/${slug}`;
 
   return {
     title,
