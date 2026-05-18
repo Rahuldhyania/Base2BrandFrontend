@@ -186,9 +186,9 @@ export default function page() {
       <Header />
       <Hiredubaibanner
         bannerimage="https://cdn.shopify.com/s/files/1/0835/6334/8002/files/monochrome-view-world-heritage-location-travel-destination_zoxmcg_1.webp"
-        pagetitle={` Top  <br />
+        pagetitle={` Top  
                 Rated Shopify <br />
-                Experts in <br />
+                Experts in 
                 <span class="text_hire_green">Dubai</span>`}
         pagedescription="Looking to scale your eCommerce business? Our Dubai-based Shopify developers craft high-performing, visually engaging, and conversion-optimized online stores tailored to your goals."
       />

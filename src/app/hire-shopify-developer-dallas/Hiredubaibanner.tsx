@@ -30,9 +30,10 @@ const Hiredubaibanner = ({ pagetitle, pagedescription, bannerimage, right_banner
           }}
         >
           <div className="py-4 px-3 px-md-5 row">
-            <div className="col-12 col-lg-6" data-aos="zoom-in-up">
+            <div className="col-12 col-lg-6 d-flex align-items-center" data-aos="zoom-in-up">
+            <div>
               <h1
-                className="hire_dubai_banner_title w-lg-100 w-75"
+                className="hire_dubai_banner_title w-lg-100 "
                 dangerouslySetInnerHTML={{ __html: pagetitle }}
               />
               <p className="b2b-title-text text-white">
@@ -46,6 +47,7 @@ const Hiredubaibanner = ({ pagetitle, pagedescription, bannerimage, right_banner
                   Request a Quote
                 </button>
               </div>
+            </div>
             </div>
             <div className="col-12 col-lg-6 d-flex justify-content-center">
               <Image
