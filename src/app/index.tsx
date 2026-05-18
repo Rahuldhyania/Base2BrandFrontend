@@ -15,7 +15,6 @@ export default function Index({ children }) {
 
   useEffect(() => {
     if(typeof window !== undefined){
-
       // Set current URL on the client-side when loading is complete  
       setCurrentUrl(`${window?.location?.href}`);
       setLoading(false);

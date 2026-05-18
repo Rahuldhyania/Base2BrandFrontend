@@ -11,6 +11,7 @@ import Notfound from "./Notfound";
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import "./Servicespages.css"; 
+import NotFound from "./Notfound";
 
 export const revalidate = 3600;
 
@@ -190,8 +191,8 @@ export default async function Dynamicservicepage(
 
   const data = await getServicePage(slug);
 
-  if (!data || !data?.data) {
-    redirect("/services");
+  if (!data) {
+    return <NotFound />;
   }
 
   return (
