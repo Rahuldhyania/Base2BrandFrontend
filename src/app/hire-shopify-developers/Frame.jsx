@@ -6,7 +6,7 @@ const Frame = () => {
             <div style={{ height: "100vh" }}>
                 {/* <Collectiion/> */}
                 <iframe
-                    src="https://shopify-base2brand.vercel.app"
+                    src="https://b2bshopifypage.netlify.app/"
                     width="100%"
                     height="100%"
                     style={{ border: "none" }}
