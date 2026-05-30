@@ -1,19 +1,19 @@
 import Frame from "./Frame";
 
 export const metadata = {
-  title: "Furniture Shopify Development Company | Hire Expert Developers Mohali",
+  title: "Furniture Store Marketing Agency | Get More Leads & Sales",
   description:
-    "Looking for a reliable Shopify development company in Mohali? Hire expert Shopify developers at Base2Brand to build, optimize, and scale your e-commerce store with custom solutions.",
+    "Get high-converting websites and performance marketing for your furniture business. Attract more buyers, increase sales, & book your free growth strategy call today.",
 
   alternates: {
-    canonical: "https://www.base2brand.com/hire-shopify-developers",
+    canonical: "https://www.base2brand.com/hire-furniture-developers",
   },
 
   openGraph: {
-    title: "Hire Expert Shopify Developers | Base2Brand",
+    title: "Furniture Store Marketing Agency | Base2Brand",
     description:
-      "Hire expert Shopify developers to build fast, scalable, and high-converting Shopify stores.",
-    url: "https://www.base2brand.com/hire-shopify-developers",
+      "Get high-converting websites and performance marketing for your furniture business.",
+    url: "https://www.base2brand.com/hire-furniture-developers",
     siteName: "Base2Brand",
     type: "website",
   },
