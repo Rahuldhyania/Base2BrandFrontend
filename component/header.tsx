@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
 import React, { useContext, useEffect, useState } from "react";
-import "./footer.css";
-import "./header.css";
-import "aos/dist/aos.css";
+// import "./footer.css";
+// import "./header.css";
+// import "aos/dist/aos.css";
 import AOS from "aos";
 import { AppStateContext } from "../src/app/context/AppStateContext";
 import { usePathname, useRouter } from "next/navigation";
@@ -540,7 +540,167 @@ export default function Header() {
                   </li>
                 </ul>
               </li>
+                 {/* Services */}
+              <li className="dropdown">
+                <Link
+                  href="/services"
+                  className={
+                    currentRoute === "/services"
+                      ? "active  py-2 px-1 dropdown-toggle"
+                      : "dropdown-toggle block py-2 px-1"
+                  }
+                >
+                  Industries
+                </Link>
 
+                <ul className="dropdown-menu ph_align_drop">
+                  <li className="mega-menu">
+                    <div className="row justify-content-center">
+                      <div className="col-lg-3 mb-3">
+                        <a href="/hire-furniture-developers">
+                          <div className="menuInner b2b-pink-bg">
+                            <h3 className="b2b-title-text text-black">
+                              Furniture
+                            </h3>
+                            <div className="d-flex align-items-center justify-content-between">
+                              <p className="menuText mb-0">
+                                Create a user-friendly store
+                              </p>
+                              <span className="menuIcon pl-3" />
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      {/* <div className="col-lg-3 mb-3">
+                        <Link href="/digital-marketing">
+                          <div className="menuInner b2b-lightBlue-bg">
+                            <h3 className="b2b-title-text text-black">
+                              Digital Marketing
+                            </h3>
+                            <div className="d-flex align-items-center justify-content-between">
+                              <p className="menuText mb-0">
+                                Implement a results-driven digital marketing
+                                strategy
+                              </p>
+                              <span className="menuIcon pl-3" />
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                      <div className="col-lg-3 mb-3">
+                        <Link href="/ui-ux-services">
+                          <div className="menuInner b2b-pink-bg">
+                            <h3 className="b2b-title-text text-black">
+                              Graphic &amp; UI/UX Services
+                            </h3>
+                            <div className="d-flex align-items-center justify-content-between">
+                              <p className="menuText mb-0">
+                                Creating Visual Solutions
+                              </p>
+                              <span className="menuIcon pl-3" />
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="row justify-content-center">
+                      <div className="col-lg-3 mb-3">
+                        <Link href="/e-commerce">
+                          <div className="menuInner b2b-lightBlue-bg">
+                            <h3 className="b2b-title-text text-black">
+                              Ecommerce
+                            </h3>
+                            <div className="d-flex align-items-center justify-content-between">
+                              <p className="menuText mb-0">
+                                Increase online sales seamlessly
+                              </p>
+                              <span className="menuIcon pl-3" />
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                      <div className="col-lg-3 mb-3">
+                        <Link href="/web-application">
+                          <div className="menuInner b2b-pink-bg">
+                            <h3 className="b2b-title-text text-black">
+                              Web Development
+                            </h3>
+                            <div className="d-flex align-items-center justify-content-between">
+                              <p className="menuText mb-0">
+                                Develop a modern, responsive website
+                              </p>
+                              <span className="menuIcon pl-3" />
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                      <div className="col-lg-3 mb-3">
+                        <Link href="/app-development">
+                          <div className="menuInner b2b-lightBlue-bg">
+                            <h3 className="b2b-title-text text-black">
+                              Mobile App Development
+                            </h3>
+                            <div className="d-flex align-items-center justify-content-between">
+                              <p className="menuText mb-0">
+                                Innovative apps for mobile devices
+                              </p>
+                              <span className="menuIcon pl-3" />
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="row justify-content-center">
+                      <div className="col-lg-3 mb-3">
+                        <a href="/devops-services">
+                          <div className="menuInner b2b-pink-bg">
+                            <h3 className="b2b-title-text text-black">
+                              DevOps Services
+                            </h3>
+                            <div className="d-flex align-items-center justify-content-between">
+                              <p className="menuText mb-0">
+                                Seamless Deployment and Scalable Infrastructure
+                                Solutions.
+                              </p>
+                              <span className="menuIcon pl-3" />
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="col-lg-3 mb-3">
+                        <a href="/ai-services">
+                          <div className="menuInner b2b-lightBlue-bg ">
+                            <h3 className="b2b-title-text text-black">
+                              AI Services
+                            </h3>
+                            <div className="d-flex align-items-center justify-content-between">
+                              <p className="menuText mb-0">
+                                Innovative AI Solutions for Smarter Business.
+                              </p>
+                              <span className="menuIcon pl-3" />
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="col-lg-3 mb-3">
+                        <Link href="/back-office-services">
+                          <div className="menuInner b2b-pink-bg">
+                            <h3 className="b2b-title-text text-black">
+                              Back Office Services
+                            </h3>
+                            <div className="d-flex align-items-center justify-content-between">
+                              <p className="menuText mb-0">
+                                Smart Back Office Support for Smarter Businesses
+                              </p>
+                              <span className="menuIcon pl-3" />
+                            </div>
+                          </div>
+                        </Link>
+                      </div> */}
+                    </div>
+                  </li>
+                </ul>
+              </li>
               <li className="d-block d-xl-none">
                 <Link href="/contact-us">Contact Us</Link>
               </li>
