@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
 import React, { useContext, useEffect, useState } from "react";
-// import "./footer.css";
-// import "./header.css";
-// import "aos/dist/aos.css";
+import "./footer.css";
+import "./header.css";
+import "aos/dist/aos.css";
 import AOS from "aos";
 import { AppStateContext } from "../src/app/context/AppStateContext";
 import { usePathname, useRouter } from "next/navigation";
