@@ -23,25 +23,47 @@ function Newcontactform() {
 
   const handleSubmit = async e => {
     e.preventDefault();
+    // Last Name Required
+  // if (!formData.lastname.trim()) {
+  //   toast.error("Last Name is required");
+  //   return;
+  // }
 
-    const payload = {
-      __vtrftk: "sid:ae9424b5bc72783db333534d6ec0efb4da069571,1765285959",
-      publicid: "a65c6b3cb33fbd21ea5a375951a2546f",
-      urlencodeenable: "1",
-      name: "Base2brand Contact us",
+  // // Email Validation
+  // if (formData.email.trim() !== "") {
+  //   const emailFilter =
+  //     /^[_/a-zA-Z0-9]+([!"#$%&()*+,./:;<=>?\^_`{|}~-]?[a-zA-Z0-9/_/-])*@[a-zA-Z0-9]+([\_\-\.]?[a-zA-Z0-9]+)*\.([\-\_]?[a-zA-Z0-9])+(\.?[a-zA-Z0-9]+)?$/;
 
-      firstname: formData.firstname,
-      lastname: formData.lastname,
-      mobile: formData.mobile,
-      email: formData.email,
-      country: formData.country,
+  //   const illegalChars = /[\(\)\<\>\,\;\:\"\[\]]/;
 
-      // vtiger custom field
-      cf_1196: formData.notes,
+  //   if (!emailFilter.test(formData.email)) {
+  //     toast.error("Please enter a valid email address");
+  //     return;
+  //   }
 
-      // hidden select field
-      leadsource: "base2brand contact us"
-    };
+  //   if (formData.email.match(illegalChars)) {
+  //     toast.error("Email contains illegal characters");
+  //     return;
+  //   }
+  // }
+            const payload = {
+          __vtrftk:
+            "sid:8ccf724925dc6eb6e357f28baa5bfe01a512d874,1780396856",
+
+          publicid: "a65c6b3cb33fbd21ea5a375951a2546f",
+          urlencodeenable: "1",
+          name: "Base2brand Contact us",
+
+          firstname: formData.firstname,
+          lastname: formData.lastname,
+          mobile: formData.mobile,
+          email: formData.email,
+          country: formData.country,
+
+          cf_1402: formData.notes,
+
+          leadsource: "base2brand contact us"
+        };
 
     try {
       const res = await fetch("/api/crm", {
@@ -80,27 +102,32 @@ function Newcontactform() {
           <div className="form-group">
             <label>First Name</label>
             <input
-              type="text"
-              name="firstname"
-              value={formData.firstname}
-              onChange={handleChange}
-            />
+            type="text"
+            name="firstname"
+            required
+            data-label="First Name"
+            value={formData.firstname}
+            onChange={handleChange}
+          />
           </div>
           <div className="form-group">
             <label>Last Name*</label>
             <input
-              type="text"
-              name="lastname"
-              required
-              value={formData.lastname}
-              onChange={handleChange}
-            />
+                type="text"
+                name="lastname"
+                data-label="Last Name"
+                required
+                value={formData.lastname}
+                onChange={handleChange}
+              />
           </div>
           <div className="form-group">
             <label>Mobile Phone</label>
             <input
               type="text"
               name="mobile"
+              required
+              data-label="Mobile Phone"
               value={formData.mobile}
               onChange={handleChange}
             />
@@ -108,9 +135,11 @@ function Newcontactform() {
 
           <div className="form-group">
             <label>Email</label>
-            <input
+           <input
               type="email"
               name="email"
+              required
+              data-label="Primary Email"
               value={formData.email}
               onChange={handleChange}
             />
@@ -121,6 +150,7 @@ function Newcontactform() {
             <input
               type="text"
               name="country"
+              data-label="Country"
               value={formData.country}
               onChange={handleChange}
             />
@@ -129,12 +159,17 @@ function Newcontactform() {
           <div className="form-group full">
             <label>Comment</label>
             <textarea
-              name="notes"
-              value={formData.notes}
-              onChange={handleChange}
-            //   rows="4"
+            name="notes"
+            data-label="Customer Notes"
+            value={formData.notes}
+            onChange={handleChange}
             />
           </div>
+          <input
+            type="hidden"
+            name="leadsource"
+            value="base2brand contact us"
+          />
         </div>
 
         <button className="submit-btn" type="submit">
