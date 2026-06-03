@@ -887,7 +887,7 @@ export default function Header() {
                     </div>
                   </li>
                   <li className="mega-menu">
-                    <Link href="https://wa.me/919041700209">
+                    <Link href="https://wa.me/7889101844">
                       <div className="menuInner align-items-center">
                         <div className="phoneMenuIcon">
                           <Image
@@ -900,7 +900,7 @@ export default function Header() {
                           />
                         </div>
                         <h3 className="b2b-sub-text-gk text-white">
-                          +91 (904) 1700209
+                          +91 (788) 910 1844
                         </h3>
                       </div>
                     </Link>
