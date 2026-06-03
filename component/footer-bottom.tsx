@@ -84,7 +84,7 @@ export default function FooterBottom() {
             <ul className="mb-0">
               <li>F-209,
                 Sector 74, Mohali, 160074 <br />
-                IND <a className="text-white" href="tel:+91-9872487850">+91 9872487850</a></li>
+                IND <a className="text-white" href="tel:+91-7889101844">+91 7889101844</a></li>
             </ul>
           </div>
 
@@ -102,7 +102,7 @@ export default function FooterBottom() {
             <h6>UK</h6>
             <ul className="mb-0">
 
-              
+
               <li>
                 UK
                 <a className="text-white" href="tel:+447441913940"> +44 7441913940

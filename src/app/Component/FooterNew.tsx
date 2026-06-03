@@ -121,15 +121,15 @@ const FooterNew = () => {
       style={{ backgroundImage: "url(/newhomepage/newfooterbg.webp)" }}
     >
       <div className="xxl_container pb-3 pb-md-5 pt-4 pt-md-5">
-          <div className="mb-4 footerMenu d-flex d-md-none">
-              <Image
-                src="https://cdn.shopify.com/s/files/1/0835/6334/8002/files/logo.e9cf2080_1_egmydg.png"
-                alt=""
-                width={1000}
-                height={500}
-                className="newfooterlogo"
-              />
-            </div>
+        <div className="mb-4 footerMenu d-flex d-md-none">
+          <Image
+            src="https://cdn.shopify.com/s/files/1/0835/6334/8002/files/logo.e9cf2080_1_egmydg.png"
+            alt=""
+            width={1000}
+            height={500}
+            className="newfooterlogo"
+          />
+        </div>
         <div className="row">
           {FooterData.map((data, index) =>
             <div className="col-12 col-md-4 col-lg footernewCard" key={index}>
@@ -199,8 +199,8 @@ const FooterNew = () => {
                 <li>
                   F-209, Sector 74, Mohali, 160074 <br />
                   IND{" "}
-                  <a className="text-white" href="tel:+91-9872487850">
-                    +91 9872487850
+                  <a className="text-white" href="tel:+91-7889101844">
+                    +91 7889101844
                   </a>
                 </li>
               </ul>
@@ -220,7 +220,7 @@ const FooterNew = () => {
             <div className="mb-sm-0 mb-4 footerMenu">
               <h6 className="text-white footernew_title">UK</h6>
               <ul className="mb-0">
-                
+
                 <li>
                   UK
                   <a className="text-white" href="tel:+447441913940">

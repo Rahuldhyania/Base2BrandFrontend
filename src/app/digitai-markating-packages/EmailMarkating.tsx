@@ -23,8 +23,8 @@ const EmailMarkating = () => {
 
                     <div className=" d-flex  justify-content-center gap-3 align-items-center ">
                         <h3 className="gk-heading-bold text-center  text-cente  ">
-                           
-                        Email Marketing
+
+                            Email Marketing
 
                         </h3>
                         <span>
@@ -45,20 +45,20 @@ const EmailMarkating = () => {
                                         <li className="fw-bold fs-5">2 Campaigns/Month</li>
                                         <li className="fw-bold fs-5">Template Design</li>
                                         <li>Performance Tracking</li>
-                                        
+
                                     </div>
                                     <div className="card-btn"></div>
                                     <h5 className="text-white mt-lg-3 mt-2 pt-lg-4 pt-3 gk-border-top-2px  gk-text-bold">
                                         TALK TO US
                                     </h5>
                                     <h5 className="text-white mt-lg-4 mt-3 gk-text-bold">
-                                    <a
-                      href="tel:+919872487850"
-                      target="_blank"
-                      className="text-white"
-                    >
-                      +91-9872-487-850
-                    </a>
+                                        <a
+                                            href="tel:+917889101844"
+                                            target="_blank"
+                                            className="text-white"
+                                        >
+                                            +91-9872-487-850
+                                        </a>
                                     </h5>
                                 </div>
                             </div>
@@ -76,21 +76,21 @@ const EmailMarkating = () => {
                                         <li className="fw-bold fs-5">Template Design</li>
                                         <li className="fw-bold fs-5">Performance Tracking</li>
                                         <li>Segmentation & Personalization</li>
-                                        
+
                                     </div>
                                     <div className="card-btn"></div>
-                                    
+
                                     <h5 className="text-white mt-lg-3 mt-2 pt-lg-4 pt-3 gk-border-top-2px  gk-text-bold">
                                         TALK TO US
                                     </h5>
                                     <h5 className="text-white mt-lg-4 mt-3 gk-text-bold">
-                                    <a
-                      href="tel:+919872487850"
-                      target="_blank"
-                      className="text-white"
-                    >
-                      +91-9872-487-850
-                    </a>
+                                        <a
+                                            href="tel:+917889101844"
+                                            target="_blank"
+                                            className="text-white"
+                                        >
+                                            +91-9872-487-850
+                                        </a>
                                     </h5>
                                 </div>
                             </div>
@@ -109,21 +109,21 @@ const EmailMarkating = () => {
                                         <li className="fw-bold fs-5">Performance Tracking</li>
                                         <li className="fw-bold fs-5">Segmentation & Personalization</li>
                                         <li>Automation</li>
-                                        
+
                                     </div>
                                     <div className="card-btn"></div>
-                                    
+
                                     <h5 className="text-white mt-lg-3 mt-2 pt-lg-4 pt-3 gk-border-top-2px  gk-text-bold">
                                         TALK TO US
                                     </h5>
                                     <h5 className="text-white mt-lg-4 mt-3 gk-text-bold">
-                                    <a
-                      href="tel:+919872487850"
-                      target="_blank"
-                      className="text-white"
-                    >
-                      +91-9872-487-850
-                    </a>
+                                        <a
+                                            href="tel:+917889101844"
+                                            target="_blank"
+                                            className="text-white"
+                                        >
+                                            +91-9872-487-850
+                                        </a>
                                     </h5>
                                 </div>
                             </div>

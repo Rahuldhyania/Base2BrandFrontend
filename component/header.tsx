@@ -36,7 +36,7 @@ export default function Header() {
             
   </div> */}
 
-      <nav className={` ${currentRoute == '/new-home-page' ?  'bg-black' :  ''} navbar  navbar-expand-xl pt-4 pb-4 ps-3 pe-3 position-relative`}>
+      <nav className={` ${currentRoute == '/new-home-page' ? 'bg-black' : ''} navbar  navbar-expand-xl pt-4 pb-4 ps-3 pe-3 position-relative`}>
         <div className="container-fluid">
           <Link href="/" className="flex items-center navbar-brand pt-0">
             {/* <Image
@@ -540,7 +540,7 @@ export default function Header() {
                   </li>
                 </ul>
               </li>
-                 {/* Services */}
+              {/* Services */}
               <li className="dropdown">
                 <Link
                   href="/services"
@@ -709,7 +709,7 @@ export default function Header() {
               </li>
               <div className="header_socialmedia d-flex flex-column d-xl-none">
                 <li className="m-auto mt-4 d-flex justify-content-start">
-                  <Link href="tel:+919872487850">
+                  <Link href="tel:+917889101844">
                     <div className="align-items-center d-flex gap-2 align-items-center">
                       <div className="phoneMenuIcon m-0">
                         <Image
@@ -721,7 +721,7 @@ export default function Header() {
                         />
                       </div>
                       <h3 className="b2b-title-text text-white m-0 hover-primary">
-                        +91 (987) 248 7850
+                        +91 (788) 910 1844
                       </h3>
                     </div>
                   </Link>
@@ -841,7 +841,7 @@ export default function Header() {
                     </div>
                   </li>
                   <li className="mega-menu">
-                    <Link href="tel:+919872487850">
+                    <Link href="tel:+917889101844">
                       <div className="menuInner align-items-center">
                         <div className="phoneMenuIcon">
                           <Image
@@ -854,7 +854,7 @@ export default function Header() {
                           />
                         </div>
                         <h3 className="b2b-sub-text-gk text-white">
-                          +91 (987) 248 7850
+                          +91 (788) 910 1844
                         </h3>
                       </div>
                     </Link>
@@ -923,7 +923,7 @@ export default function Header() {
                             width="28"
                             height="28"
                             style={{ maxWidth: "28px" }}
-                            // quality="auto"
+                          // quality="auto"
                           />
                         </div>
                         <h3 className="b2b-sub-text-gk text-white">
@@ -942,11 +942,31 @@ export default function Header() {
                             width="28"
                             height="28"
                             style={{ maxWidth: "28px" }}
-                            // quality="auto"
+                          // quality="auto"
                           />
                         </div>
                         <h3 className="b2b-sub-text-gk text-white">
                           + (0044) 7448435973
+                        </h3>
+                      </div>
+                    </Link>
+                  </li>
+
+                  <li className="mega-menu">
+                    <Link href="tel:+919872487850">
+                      <div className="menuInner align-items-center">
+                        <div className="phoneMenuIcon">
+                          <Image
+                            src="https://cdn.shopify.com/s/files/1/0835/6334/8002/files/india_mvji31.svg"
+                            alt=""
+                            width="28"
+                            height="28"
+                            style={{ maxWidth: "28px" }}
+                          // quality="auto"
+                          />
+                        </div>
+                        <h3 className="b2b-sub-text-gk text-white">
+                          +91 (987) 248 7850 (For any complaints)
                         </h3>
                       </div>
                     </Link>

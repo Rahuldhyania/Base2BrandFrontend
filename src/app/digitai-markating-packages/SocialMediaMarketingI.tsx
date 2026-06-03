@@ -43,7 +43,7 @@ const SocialMediaMarketingI = () => {
                     <li className="fw-bold fs-5">Social Media Integration</li>
                     <li>Google Analytics Integration</li>
                   </div>
-                 {/*  */}
+                  {/*  */}
                   <div className="vewmore mt-4">
                     <div
                       className="accordion Accodian-style"
@@ -105,7 +105,7 @@ const SocialMediaMarketingI = () => {
                   </h5>
                   <h5 className="text-white mt-lg-4 mt-3 gk-text-bold">
                     <a
-                      href="tel:+919872487850"
+                      href="tel:+917889101844"
                       target="_blank"
                       className="text-white"
                     >
@@ -131,8 +131,8 @@ const SocialMediaMarketingI = () => {
                     <li>SEO Ready Website</li>
                     <li>SSL Certificate</li>
                   </div>
-                 {/*  */}
-                 <div className="vewmore mt-4">
+                  {/*  */}
+                  <div className="vewmore mt-4">
                     <div
                       className="accordion Accodian-style"
                       id="accordionPanelsStayOpenExample"
@@ -193,7 +193,7 @@ const SocialMediaMarketingI = () => {
                   </h5>
                   <h5 className="text-white mt-lg-4 mt-3 gk-text-bold">
                     <a
-                      href="tel:+919872487850"
+                      href="tel:+917889101844"
                       target="_blank"
                       className="text-white"
                     >
@@ -219,8 +219,8 @@ const SocialMediaMarketingI = () => {
                     <li>Upto 200 Products Upload By Our Team</li>
                     <li className="fw-bold fs-5">SEO Ready Website</li>
                   </div>
-                 {/*  */}
-                 <div className="vewmore mt-4">
+                  {/*  */}
+                  <div className="vewmore mt-4">
                     <div
                       className="accordion Accodian-style"
                       id="accordionPanelsStayOpenExample"
@@ -281,7 +281,7 @@ const SocialMediaMarketingI = () => {
                   </h5>
                   <h5 className="text-white mt-lg-4 mt-3 gk-text-bold">
                     <a
-                      href="tel:+919872487850"
+                      href="tel:+917889101844"
                       target="_blank"
                       className="text-white"
                     >

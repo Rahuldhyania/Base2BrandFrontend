@@ -73,7 +73,7 @@ const FacebookAds = () => {
                   <h2 className="fontlinear ">₹ 149,000</h2>
                   <div className="list d-flex  flex-column gap-3 pt-3">
                     <li className="fw-bold fs-5">
-                    2 Campaigns a month
+                      2 Campaigns a month
                     </li>
                     <li>Pixel Setup</li>
                     <li className="fw-bold fs-5">Weekly Ad Optimization </li>
@@ -149,7 +149,7 @@ const FacebookAds = () => {
                   </h5>
                   <h5 className="text-white mt-lg-4 mt-3 gk-text-bold">
                     <a
-                      href="tel:+919872487850"
+                      href="tel:+917889101844"
                       target="_blank"
                       className="text-white"
                     >
@@ -167,7 +167,7 @@ const FacebookAds = () => {
                   <h2 className="fontlinear ">₹ 249,000</h2>
                   <div className="list d-flex  flex-column gap-3 pt-3">
                     <li className="fw-bold fs-5">
-                    5 Campaigns a month
+                      5 Campaigns a month
                     </li>
                     <li className="fw-bold fs-5">Comprehensive Pixel Setup</li>
                     <li>Weekly Ad Optimization </li>
@@ -218,15 +218,15 @@ const FacebookAds = () => {
                             <div className="list d-flex  flex-column gap-3 ">
                               <li>Advanced Conversion Setup</li>
                               <li className="fw-bold fs-5">
-                              Detailed Custom Conversion Tracking
+                                Detailed Custom Conversion Tracking
                               </li>
                               <li className="fw-bold fs-5">
-                              Weekly Performance Reports
+                                Weekly Performance Reports
                               </li>
                               <li className="">
-                              Weekly Strategy Review
+                                Weekly Strategy Review
                               </li>
-                              
+
                             </div>
                           </div>
                         </div>
@@ -238,7 +238,7 @@ const FacebookAds = () => {
                   </h5>
                   <h5 className="text-white mt-lg-4 mt-3 gk-text-bold">
                     <a
-                      href="tel:+919872487850"
+                      href="tel:+917889101844"
                       target="_blank"
                       className="text-white"
                     >
@@ -261,7 +261,7 @@ const FacebookAds = () => {
                     <li>Extensive Image/Video Variants</li>
                     <li>Conversion Setup</li>
                     <li className="fw-bold fs-5  b2b-sub-text ">
-                    Weekly Ad Optimization 
+                      Weekly Ad Optimization
                     </li>
                     <li>A/B Testing</li>
                     <li className="fw-bold fs-5">Full Conversion Setup</li>
@@ -304,10 +304,10 @@ const FacebookAds = () => {
                             <div className="list d-flex flex-column gap-3">
                               <li>Advanced Custom Conversion Tracking</li>
                               <li className="fw-bold fs-5">
-                              Detailed Ad Copy Testing
+                                Detailed Ad Copy Testing
                               </li>
                               <li className="fw-bold fs-5">
-                              Weekly Performance Reports
+                                Weekly Performance Reports
                               </li>
                               <li>Weekly Strategy Review</li>
                               <li>Monthly Deep-Dive Analysis</li>
@@ -330,7 +330,7 @@ const FacebookAds = () => {
                   </h5>
                   <h5 className="text-white mt-lg-4 mt-3 gk-text-bold">
                     <a
-                      href="tel:+919872487850"
+                      href="tel:+917889101844"
                       target="_blank"
                       className="text-white"
                     >

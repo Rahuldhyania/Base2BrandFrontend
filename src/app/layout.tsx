@@ -30,7 +30,7 @@ const organizationSchema = {
   logo: "https://www.base2brand.com/path-to-logo-image.jpg",
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+91 98724-87850",
+    telephone: "+91 78891-01844",
     contactType: "Customer Service",
     areaServed: "IN",
     availableLanguage: "English"

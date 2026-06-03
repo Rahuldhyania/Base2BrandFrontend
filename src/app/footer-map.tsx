@@ -83,7 +83,7 @@ export default function FooterMap() {
                                 <div className="address2" data-aos="zoom-in" data-aos-delay="700">
                                     <span data-tooltip-id="my-tooltip-2" className="addressDot"></span>
                                 </div>
-                                
+
                                 <Tooltip
                                     id="my-tooltip-2"
                                     className="tooltipText"
@@ -101,7 +101,7 @@ export default function FooterMap() {
                                     place="top"
                                     html="<p class='tooltipTitle'>India (headquarter) </p>
                                         F-209, Industrial area Phase 8-B,<br />
-                                        Sector 74, Mohali, 160074 +91 9872487850"
+                                        Sector 74, Mohali, 160074 +91 7889101844"
                                 />
                             </div>
                         </div>
