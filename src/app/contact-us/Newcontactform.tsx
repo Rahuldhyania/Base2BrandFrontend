@@ -100,7 +100,7 @@ function Newcontactform() {
 
         <div className="grid">
           <div className="form-group">
-            <label>First Name</label>
+            <label>First Name*</label>
             <input
             type="text"
             name="firstname"
@@ -122,7 +122,7 @@ function Newcontactform() {
               />
           </div>
           <div className="form-group">
-            <label>Mobile Phone</label>
+            <label>Mobile Phone*</label>
             <input
               type="text"
               name="mobile"
@@ -134,7 +134,7 @@ function Newcontactform() {
           </div>
 
           <div className="form-group">
-            <label>Email</label>
+            <label>Email*</label>
            <input
               type="email"
               name="email"
@@ -146,11 +146,12 @@ function Newcontactform() {
           </div>
 
           <div className="form-group">
-            <label>Country</label>
+            <label>Country*</label>
             <input
               type="text"
               name="country"
               data-label="Country"
+              required
               value={formData.country}
               onChange={handleChange}
             />
