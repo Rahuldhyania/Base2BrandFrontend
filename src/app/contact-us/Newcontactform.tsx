@@ -3,8 +3,6 @@
 import React, { useState } from "react";
 import "./Newcontactform.css";
 import { toast } from "react-toastify";
-import "react-phone-input-2/lib/style.css";  // ← CSS import zaroori hai
-import PhoneInput from "react-phone-input-2";
 
 function Newcontactform() {
   const [formData, setFormData] = useState({
@@ -22,14 +20,7 @@ function Newcontactform() {
       [e.target.name]: e.target.value
     });
   };
-// ← Mobile ke liye alag handler
-  const handlePhoneChange = (value, countryData) => {
-  setFormData({
-    ...formData,
-    mobile: value,
-    country: countryData.name  // ← auto fill country name
-  });
-};
+
   const handleSubmit = async e => {
     e.preventDefault();
     // Last Name Required
@@ -130,19 +121,15 @@ function Newcontactform() {
                 onChange={handleChange}
               />
           </div>
-           <div className="form-group">
+          <div className="form-group">
             <label>Mobile Phone*</label>
-            {/* ← Sirf yeh input replace karna hai */}
-            <PhoneInput
-              country={"in"}          // default India
+            <input
+              type="text"
+              name="mobile"
+              required
+              data-label="Mobile Phone"
               value={formData.mobile}
-              onChange={handlePhoneChange}
-              inputProps={{
-                name: "mobile",
-                required: true,
-              }}
-              containerStyle={{ width: "100%" ,}}
-              inputStyle={{ width: "100%", height: "50px" }}
+              onChange={handleChange}
             />
           </div>
 
@@ -165,7 +152,6 @@ function Newcontactform() {
               name="country"
               data-label="Country"
               required
-              readOnly  // ← Country auto fill hoga, user edit nahi kar sakta
               value={formData.country}
               onChange={handleChange}
             />
