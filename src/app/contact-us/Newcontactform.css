@@ -1,4 +1,4 @@
-/* Wrapper */
+@import 'react-phone-input-2/lib/style.css';/* Wrapper */
 .form-wrapper {
   max-width: 900px;
   margin: 40px auto;
