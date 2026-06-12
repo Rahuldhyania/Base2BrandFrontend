@@ -1,5 +1,5 @@
 'use client'
-
+ 
 import React, { useState } from "react";
 import Header from '../../component/header';
 import Footer from '../../component/footer';
@@ -15,25 +15,25 @@ import Request from "./request-form";
 import PageHead from "../../component/PageHead";
 import Footerbar from "./footerbar";
 import Bannerposter from "./Bannerposter";
-
+ 
 export default function Home() {
   const baseURL = "https://base2brand.com";
   const wwwURL = "https://www.base2brand.com";
-
+ 
   let canonical = '';
   if (typeof window !== "undefined") {
     const isUsingWWW = window.location.href.includes("www.");
-
+ 
     canonical = isUsingWWW ? wwwURL : baseURL;
   }
   const PageMeta = {
     title: "Base2Brand | High-Converting Website Design & Digital Growth Agency",
     description: "Base2Brand builds high-converting websites and digital strategies that help brands grow. Expert website design, development, SEO, and performance marketing.",
-    canonical: canonical, 
-    image: "/img/portfolio/b1.png", 
+    canonical: canonical,
+    image: "/img/portfolio/b1.png",
   };
   const [showModal, setShowModal] = useState(false);
-
+ 
   const toggleModal = () => {
     setShowModal(!showModal);
     setTimeout(function () {
@@ -41,10 +41,10 @@ export default function Home() {
       if (ModalBody) {
         ModalBody.classList.add("transformAnim");
       }
-
+ 
     }, 200);
   };
-
+ 
   const settings = {
     dots: false,
     arrows: false,
@@ -89,7 +89,7 @@ export default function Home() {
         <meta property="og:description" content={PageMeta.description} />
       </head>
       <Header />
-
+ 
       <HomeBanner />
       {/* <Bannerposter /> */}
       <div className="bg_home b2b-overflow-hidden" >
@@ -101,8 +101,8 @@ export default function Home() {
         <Career />
       </div>
       <VerticalScroll />
-
-
+ 
+ 
       <Footer />
       {showModal &&
         <Request
@@ -112,3 +112,49 @@ export default function Home() {
     </>
   )
 }
+
+
+// import React from 'react'
+// import NewHomeWrap from './Component/NewHomePage/NewHomeWrap';
+// import Header from '../../component/header';
+// import Head from 'next/head';
+// import PageHead from '../../component/PageHead';
+ 
+//   const baseURL = "https://base2brand.com";
+//   const wwwURL = "https://www.base2brand.com";
+ 
+//   let canonical = '';
+//   if (typeof window !== "undefined") {
+//     const isUsingWWW = window.location.href.includes("www.");
+ 
+//     canonical = isUsingWWW ? wwwURL : baseURL;
+//   }
+//   const PageMeta = {
+//     title: "Base2Brand | High-Converting Website Design & Digital Growth Agency",
+//     description: "Base2Brand builds high-converting websites and digital strategies that help brands grow. Expert website design, development, SEO, and performance marketing.",
+//     canonical: canonical,
+//     image: "/img/portfolio/b1.png",
+//   };
+ 
+ 
+// export const metadata = {
+//   title : 'Base2Brand | High-Converting Website Design & Digital Growth Agency',
+//   description : 'Base2Brand builds high-converting websites and digital strategies that help brands grow. Expert website design, development, SEO, and performance marketing.',
+// }
+// const page = () => {
+ 
+//  return (
+//     <div>
+//       <PageHead PageMeta={PageMeta} />
+//       <Head>
+//         <meta name="robots" content="noindex, nofollow" />
+//       </Head>
+ 
+//       <Header />
+//       <NewHomeWrap />
+//     </div>
+//   );
+// }
+ 
+// export default page
+ 
