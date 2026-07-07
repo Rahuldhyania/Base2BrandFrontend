@@ -24,19 +24,48 @@ export async function POST(request) {
         const verifyData = await verifyRes.json();
 
         if (!verifyData.success) {
-            return Response.json({ success: false, message: "Captcha verification failed." }, { status: 400 });
+            return Response.json({
+                success: false,
+                message: "Captcha verification failed.",
+                errors: verifyData["error-codes"] || [],
+            }, { status: 400 });
         }
 
-        // Yaha apna existing CRM submission code add hoga
-        // Important: CRM me body ki jagah crmPayload send karna hai
-        // recaptchaToken CRM me send nahi karna
+        const origin = new URL(request.url).origin;
 
-        return Response.json({
-            success: true,
-            message: "Captcha verified successfully.",
-            data: crmPayload,
+        const crmRes = await fetch(`${origin}/api/crm`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(crmPayload),
         });
+
+        const crmText = await crmRes.text();
+
+        let crmData;
+
+        try {
+            crmData = JSON.parse(crmText);
+        } catch {
+            crmData = {
+                success: crmRes.ok,
+                message: crmText || "CRM response is not JSON.",
+            };
+        }
+
+        if (!crmRes.ok) {
+            return Response.json({
+                success: false,
+                message: crmData ? .message || "CRM submission failed.",
+                crmData,
+            }, { status: crmRes.status });
+        }
+
+        return Response.json(crmData, { status: crmRes.status });
     } catch (error) {
+        console.log("captcha-crm error:", error);
+
         return Response.json({ success: false, message: "Server error." }, { status: 500 });
     }
 }
