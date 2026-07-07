@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import "./Newcrmform.css";
 import { toast } from "react-toastify";
 import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 // import "react-phone-input-2/lib/style.css";
 
 
@@ -11,7 +12,7 @@ interface CrmFormProps {
   onCloseModal?: () => void;
 }
 
-function Newcrmform({ onCloseModal }:CrmFormProps) {
+function Newcrmform({ onCloseModal }: CrmFormProps) {
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -72,11 +73,11 @@ function Newcrmform({ onCloseModal }:CrmFormProps) {
     }
   };
   const handlePhoneChange = (value) => {
-  setFormData({
-    ...formData,
-    mobile: value
-  });
-};
+    setFormData({
+      ...formData,
+      mobile: value
+    });
+  };
 
   return (
     <div className="form-wrapper">
@@ -107,19 +108,19 @@ function Newcrmform({ onCloseModal }:CrmFormProps) {
           </div>
 
           <div className="form-group">
-  <label>Mobile Phone*</label>
-  <PhoneInput
-    country={"in"}
-    value={formData.mobile}
-    onChange={handlePhoneChange}
-    inputProps={{
-      name: "mobile",
-      required: true,
-    }}
-    containerStyle={{ width: "100%" }}
-    inputStyle={{ width: "100%", height: "50px" }}
-  />
-</div>
+            <label>Mobile Phone*</label>
+            <PhoneInput
+              country={"in"}
+              value={formData.mobile}
+              onChange={handlePhoneChange}
+              inputProps={{
+                name: "mobile",
+                required: true,
+              }}
+              containerStyle={{ width: "100%" }}
+              inputStyle={{ width: "100%", height: "50px" }}
+            />
+          </div>
 
           <div className="form-group">
             <label>Email*</label>
