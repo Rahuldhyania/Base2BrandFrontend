@@ -57,7 +57,7 @@ export async function POST(request) {
         if (!crmRes.ok) {
             return Response.json({
                 success: false,
-                message: crmData ? .message || "CRM submission failed.",
+                message: crmData?.message || "CRM submission failed.",
                 crmData,
             }, { status: crmRes.status });
         }
