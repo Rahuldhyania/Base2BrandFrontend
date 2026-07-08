@@ -1,11 +1,13 @@
 "use client";
 
-import React, { useState, ChangeEvent } from "react";
+import React, { useRef, useState, ChangeEvent } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Callbackform() {
+  const recaptchaRef = useRef<any>(null);
+
   const [formData, setFormData] = useState({
     name: "",
     lastname: "null",
@@ -14,8 +16,11 @@ export default function Callbackform() {
     service: "",
     companyName: "base2brand",
     country: "India",
-    comment: ""
+    comment: "",
   });
+
+  const [recaptchaToken, setRecaptchaToken] = useState("");
+  const [submitting, setSubmitting] = useState(false);
 
   const handleChange = (
     e:
@@ -26,61 +31,79 @@ export default function Callbackform() {
     setFormData({ ...formData, [name]: value });
   };
 
+  const resetCaptcha = () => {
+    setRecaptchaToken("");
+    recaptchaRef.current?.reset();
+  };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const payload = {
-  __vtrftk:
-    "sid:8ccf724925dc6eb6e357f28baa5bfe01a512d874,1780396856",
-
-  publicid: "a65c6b3cb33fbd21ea5a375951a2546f",
-  urlencodeenable: "1",
-  name: "Base2brand Contact us",
-
-  firstname: formData.name,
-  lastname: "Callback Form",
-  mobile: formData.mobileNo,
-  email: formData.email,
-  country: "India",
-
-  // CRM Notes Field
-  cf_1402: formData.comment,
-
-  // Lead Source
-  leadsource: "callback form"
-};
-
-   try {
-    const res = await fetch("/api/crm", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(payload)
-    });
-
-    const data = await res.json();
-
-    if (data?.success) {
-      toast.success("Callback request submitted successfully!");
-
-      setFormData({
-        name: "",
-        lastname: "null",
-        email: "",
-        mobileNo: "",
-        service: "",
-        companyName: "base2brand",
-        country: "India",
-        comment: ""
-      });
-    } else {
-      toast.error("Submission failed");
+    if (!recaptchaToken) {
+      toast.error("Please complete the captcha verification.");
+      return;
     }
-  } catch (error) {
-    toast.error("Server error!");
-  }
-};
+
+    const payload = {
+      __vtrftk:
+        "sid:8ccf724925dc6eb6e357f28baa5bfe01a512d874,1780396856",
+
+      publicid: "a65c6b3cb33fbd21ea5a375951a2546f",
+      urlencodeenable: "1",
+      name: "Base2brand Contact us",
+
+      firstname: formData.name,
+      lastname: "Callback Form",
+      mobile: formData.mobileNo,
+      email: formData.email,
+      country: "India",
+
+      cf_1402: formData.comment,
+
+      leadsource: "callback form",
+
+      recaptchaToken,
+    };
+
+    try {
+      setSubmitting(true);
+
+      const res = await fetch("/api/captcha-crm", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+
+      if (data?.success) {
+        toast.success("Callback request submitted successfully!");
+
+        setFormData({
+          name: "",
+          lastname: "null",
+          email: "",
+          mobileNo: "",
+          service: "",
+          companyName: "base2brand",
+          country: "India",
+          comment: "",
+        });
+
+        resetCaptcha();
+      } else {
+        toast.error(data?.message || "Submission failed");
+        resetCaptcha();
+      }
+    } catch (error) {
+      toast.error("Server error!");
+      resetCaptcha();
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
   return (
     <div>
@@ -129,16 +152,12 @@ export default function Callbackform() {
                     value={formData.mobileNo}
                     onChange={handleChange}
                     required
-                    onInput={(
-                      e: React.FormEvent<HTMLInputElement>
-                    ) => {
-                      const inputElement =
-                        e.target as HTMLInputElement;
-                      inputElement.value =
-                        inputElement.value.replace(
-                          /[^0-9]/g,
-                          ""
-                        );
+                    onInput={(e: React.FormEvent<HTMLInputElement>) => {
+                      const inputElement = e.target as HTMLInputElement;
+                      inputElement.value = inputElement.value.replace(
+                        /[^0-9]/g,
+                        ""
+                      );
                     }}
                   />
                 </div>
@@ -155,12 +174,26 @@ export default function Callbackform() {
                   />
                 </div>
 
+                <div className="col-lg-12 mb-3">
+                  <ReCAPTCHA
+                    ref={recaptchaRef}
+                    sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
+                    onChange={token => setRecaptchaToken(token || "")}
+                    onExpired={() => setRecaptchaToken("")}
+                    onErrored={() => {
+                      setRecaptchaToken("");
+                      toast.error("Captcha error. Please try again.");
+                    }}
+                  />
+                </div>
+
                 <div className="d-flex justify-content-end m-0">
                   <button
                     type="submit"
                     className="b2b-btn b2b-btn-sm"
+                    disabled={submitting}
                   >
-                    Let's Call !
+                    {submitting ? "Submitting..." : "Let's Call !"}
                   </button>
                 </div>
               </div>
